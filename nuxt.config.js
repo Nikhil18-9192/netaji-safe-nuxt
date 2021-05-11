@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'netaji-safe',
+    title: 'Netaji Safe Company',
     htmlAttrs: {
       lang: 'en'
     },
@@ -14,7 +14,12 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylsheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap',
+      },
     ]
   },
 
@@ -35,7 +40,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
   ],
+  styleResources: {
+    scss: ['~assets/global.scss'],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
