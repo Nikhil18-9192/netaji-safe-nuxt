@@ -18,7 +18,7 @@ export default {
       {
         rel: 'stylsheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap',
       },
     ]
   },

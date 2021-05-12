@@ -54,6 +54,8 @@ export default {
   width: 100%;
   height: 102px;
   background-image: url('/nav_bg.jpg');
+  background-position: center;
+  background-size: cover;
   padding: 0 63px;
   display: flex;
   align-items: center;

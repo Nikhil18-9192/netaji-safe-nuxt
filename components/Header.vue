@@ -1,6 +1,7 @@
 <template>
   <div id="header">
     <h1 class="heading">A complete System For your security needs</h1>
+    <img class="image" src="/shild.png" alt="" />
   </div>
 </template>
 
@@ -23,7 +24,7 @@ export default {
   justify-content: center;
 
   .heading {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 36px;
     line-height: 151.5%;
     text-align: center;
@@ -31,6 +32,14 @@ export default {
     text-transform: uppercase;
     width: 500px;
     margin-top: 170px;
+  }
+  .image {
+    position: absolute;
+    bottom: -53px;
+    transform: translate(-50% -50%);
+    width: 169px;
+    height: 216px;
+    object-fit: contain;
   }
 }
 </style>
