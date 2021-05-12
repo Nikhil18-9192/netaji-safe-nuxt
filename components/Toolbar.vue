@@ -26,23 +26,16 @@
 </template>
 
 <script>
+import { productNav, navMenu } from '@/utils'
 export default {
   name: 'ToolbarComponent',
-  data() {
-    return {
-      productNav: [
-        { name: ' Heavy Safe n Door ', path: '/' },
-        { name: ' Home Range ', path: '/' },
-        { name: ' Office Range ', path: '/' },
-        { name: ' S.S. Safe  ', path: '/' },
-      ],
-      navMenu: [
-        { name: ' Home ', path: '/' },
-        { name: ' About ', path: '/' },
-        { name: 'Clients ', path: '/' },
-        { name: ' Contact  ', path: '/' },
-      ],
-    }
+  computed: {
+    productNav() {
+      return productNav
+    },
+    navMenu() {
+      return navMenu
+    },
   },
 }
 </script>
