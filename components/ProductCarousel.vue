@@ -3,7 +3,6 @@
     <client-only>
       <carousel
         ref="slider"
-        v-model="currentPage"
         class="carousel"
         :perPageCustom="[
           [320, 1],
