@@ -53,12 +53,7 @@ export default {
   top: 0;
   width: 100%;
   height: 102px;
-  // background: rgba(255, 255, 255, 0.6);
-  // backdrop-filter: blur(53px);
-  background-image: url('/toolbar-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url('/nav_bg.jpg');
   padding: 0 63px;
   display: flex;
   align-items: center;
@@ -80,6 +75,7 @@ export default {
           width: 100%;
           height: 100%;
           object-fit: contain;
+          mix-blend-mode: multiply;
         }
       }
       .nav-products {
