@@ -73,12 +73,11 @@ export default {
 
     .slide {
       padding-top: 50px;
-      margin-left: 85px;
-      max-width: 450px;
+      padding-left: 85px;
     }
     .card {
       position: relative;
-
+      // min-width: 450px;
       .overlay {
         background: linear-gradient(
           180deg,

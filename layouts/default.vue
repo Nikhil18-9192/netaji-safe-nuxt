@@ -2,6 +2,7 @@
   <div>
     <Toolbar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
