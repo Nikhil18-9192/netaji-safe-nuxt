@@ -35,7 +35,7 @@ export default {
   }
   .image {
     position: absolute;
-    bottom: -53px;
+    bottom: -50px;
     transform: translate(-50% -50%);
     width: 169px;
     height: 216px;

@@ -1,6 +1,7 @@
 <template>
   <div class="home-page">
     <Header />
+    <ProductCarousel />
   </div>
 </template>
 
