@@ -53,12 +53,17 @@ export default {
   top: 0;
   width: 100%;
   height: 102px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(53px);
+  // background: rgba(255, 255, 255, 0.6);
+  // backdrop-filter: blur(53px);
+  background-image: url('/toolbar-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 0 63px;
   display: flex;
   align-items: center;
   border-bottom: 12px solid #cb2929;
+  z-index: 2000;
   .container {
     display: flex;
     width: 100%;
