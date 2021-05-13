@@ -131,6 +131,7 @@ export default {
           font-size: 12px;
           line-height: 13px;
           margin-left: 21px;
+          transition: 0.3s ease all;
         }
       }
     }
