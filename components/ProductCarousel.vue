@@ -38,6 +38,16 @@
         </slide>
       </carousel>
     </client-only>
+    <div class="btn-container">
+      <a class="broture-btn" href="/">
+        <img src="/download.svg" alt="broture download" />
+        <p>Download Broture</p>
+      </a>
+      <a class="video-btn" href="/">
+        <img src="/youtube.svg" alt="vidio play" />
+        <p>Watch Video</p>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -131,6 +141,53 @@ export default {
           height: 349px;
           object-fit: contain;
         }
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    .broture-btn {
+      display: flex;
+      align-items: center;
+      width: 185px;
+      height: 47px;
+      padding: 10px 13px;
+      background: #1f1f1f;
+      border-radius: 47px;
+      margin-right: 33px;
+      p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 151.5%;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        margin-right: 4px;
+      }
+    }
+    .video-btn {
+      display: flex;
+      align-items: center;
+      padding: 10px 13px;
+      width: 166px;
+      height: 47px;
+      background: #cb2929;
+      border-radius: 47px;
+      p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 151.5%;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        margin-right: 9px;
       }
     }
   }

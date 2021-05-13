@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <div class="logo">
-          <img src="/logo.png" alt="logo" />
+          <nuxt-link to="/"> <img src="/logo.png" alt="logo" /></nuxt-link>
         </div>
         <div class="nav-products">
           <nuxt-link

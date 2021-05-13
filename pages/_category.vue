@@ -1,0 +1,139 @@
+<template>
+  <div id="category">
+    <div class="header">
+      <div class="navigator">
+        <p><span>Home / </span> {{ category }}</p>
+      </div>
+    </div>
+    <div class="product-container">
+      <div class="card-wrapper">
+        <div class="card" v-for="(product, i) in products" :key="i">
+          <h4 class="title">{{ product.title }}</h4>
+          <div class="image">
+            <img :src="product.src" alt="" />
+          </div>
+          <div class="desc">
+            <p>{{ product.desc }}</p>
+            <p v-if="product.desc2">{{ product.desc2 }}</p>
+          </div>
+          <nuxt-link class="read-btn" to="/">Read More ...</nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { heavySafeDoor, homeRange, officeRange, ss } from '@/utils'
+export default {
+  name: 'CategoryPage',
+  data() {
+    return {
+      category: false,
+    }
+  },
+  mounted() {
+    this.category = this.$route.params.category.replace(/_/g, ' ')
+  },
+  computed: {
+    products() {
+      if (this.category == 'heavy safe n door') {
+        return heavySafeDoor
+      } else if (this.category == 'home range') {
+        return homeRange
+      } else if (this.category == 'office range') {
+        return officeRange
+      } else if (this.category == 's. s. safe') {
+        return ss
+      }
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+#category {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .header {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    background-image: url('/category-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 199px;
+    .navigator {
+      width: 399px;
+      height: 46px;
+      background: #cb2929;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      padding: 13px 20px;
+      p {
+        span {
+          color: #ff8989;
+        }
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 151.5%;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .product-container {
+    padding: 70px 199px;
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+      column-gap: 32px;
+      max-width: 1018px;
+      .card {
+        width: 492px;
+        background: linear-gradient(
+          180deg,
+          #efefef 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 9px;
+        padding: 38px 65px;
+        .title {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 151.5%;
+          width: 317px;
+        }
+        .image {
+          height: 304px;
+          padding-top: 30px;
+          padding-bottom: 35px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .desc {
+          margin-bottom: 20px;
+          p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 173.69%;
+          }
+        }
+        .read-btn {
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 173.69%;
+        }
+      }
+    }
+  }
+}
+</style>
