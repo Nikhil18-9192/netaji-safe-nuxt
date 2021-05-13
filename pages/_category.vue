@@ -103,6 +103,7 @@ export default {
         );
         border-radius: 9px;
         padding: 38px 65px;
+
         .title {
           font-weight: 600;
           font-size: 18px;
@@ -113,10 +114,12 @@ export default {
           height: 304px;
           padding-top: 30px;
           padding-bottom: 35px;
+
           img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+            mix-blend-mode: multiply;
           }
         }
         .desc {
