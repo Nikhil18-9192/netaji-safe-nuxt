@@ -54,11 +54,13 @@ export default {
   border-bottom: 12px solid #cb2929;
   z-index: 2000;
   .blur {
-    backdrop-filter: blur(55px);
+    filter: blur(4px);
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 0;
+    top: 0;
+    left: 0;
   }
   .container {
     display: flex;
