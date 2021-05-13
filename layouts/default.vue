@@ -5,7 +5,15 @@
     <Footer />
   </div>
 </template>
-
+<script>
+export default {
+  mounted() {
+    window.addEventListener('scroll', (e) => {
+      this.$store.commit('SET_SCROLL_POSITION', parseInt(window.scrollY))
+    })
+  },
+}
+</script>
 <style>
 html {
   font-family: 'Spartan', sans-serif;

@@ -1,9 +1,23 @@
 <template>
-  <div id="toolbar">
+  <div
+    id="toolbar"
+    :style="[
+      scrollPosition > 0
+        ? { height: '71px', 'border-bottom': '4px solid #cb2929' }
+        : { height: '102px', 'border-bottom': '12px solid #cb2929' },
+    ]"
+  >
     <div class="blur"></div>
     <div class="container">
-      <div class="left">
-        <div class="logo">
+      <div
+        class="left"
+        :style="[
+          scrollPosition > 0
+            ? { 'align-items': 'center' }
+            : { 'align-items': 'flex-end' },
+        ]"
+      >
+        <div :class="scrollPosition > 0 ? 'scroll-logo' : 'logo'">
           <nuxt-link to="/"> <img src="/logo.png" alt="logo" /></nuxt-link>
         </div>
         <div class="nav-products">
@@ -15,7 +29,14 @@
           >
         </div>
       </div>
-      <div class="right">
+      <div
+        class="right"
+        :style="[
+          scrollPosition > 0
+            ? { height: '100%', 'align-items': 'center' }
+            : { height: '64px', 'align-items': 'flex-end' },
+        ]"
+      >
         <div class="nav-menu">
           <nuxt-link v-for="(menu, i) in navMenu" :key="i" :to="menu.path">{{
             menu.name
@@ -37,6 +58,9 @@ export default {
     navMenu() {
       return navMenu
     },
+    scrollPosition: function () {
+      return this.$store.getters.getScrollPosition
+    },
   },
 }
 </script>
@@ -46,13 +70,12 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 102px;
   backdrop-filter: blur(53px);
   padding: 0 63px;
   display: flex;
   align-items: center;
-  border-bottom: 12px solid #cb2929;
   z-index: 2000;
+  transition: 0.3s ease all;
   .blur {
     position: absolute;
     width: 100%;
@@ -69,17 +92,18 @@ export default {
     .left {
       width: 70%;
       display: flex;
-      align-items: flex-end;
+      transition: 0.3s ease all;
       .logo {
         width: 235px;
         height: 64px;
         margin-right: 36px;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          mix-blend-mode: multiply;
-        }
+        transition: 0.3s ease all;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode: multiply;
       }
       .nav-products {
         a {
@@ -93,10 +117,9 @@ export default {
     }
     .right {
       width: 30%;
-      height: 64px;
       display: flex;
       justify-content: flex-end;
-      align-items: flex-end;
+      transition: 0.3s ease all;
       .nav-menu {
         a {
           font-weight: normal;
@@ -107,5 +130,11 @@ export default {
       }
     }
   }
+}
+.scroll-logo {
+  width: 151px;
+  height: 41px;
+  margin-right: 84px;
+  transition: 0.3s ease all;
 }
 </style>
