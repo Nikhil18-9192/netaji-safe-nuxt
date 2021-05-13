@@ -56,7 +56,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-
   .header {
     position: relative;
     width: 100%;
@@ -65,6 +64,7 @@ export default {
     background-size: cover;
     background-position: center;
     padding: 0 199px;
+
     .navigator {
       width: 399px;
       height: 46px;
