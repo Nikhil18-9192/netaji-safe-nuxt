@@ -47,26 +47,25 @@ export default {
   top: 0;
   width: 100%;
   height: 102px;
-  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(53px);
   padding: 0 63px;
   display: flex;
   align-items: center;
   border-bottom: 12px solid #cb2929;
   z-index: 2000;
   .blur {
-    filter: blur(4px);
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
     top: 0;
     left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
   }
   .container {
     display: flex;
     width: 100%;
     align-items: center;
-    z-index: 1;
     .left {
       width: 70%;
       display: flex;
