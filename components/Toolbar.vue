@@ -22,6 +22,11 @@
         </div>
         <div class="nav-products">
           <nuxt-link
+            :style="[
+              scrollPosition > 0
+                ? { 'font-size': '12px', 'margin-right': '50px' }
+                : { 'font-size': '13px', 'margin-right': '38px' },
+            ]"
             v-for="(product, i) in productNav"
             :key="i"
             :to="product.path"
