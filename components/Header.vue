@@ -22,6 +22,7 @@ export default {
   background-size: cover;
   display: flex;
   justify-content: center;
+  margin-top: -102px;
   .heading {
     font-weight: 400;
     font-size: 36px;
