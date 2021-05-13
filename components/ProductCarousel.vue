@@ -140,6 +140,7 @@ export default {
           width: 266px;
           height: 349px;
           object-fit: contain;
+          mix-blend-mode: multiply;
         }
       }
     }

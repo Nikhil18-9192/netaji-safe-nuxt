@@ -46,9 +46,8 @@ export default {
   top: 0;
   width: 100%;
   height: 102px;
-  background-image: url('/nav_bg.jpg');
-  background-position: center;
-  background-size: cover;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(55px);
   padding: 0 63px;
   display: flex;
   align-items: center;
