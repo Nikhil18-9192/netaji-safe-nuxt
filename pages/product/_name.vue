@@ -1,0 +1,286 @@
+<template>
+  <div id="product">
+    <div class="header">
+      <div class="navigater">
+        <p>
+          <span>Home / Heavy Safe N Door / </span> Heavy fire proof safe single
+          / double door
+        </p>
+      </div>
+    </div>
+    <h1 class="title">
+      We manufacturer Fire proof Safes in various storage capacities ranging
+      from size <span>28”</span> to size <span>72”</span>, All our safes come
+      with special features.
+    </h1>
+    <div class="card-container">
+      <div class="card" v-for="(item, i) in productCards" :key="i">
+        <div class="left">
+          <img :src="item.icon" :alt="item.title" />
+        </div>
+        <div class="right">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.desc }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="image-carousel">
+      <client-only>
+        <carousel
+          ref="slider"
+          class="carousel"
+          :perPageCustom="[
+            [320, 1],
+            [375, 1],
+            [768, 3],
+            [1200, 5],
+            [1800, 5],
+          ]"
+          :loop="true"
+          :autoplay="true"
+          :autoplayTimeout="100000"
+          :mouse-drag="true"
+          :paginationEnabled="false"
+        >
+          <slide class="slide" v-for="(item, i) in images" :key="i">
+            <img :src="item" alt="" />
+          </slide>
+        </carousel>
+      </client-only>
+    </div>
+    <div class="size-table">
+      <table>
+        <tr class="heading">
+          <th>No.</th>
+          <th>Outer Size (H. W. D.)</th>
+          <th>Inner Size (H. W. D.)</th>
+          <th>Weight (Approx)</th>
+        </tr>
+        <tr class="table-row" v-for="(item, i) in weights" :key="i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.outer }}</td>
+          <td>{{ item.inner }}</td>
+          <td>{{ item.weight }}</td>
+        </tr>
+      </table>
+    </div>
+    <p class="note">
+      *note : Double Door Safe are available in models from 36″ width and above.
+    </p>
+  </div>
+</template>
+
+<script>
+import Carousel from 'vue-carousel/src/Carousel.vue'
+import Slide from 'vue-carousel/src/Slide.vue'
+import { productCards } from '@/utils'
+export default {
+  name: 'ProductPage',
+  components: {
+    Carousel,
+    Slide,
+  },
+  data() {
+    return {
+      images: [
+        '/double_door.jpg',
+        '/safe_features.jpg',
+        '/safe_features2.jpg',
+        '/safe_features3.jpg',
+        '/lock.jpg',
+        '/double_door.jpg',
+        '/safe_features.jpg',
+        '/safe_features2.jpg',
+        '/safe_features3.jpg',
+        '/lock.jpg',
+      ],
+      weights: [
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+        {
+          outer: '28″ x 22″ x 21″',
+          inner: '28″ x 22″ x 21″',
+          weight: '400 K.G',
+        },
+      ],
+    }
+  },
+  computed: {
+    productCards() {
+      return productCards
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+#product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 187px;
+  .header {
+    margin-top: 109px;
+    border-bottom: 1px solid #bdbdbd;
+    .navigater {
+      width: 580px;
+      height: 46px;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      padding: 13px 19px;
+      p {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 151.5%;
+        span {
+          color: #7a7a7a;
+        }
+      }
+    }
+  }
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 161%;
+    text-align: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    margin-bottom: 96px;
+    span {
+      color: #cb2929;
+    }
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 40px;
+    column-gap: 32px;
+    // max-width: 1018px;
+    .card:nth-child(1) {
+      grid-row: auto / span 2;
+    }
+    .card {
+      grid-row: auto / span 3;
+      display: flex;
+      padding: 44px 0 23px 0;
+      background: linear-gradient(
+        180deg,
+        #efefef 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 9px;
+      width: 557px;
+      height: 100%;
+      min-height: 282px;
+      .left {
+        width: 25%;
+        padding-left: 43px;
+        img {
+          width: 57px;
+          height: 57px;
+          object-fit: contain;
+        }
+      }
+      .right {
+        width: 75%;
+        padding-right: 22px;
+        h4 {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 151.5%;
+          margin-bottom: 22px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 173.69%;
+        }
+      }
+    }
+  }
+  .image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 100px 0;
+    .carousel {
+      width: 100%;
+      .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #bcbcbc;
+        img {
+          width: 169px;
+          height: 220px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .size-table {
+    width: 100%;
+    table {
+      width: 791px;
+      margin: 0 auto;
+      border-spacing: 0 5px;
+      th {
+        border-top: 9px solid #1f1f1f;
+        background: #cb2929;
+        height: 47px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 173.69%;
+        color: #fff;
+      }
+      td {
+        text-align: center;
+        background: #f4f4f4;
+        height: 47px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 173.69%;
+      }
+    }
+  }
+  .note {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 173.69%;
+    text-align: center;
+    margin-top: 36px;
+  }
+}
+</style>
