@@ -148,7 +148,7 @@ export default {
   height: 100%;
   padding: 0 187px;
   .header {
-    margin-top: 109px;
+    margin-top: 34px;
     border-bottom: 1px solid #bdbdbd;
     .navigater {
       width: 580px;

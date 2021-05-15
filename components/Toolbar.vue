@@ -9,18 +9,18 @@
   >
     <div class="blur"></div>
     <div class="container">
-      <div
-        class="left"
-        :style="[
-          scrollPosition > 0
-            ? { 'align-items': 'center' }
-            : { 'align-items': 'flex-end' },
-        ]"
-      >
+      <div class="left">
         <div :class="scrollPosition > 0 ? 'scroll-logo' : 'logo'">
           <nuxt-link to="/"> <img src="/logo.png" alt="logo" /></nuxt-link>
         </div>
-        <div class="nav-products">
+        <div
+          class="nav-products"
+          :style="[
+            scrollPosition > 0
+              ? { 'align-items': 'center' }
+              : { 'align-items': 'flex-end' },
+          ]"
+        >
           <nuxt-link
             :style="[
               scrollPosition > 0
@@ -38,8 +38,8 @@
         class="right"
         :style="[
           scrollPosition > 0
-            ? { height: '100%', 'align-items': 'center' }
-            : { height: '64px', 'align-items': 'flex-end' },
+            ? { height: '100%', 'padding-top': '0' }
+            : { height: '100%', 'padding-top': '40px' },
         ]"
       >
         <div class="nav-menu">
@@ -94,6 +94,7 @@ export default {
     display: flex;
     width: 100%;
     align-items: center;
+    transition: 0.3s ease all;
     .left {
       width: 70%;
       display: flex;
@@ -111,6 +112,8 @@ export default {
         mix-blend-mode: multiply;
       }
       .nav-products {
+        display: flex;
+        transition: 0.3s ease all;
         a {
           font-weight: 600;
           font-size: 13px;
@@ -126,6 +129,7 @@ export default {
       justify-content: flex-end;
       transition: 0.3s ease all;
       .nav-menu {
+        transition: 0.3s ease all;
         a {
           font-weight: normal;
           font-size: 12px;
