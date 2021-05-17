@@ -21,12 +21,12 @@ const slides = [
 ]
 
 const heavySafeDoor = [
-    { title: 'Heavy fire proof safe single / double door', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/d1.png' },
-    { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/d2.png' },
-    { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: '/category/d3.png' },
-    { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: '/category/d4.png' },
-    { title: 'Safe Deposite Vaults', desc: 'Netaji Safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables.', src: '/category/d5.png' },
-    { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: '/category/d6.png' },
+    { title: 'Heavy fire proof safe single / double door', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/d1.png', slug: 'heavy-safe-n-door/heavy-fire-proof-safe-doors' },
+    { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/d2.png', slug: 'heavy-safe-n-door/strong-room-door-with-grill-gate' },
+    { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: '/category/d3.png', slug: 'heavy-safe-n-door/jewellery-safe' },
+    { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: '/category/d4.png', slug: 'heavy-safe-n-door/counter-safe' },
+    { title: 'Safe Deposite Vaults', desc: 'Netaji Safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables.', src: '/category/d5.png', slug: 'heavy-safe-n-door/safe-deposite-vaults' },
+    { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: '/category/d6.png', slug: 'heavy-safe-n-door/night-guard' },
 ]
 
 const homeRange = [
@@ -60,14 +60,253 @@ const ss = [
     { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/ss2.jpg' },
 ]
 
-const productCards = [
-    { title: 'Strong Seamless Body', desc: 'The outer layer of body is tough tested quality 5mm M.S. Plate with fully welded multi corner bend constructed without a single rivet on all side and armored with a Double duty barrier material providing massive resistance strength of 90 mm thick layer on each side of safe which defends the attack of sledge hammer, power drills, oxy-acetylene flame and arc cutting steel.', icon: '/pattern.svg' },
-    { title: 'Strong Seamless Body', desc: 'The outer layer of the door slab is tough tested quality single solid M.S. Plate of 12 mm to 32 mm thickness. It is further fortified by a composite 190 mm thick layer of double duty barrier material and layers of flame and arc resistant alloy and hardened steel plates, which provide dependable protection against fire and attacks of power drill, oxy-acetylene flame and arc cutting. the total thickness of protective layer is strong over vital parts and is in vertical position with Un-pickable locks with high precision, superior quality dual control 10-lever 2 locks with stainless steel body and brass levers. Additional provision is made for digital or combination lock. The doors also have central 3mm aluminum plate for additional security and we use S.S. handles for lifelong durability.', icon: '/dumbbell.svg' },
-    { title: 'Strong Seamless Body', desc: 'It is specially designed as per the weight of door slab with solid polished M.S. Bar of 75 mm & further given the hardness process to work properly & easily for the lifetime. It is mounted vertically on the safe. The upper part is fitted in the body & the lower one on the door slab by heavy strong bolts.', icon: '/pattern.svg' },
-    { title: 'Hinges / Pivets System', desc: 'It is specially designed as per the weight of door slab with solid polished M.S. Bar of 75 mm & further given the hardness process to work properly & easily for the lifetime. It is mounted vertically on the safe. The upper part is fitted in the body & the lower one on the door slab by heavy strong bolts.', icon: '/pattern.svg' },
-    { title: 'Hinges / Pivets System', desc: 'It is specially designed as per the weight of door slab with solid polished M.S. Bar of 75 mm & further given the hardness process to work properly & easily for the lifetime. It is mounted vertically on the safe. The upper part is fitted in the body & the lower one on the door slab by heavy strong bolts.', icon: '/hinge.svg' },
-    { title: 'Unyielding protective shielding', desc: 'Lock protection with a special drill-defeat shield in the door.', icon: '/pattern.svg' },
-    { title: 'Unyielding protective shielding', desc: ' Lock protection with a special drill-defeat shield in the door.', icon: '/dumbbell.svg' },
-]
 
-export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, productCards }
+
+const heavyFireProofSafe = {
+    cards: [
+        { title: 'Strong Seamless Body', desc: 'The outer layer of body is tough tested quality 5mm M.S. Plate with fully welded multi corner bend constructed without a single rivet on all side and armored with a Double duty barrier material providing massive resistance strength of 90 mm thick layer on each side of safe which defends the attack of sledge hammer, power drills, oxy-acetylene flame and arc cutting steel.', icon: '/dumbbell.svg' },
+        { title: 'Super Tough door', desc: 'The outer layer of the door slab is tough tested quality single solid M.S. Plate of 12 mm to 32 mm thickness. It is further fortified by a composite 190 mm thick layer of double duty barrier material and layers of flame and arc resistant alloy and hardened steel plates, which provide dependable protection against fire and attacks of power drill, oxy-acetylene flame and arc cutting. the total thickness of protective layer is strong over vital parts and is in vertical position with Un-pickable locks with high precision, superior quality dual control 10-lever 2 locks with stainless steel body and brass levers. Additional provision is made for digital or combination lock. The doors also have central 3mm aluminum plate for additional security and we use S.S. handles for lifelong durability.', icon: '/pattern.svg' },
+        { title: 'Hinges / Pivets System', desc: 'It is specially designed as per the weight of door slab with solid polished M.S. Bar of 75 mm & further given the hardness process to work properly & easily for the lifetime. It is mounted vertically on the safe. The upper part is fitted in the body & the lower one on the door slab by heavy strong bolts.', icon: '/hinge.svg' },
+        { title: 'Various locking systems', desc: 'Superior high quality made in USA digital and combination Locks by La guard & Automatic Re-locking system.', icon: '/security.svg' },
+        { title: 'Unyielding protective shielding', desc: 'Lock protection with a special drill-defeat shield in the door.', icon: '/security.svg' },
+        { title: 'Bolt work Mechanism', desc: 'Strong movable shooting bolts of 38 mm on front & back, equally spaced to secure the door equipped with the impact resisting shaft.', icon: '/pattern.svg' },
+        { title: 'Balanced pressure Bolt-work', desc: 'Ensuring safety from attacks by dislodging.', icon: '/dumbbell.svg' },
+    ],
+    images: ['/heavy-fire-proof-door/1.jpg', '/heavy-fire-proof-door/2.jpg', '/heavy-fire-proof-door/3.jpg', '/heavy-fire-proof-door/4.jpg', '/heavy-fire-proof-door/5.jpg', '/heavy-fire-proof-door/6.jpg', '/heavy-fire-proof-door/7.jpg',],
+    weights: [
+        {
+            outer: '28″ x 22″ x 21″',
+            inner: '21″ x 15″ x 11″',
+            weight: '400 K.G',
+        },
+        {
+            outer: '36″ x 24″ x 24″',
+            inner: '29″ x 17″ x 14″',
+            weight: '550 K.G',
+        },
+        {
+            outer: '42″ x 27″ x 24″',
+            inner: '35″ x 20″ x 14″',
+            weight: '	750 K.G',
+        },
+        {
+            outer: '48″ x 33″ x 27″',
+            inner: '41″ x 26″ x 17″',
+            weight: '980 K.G',
+        },
+        {
+            outer: '60″ x 33″ x 27″',
+            inner: '53″ x 26″ x 17″',
+            weight: '1300 K.G',
+        },
+        {
+            outer: '60″ x 36″ x 30″',
+            inner: '53″ x 29″ x 20″',
+            weight: '1400 K.G',
+        },
+        {
+            outer: '60″ x 39″ x 30″',
+            inner: '53″ x 32″ x 20″',
+            weight: '1500 K.G',
+        },
+        {
+            outer: '72″ x 36″ x 30″',
+            inner: '65″ x 29″ x 20″',
+            weight: '1700 K.G',
+        },
+        {
+            outer: '72″ x 39″ x 30″',
+            inner: '65″ x 32″ x 20″',
+            weight: '1800 K.G',
+        },
+        {
+            outer: '72″ x 42″ x 30″',
+            inner: '65″ x 35″ x 20″',
+            weight: '2000 K.G',
+        },
+    ],
+    note: '*note : Double Door Safe are available in models from 36″ width and above.'
+}
+
+const strongRoomDoor = {
+    cards: [
+        { title: '', desc: 'Netaji branded Strong room door with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill gate are made of superior quality material along with special attention to all the security measures.', icon: '/dumbbell.svg' },
+        { title: 'Door Slab', desc: 'The outer layer of the door slab is tough tested quality M.S. Plate of 12 mm to 32 mm thickness. It is further fortified by a composite 190mm thick layer of tested double duty barrier material and layers of flame and arc resistant alloy and hardened steel plates, which provide dependable protection against fire and attacks of power drill, oxy-acetylene flame and arc cutting. The total thickness of protective layer is strong over vital parts with Un-pickable locks with high precision, superior quality dual control 10-lever 2 locks with stainless steel body and brass levers. Additional provision is made for digital or combination lock. The doors also have central 3mm aluminum plate for additional security and we use S.S. handles for lifelong durability.', icon: '/pattern.svg' },
+        { title: 'Frame Work ', desc: 'Tested quality ‘L’ type frame of 10mm or ‘C’ type 6mm thick M.S.Plate bent angle door frame, the door frame is reinforced along the height and width for strength and rigidity. A “Box Rebate” is plug welded to the frame to provide strong support for shooting bolts. Dual protection is provided over the entire lock case area of 1.75 Sq.mtrs.', icon: '/hinge.svg' },
+        { title: 'Bolt Work', desc: 'The door is provided with 12 shooting bolts (each of 38mm dia.) six in front, six at rear, which slides behind the tough “Box-jamb” rebate. These bolts can be activated simultaneously by the movement of the handle.', icon: '/security.svg' },
+        { title: 'Automatic Self Locking Device ', desc: 'The Strong Room Door is further protected by an automatic self-locking device which comes into operation and dead locks the doors, if the lock is dislodged by explosive, sledge hammer or other attacks.', icon: '/security.svg' },
+        { title: 'Ventilating Grill Gate ', desc: 'The grill gate is constructed with heavy round 19mm m.s. solid polish bars at staggered pitch and secured with high precision 8 levers unpickable lock operating on both sides provided with stainless steel keys in duplicate.', icon: '/pattern.svg' },
+    ],
+    images: ['/strong-room-door/1.jpg', '/strong-room-door/2.jpg', '/strong-room-door/3.jpg', '/strong-room-door/4.jpg', '/strong-room-door/5.jpg', '/strong-room-door/6.jpg', '/strong-room-door/7.jpg',],
+    weights: [
+        {
+            outer: '72” x 42”',
+            inner: '63”x 33”',
+            weight: '750 K.G',
+        },
+        {
+            outer: '81”x 42”',
+            inner: '72” x 33”',
+            weight: '800 K.G',
+        },
+        {
+            outer: '81” x 45”',
+            inner: '72” x 36”',
+            weight: '850 K.G',
+        },
+        {
+            outer: '90” x 48”',
+            inner: '81” x 39”',
+            weight: '900 K.G.',
+        },
+    ],
+    note: ''
+}
+const jewellerySafe = {
+    cards: [
+        { title: '', desc: 'Netaji Safe Offers wide range of a Jewellery safe that are specially built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking]. Balanced pressure bolt work, Attractive Finish & Rugged are the primary features.', icon: '/dumbbell.svg' },
+        { title: '', desc: 'The main specialist of this type of safe is they of Converted to a show case form This can be used for both display of Jewellery as will as protection. The three locking divice make it unpick able & convenient to use.', icon: '/pattern.svg' },
+        { title: '', desc: 'The superior quality ten lever lock with brass levers, stainless steel keys with individual nomenclature, high quality made in USA lock & Auto locking feature make this a highly preferred safe for many Jewellers.', icon: '/hinge.svg' },
+    ],
+    images: ['/jewellery-safe/1.jpg', '/jewellery-safe/2.jpg', '/jewellery-safe/3.jpg', '/jewellery-safe/4.jpg', '/jewellery-safe/5.jpg', '/jewellery-safe/6.jpg', '/jewellery-safe/7.jpg', '/jewellery-safe/8.jpg', '/jewellery-safe/9.jpg', '/jewellery-safe/10.jpg', '/jewellery-safe/11.jpg', '/jewellery-safe/12.jpg', '/jewellery-safe/13.jpg', '/jewellery-safe/15.jpg', '/jewellery-safe/16.jpg', '/jewellery-safe/17.jpg', '/jewellery-safe/18.jpg', '/jewellery-safe/19.jpg',],
+    weights: [
+    ],
+    note: ''
+}
+const counterSafe = {
+    cards: [
+        { title: '', desc: 'This is a special product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ in height, 48″ to 72″ in width and 18″ to 24″ in depth. The body thickness of minimum 2mm and the door plate of minimum 3mm makes it strong and sturdy. We can also use Fire Proof material to make it more reliable and safe. More safety features can be added like use of LG digital locks instead of Key Locks.', icon: '/dumbbell.svg' },
+        { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
+
+    ],
+    images: ['/counter-safe/1.jpg', '/counter-safe/2.jpg', '/counter-safe/3.jpg', '/counter-safe/4.jpg', '/counter-safe/5.jpg', '/counter-safe/6.jpg', '/counter-safe/7.jpg',],
+    weights: [
+    ],
+    note: ''
+}
+
+const depositeVaults = {
+    cards: [
+        { title: '', desc: 'All steel parts of Netaji products are subject to anti-rust and anti-corrosion treatment. The Netaji safe deposit locker is fitted with special dual control 7 lever safe deposit lock in each individual locker. These locks are unpick-able which ensures absolute security. Over all pad locking systems can also be provided so that customer can use their own padlocks for more confidence.', icon: '/dumbbell.svg' },
+        { title: '', desc: 'Netaji safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables which ensures 36 Lockers Fire Proof Safe Deposit Vault equal rigidity, strength and greater accuracy to Netaji branded Safe Deposit Lockers.', icon: '/pattern.svg' },
+        { title: '', desc: 'Netaji offers a wide range of safe deposit lockers as per the configuration mentioned in the table below. In addition to that we can also provide Safe deposit lockers as per clients individual requirements, choice and specification for the best and economical use of available space. We can provide consultancy service on techno-commercial aspects to you from concept stage to commissioning stage with out incurring any extra cost.', icon: '/security.svg' },
+
+    ],
+    images: ['/deposite-vaults/1.jpg', '/deposite-vaults/2.jpg', '/deposite-vaults/3.jpg', '/deposite-vaults/4.jpg', '/deposite-vaults/5.jpg', '/deposite-vaults/6.jpg', '/deposite-vaults/7.jpg', '/deposite-vaults/8.jpg',],
+    weights: [
+        {
+            outer: '90',
+            inner: '2000 x 1080 x 600 mm 90 Lockers Size 125 x 175 x 517 mm',
+            weight: '840 K.G.',
+        },
+        {
+            outer: '75',
+            inner: '2000 x 1080 x 600 mm 66 Lockers Size 125 x 175 x 517 mm 6 Lockers Size 125 x 352 x 517 mm 3 Lockers Size 278 x 352 x 517 mm',
+            weight: '810 K.G.',
+        },
+        {
+            outer: '51',
+            inner: '2000 x 1080 x 600 mm 46 Lockers Size 159 x 210 x 517 mm 2 Lockers Size 159 x 423 x 517 mm 2 Lockers Size 322 x 423 x 517 mm 1 Locker Size 322 x 210 x 517 mm',
+            weight: '750 K.G',
+        },
+        {
+            outer: '45',
+            inner: '2000 x 1080 x 600 mm 45 Lockers Size 125 x 352 x 517 mm',
+            weight: '730 K.G.',
+        },
+        {
+            outer: '40',
+            inner: '2000 x 1080 x 600 mm 40 Lockers Size 189 x 263 x 517 mm',
+            weight: '690 K.G.',
+        },
+        {
+            outer: '32',
+            inner: '2000 x 1080 x 600 mm 28 Lockers Size 189 x 263 x 517 mm 2 Lockers Size 189 x 529 x 517 mm 2 Lockers Size 405 x 529 x 517 mm’',
+            weight: '670 K.G.',
+        },
+        {
+            outer: '21',
+            inner: '2000 x 1080 x 600 mm 21 Lockers Size 278 x 352 x 517 mm',
+            weight: '625 K.G.',
+        },
+        {
+            outer: '20',
+            inner: '2000 x 1080 x 600 mm 20 Lockers Size 189 x 529 x 517',
+            weight: '620 K.G.',
+        },
+    ],
+    note: 'Note : In the above Lockers the outer plate will be of 5 mm, Partition plate of 14 guage and shutter plate of 10 mm'
+}
+
+
+const nightGuard = {
+    cards: [
+        { title: '', desc: 'Night Guard Special Locker for collection centre. Our prime product called Night Guard caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The prominent features of this product is that the money is kept in the drawer which is the upper position of the safe and when the drawer is closed the money is transferred into the lower part which is a secure safe having thickness and protection of Fire Proof Safe and this can only be taken out by the owner.', icon: '/dumbbell.svg' },
+        { title: 'Body Work', desc: 'Constructed from tough steel plates fabricated using the most modern steel bending techniques, the entire body of the safe is strengthened uniformly. Electrical welding of the back lined on the inside with a highly re-enforced heavier steel plate which is anchored to the body giving it an strong thickness overall. The outer layer of body is tough tested quality 5mm M.S. Plate with fully welded multi corner bend constructed without a single rivet on all side and armored with a Double duty barrier material providing massive resistance strength of 90 mm thick layer on each side of safe which defends the attack of sledge hammer, power drills, oxy-acetylene flame and arc cutting steel.', icon: '/pattern.svg' },
+        { title: 'Door Construction', desc: 'The outer layer of the door slab is tough tested Special Type of Design for collection centres quality M.S. Plate of 12 mm to 32 mm thickness. It is further fortified by a composite 105mm thick layer of double duty barrier material and layers of flame and arc resistant alloy and hardened steel plates, which provide dependable protection against fire and attacks of power drill, oxy-acetylene flame and arc cutting. The total thickness of protective layer is strong over vital parts of safe. the doors also have central 3mm aluminium plate for additional security.', icon: '/security.svg' },
+        { title: 'Frame Work', desc: 'The formed inner lining provides the backing to the four multiple bend front edged body frame.', icon: '/security.svg' },
+        { title: 'Locking Device', desc: 'A smooth operating double eccentric levers activated the bolt throwing mechanism. A customised design unpickable 10 lever dual control lock is used to control it. Separate stainless steel keys with individual nomenclature are provided in duplicate for these locks making it possible for 2 persons to remain in joint charge of the safe. The dual control lock also provides protection in the event of the loss of any one key by employing the other as a check on the first one if the safe is in charge of a single individual.', icon: '/security.svg' },
+    ],
+    images: ['/night-gaurd/1.jpg', '/night-gaurd/2.jpg', '/night-gaurd/3.jpg', '/night-gaurd/4.jpg',],
+    weights: [
+        {
+            outer: '90',
+            inner: '2000 x 1080 x 600 mm 90 Lockers Size 125 x 175 x 517 mm',
+            weight: '840 K.G.',
+        },
+        {
+            outer: '75',
+            inner: '2000 x 1080 x 600 mm 66 Lockers Size 125 x 175 x 517 mm 6 Lockers Size 125 x 352 x 517 mm 3 Lockers Size 278 x 352 x 517 mm',
+            weight: '810 K.G.',
+        },
+        {
+            outer: '51',
+            inner: '2000 x 1080 x 600 mm 46 Lockers Size 159 x 210 x 517 mm 2 Lockers Size 159 x 423 x 517 mm 2 Lockers Size 322 x 423 x 517 mm 1 Locker Size 322 x 210 x 517 mm',
+            weight: '750 K.G',
+        },
+        {
+            outer: '45',
+            inner: '2000 x 1080 x 600 mm 45 Lockers Size 125 x 352 x 517 mm',
+            weight: '730 K.G.',
+        },
+        {
+            outer: '40',
+            inner: '2000 x 1080 x 600 mm 40 Lockers Size 189 x 263 x 517 mm',
+            weight: '690 K.G.',
+        },
+        {
+            outer: '32',
+            inner: '2000 x 1080 x 600 mm 28 Lockers Size 189 x 263 x 517 mm 2 Lockers Size 189 x 529 x 517 mm 2 Lockers Size 405 x 529 x 517 mm’',
+            weight: '670 K.G.',
+        },
+        {
+            outer: '21',
+            inner: '2000 x 1080 x 600 mm 21 Lockers Size 278 x 352 x 517 mm',
+            weight: '625 K.G.',
+        },
+        {
+            outer: '20',
+            inner: '2000 x 1080 x 600 mm 20 Lockers Size 189 x 529 x 517',
+            weight: '620 K.G.',
+        },
+    ],
+    note: ''
+}
+function getHeavySafeProduct(name) {
+    if (name == 'heavy fire proof safe doors') {
+        return heavyFireProofSafe
+    } else if (name == 'strong room door with grill gate') {
+        return strongRoomDoor
+    } else if (name == 'jewellery safe') {
+        return jewellerySafe
+    } else if (name == 'counter safe') {
+        return counterSafe
+    } else if (name == 'safe deposite vaults') {
+        return depositeVaults
+    } else if (name == 'night guard') {
+        return nightGuard
+    }
+
+}
+
+export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct }

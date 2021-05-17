@@ -2,10 +2,7 @@
   <div id="product">
     <div class="header">
       <div class="navigater">
-        <p>
-          <span>Home / Heavy Safe N Door / </span> Heavy fire proof safe single
-          / double door
-        </p>
+        <p><span>Home / Heavy Safe N Door / </span> {{ productName }}</p>
       </div>
     </div>
     <h1 class="title">
@@ -14,7 +11,7 @@
       with special features.
     </h1>
     <div class="card-container">
-      <div class="card" v-for="(item, i) in productCards" :key="i">
+      <div class="card" v-for="(item, i) in products.cards" :key="i">
         <div class="left">
           <img :src="item.icon" :alt="item.title" />
         </div>
@@ -42,13 +39,13 @@
           :mouse-drag="true"
           :paginationEnabled="false"
         >
-          <slide class="slide" v-for="(item, i) in images" :key="i">
+          <slide class="slide" v-for="(item, i) in products.images" :key="i">
             <img :src="item" alt="" />
           </slide>
         </carousel>
       </client-only>
     </div>
-    <div class="size-table">
+    <div v-if="products.weights.length" class="size-table">
       <table>
         <tr class="heading">
           <th>No.</th>
@@ -56,16 +53,16 @@
           <th>Inner Size (H. W. D.)</th>
           <th>Weight (Approx)</th>
         </tr>
-        <tr class="table-row" v-for="(item, i) in weights" :key="i">
+        <tr class="table-row" v-for="(item, i) in products.weights" :key="i">
           <td>{{ i + 1 }}</td>
           <td>{{ item.outer }}</td>
-          <td>{{ item.inner }}</td>
+          <td style="max-width: 225px">{{ item.inner }}</td>
           <td>{{ item.weight }}</td>
         </tr>
       </table>
     </div>
-    <p class="note">
-      *note : Double Door Safe are available in models from 36″ width and above.
+    <p v-if="products.note" class="note">
+      {{ products.note }}
     </p>
   </div>
 </template>
@@ -73,7 +70,7 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
-import { productCards } from '@/utils'
+import { getHeavySafeProduct } from '@/utils'
 export default {
   name: 'ProductPage',
   components: {
@@ -82,61 +79,15 @@ export default {
   },
   data() {
     return {
-      images: [
-        '/double_door.jpg',
-        '/safe_features.jpg',
-        '/safe_features2.jpg',
-        '/safe_features3.jpg',
-        '/lock.jpg',
-        '/double_door.jpg',
-        '/safe_features.jpg',
-        '/safe_features2.jpg',
-        '/safe_features3.jpg',
-        '/lock.jpg',
-      ],
-      weights: [
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-        {
-          outer: '28″ x 22″ x 21″',
-          inner: '28″ x 22″ x 21″',
-          weight: '400 K.G',
-        },
-      ],
+      productName: false,
     }
   },
-  computed: {
-    productCards() {
-      return productCards
-    },
+  asyncData({ route }) {
+    let products = getHeavySafeProduct(route.params.name.replace(/-/g, ' '))
+    return { products }
+  },
+  mounted() {
+    this.productName = this.$route.params.name.replace(/-/g, ' ')
   },
 }
 </script>
@@ -161,6 +112,7 @@ export default {
         font-weight: 600;
         font-size: 13px;
         line-height: 151.5%;
+        text-transform: capitalize;
         span {
           color: #7a7a7a;
         }

@@ -16,7 +16,9 @@
             <p>{{ product.desc }}</p>
             <p v-if="product.desc2">{{ product.desc2 }}</p>
           </div>
-          <nuxt-link class="read-btn" to="/">Read More ...</nuxt-link>
+          <nuxt-link class="read-btn" :to="product.slug"
+            >Read More ...</nuxt-link
+          >
         </div>
       </div>
     </div>
