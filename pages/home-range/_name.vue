@@ -136,7 +136,6 @@ export default {
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     row-gap: 40px;
     column-gap: 32px;
     // max-width: 1018px;

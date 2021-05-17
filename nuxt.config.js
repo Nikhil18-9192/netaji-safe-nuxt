@@ -1,4 +1,5 @@
 export default {
+  pageTransition: 'my-page',
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
