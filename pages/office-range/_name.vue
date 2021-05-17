@@ -2,13 +2,13 @@
   <div id="product">
     <div class="header">
       <div class="navigater">
-        <p><span>Home / Heavy Safe N Door / </span> {{ productName }}</p>
+        <p><span>Home / Office Range / </span> {{ productName }}</p>
       </div>
     </div>
     <h1 class="title">
-      We manufacturer Fire proof Safes in various storage capacities ranging
+      <!-- We manufacturer Fire proof Safes in various storage capacities ranging
       from size <span>28”</span> to size <span>72”</span>, All our safes come
-      with special features.
+      with special features. -->
     </h1>
     <div class="card-container">
       <div class="card" v-for="(item, i) in products.cards" :key="i">
@@ -69,7 +69,7 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
-import { getHeavySafeProduct } from '@/utils'
+import { getOfficeRangeProduct } from '@/utils'
 export default {
   name: 'ProductPage',
   components: {
@@ -82,7 +82,7 @@ export default {
     }
   },
   asyncData({ route }) {
-    let products = getHeavySafeProduct(route.params.name.replace(/-/g, ' '))
+    let products = getOfficeRangeProduct(route.params.name.replace(/-/g, ' '))
     return { products }
   },
   mounted() {

@@ -16,7 +16,7 @@
             <p>{{ product.desc }}</p>
             <p v-if="product.desc2">{{ product.desc2 }}</p>
           </div>
-          <nuxt-link class="read-btn" :to="product.slug"
+          <nuxt-link v-if="product.slug" class="read-btn" :to="product.slug"
             >Read More ...</nuxt-link
           >
         </div>
@@ -31,7 +31,7 @@ export default {
   name: 'CategoryPage',
   data() {
     return {
-      category: false,
+      category: '',
     }
   },
   mounted() {
