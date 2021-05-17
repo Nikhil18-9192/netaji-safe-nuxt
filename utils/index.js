@@ -73,6 +73,7 @@ const heavyFireProofSafe = {
         { title: 'Balanced pressure Bolt-work', desc: 'Ensuring safety from attacks by dislodging.', icon: '/dumbbell.svg' },
     ],
     images: ['/heavy-fire-proof-door/1.jpg', '/heavy-fire-proof-door/2.jpg', '/heavy-fire-proof-door/3.jpg', '/heavy-fire-proof-door/4.jpg', '/heavy-fire-proof-door/5.jpg', '/heavy-fire-proof-door/6.jpg', '/heavy-fire-proof-door/7.jpg',],
+    tableHeader: ['No.', 'Outer Size (H. W. D.)', 'Inner Size (H. W. D.)', 'Weight (Approx)'],
     weights: [
         {
             outer: '28″ x 22″ x 21″',
@@ -138,6 +139,7 @@ const strongRoomDoor = {
         { title: 'Ventilating Grill Gate ', desc: 'The grill gate is constructed with heavy round 19mm m.s. solid polish bars at staggered pitch and secured with high precision 8 levers unpickable lock operating on both sides provided with stainless steel keys in duplicate.', icon: '/pattern.svg' },
     ],
     images: ['/strong-room-door/1.jpg', '/strong-room-door/2.jpg', '/strong-room-door/3.jpg', '/strong-room-door/4.jpg', '/strong-room-door/5.jpg', '/strong-room-door/6.jpg', '/strong-room-door/7.jpg',],
+    tableHeader: ['No.', 'Outer Size ( Frame) H. W.', 'Inner Size (Door) H. W.', 'Weight (Approx)'],
     weights: [
         {
             outer: '72” x 42”',
@@ -169,6 +171,7 @@ const jewellerySafe = {
         { title: '', desc: 'The superior quality ten lever lock with brass levers, stainless steel keys with individual nomenclature, high quality made in USA lock & Auto locking feature make this a highly preferred safe for many Jewellers.', icon: '/hinge.svg' },
     ],
     images: ['/jewellery-safe/1.jpg', '/jewellery-safe/2.jpg', '/jewellery-safe/3.jpg', '/jewellery-safe/4.jpg', '/jewellery-safe/5.jpg', '/jewellery-safe/6.jpg', '/jewellery-safe/7.jpg', '/jewellery-safe/8.jpg', '/jewellery-safe/9.jpg', '/jewellery-safe/10.jpg', '/jewellery-safe/11.jpg', '/jewellery-safe/12.jpg', '/jewellery-safe/13.jpg', '/jewellery-safe/15.jpg', '/jewellery-safe/16.jpg', '/jewellery-safe/17.jpg', '/jewellery-safe/18.jpg', '/jewellery-safe/19.jpg',],
+    tableHeader: ['No.', 'Outer Size (H. W. D.)', 'Inner Size (H. W. D.)', 'Weight (Approx)'],
     weights: [
     ],
     note: ''
@@ -193,6 +196,7 @@ const depositeVaults = {
 
     ],
     images: ['/deposite-vaults/1.jpg', '/deposite-vaults/2.jpg', '/deposite-vaults/3.jpg', '/deposite-vaults/4.jpg', '/deposite-vaults/5.jpg', '/deposite-vaults/6.jpg', '/deposite-vaults/7.jpg', '/deposite-vaults/8.jpg',],
+    tableHeader: ['No.', 'Lockers', 'Size H. W. D.', 'Weight (Approx)'],
     weights: [
         {
             outer: '90',
@@ -248,46 +252,57 @@ const nightGuard = {
         { title: 'Locking Device', desc: 'A smooth operating double eccentric levers activated the bolt throwing mechanism. A customised design unpickable 10 lever dual control lock is used to control it. Separate stainless steel keys with individual nomenclature are provided in duplicate for these locks making it possible for 2 persons to remain in joint charge of the safe. The dual control lock also provides protection in the event of the loss of any one key by employing the other as a check on the first one if the safe is in charge of a single individual.', icon: '/security.svg' },
     ],
     images: ['/night-gaurd/1.jpg', '/night-gaurd/2.jpg', '/night-gaurd/3.jpg', '/night-gaurd/4.jpg',],
+    tableHeader: ['No.', 'Models', 'PPS 36', 'PPS 42'],
     weights: [
         {
-            outer: '90',
-            inner: '2000 x 1080 x 600 mm 90 Lockers Size 125 x 175 x 517 mm',
-            weight: '840 K.G.',
+            outer: 'Outside : Height (H)',
+            inner: '36"',
+            weight: '42"',
         },
         {
-            outer: '75',
-            inner: '2000 x 1080 x 600 mm 66 Lockers Size 125 x 175 x 517 mm 6 Lockers Size 125 x 352 x 517 mm 3 Lockers Size 278 x 352 x 517 mm',
-            weight: '810 K.G.',
+            outer: 'Outside : Width (W)',
+            inner: '24"',
+            weight: '27"',
         },
         {
-            outer: '51',
-            inner: '2000 x 1080 x 600 mm 46 Lockers Size 159 x 210 x 517 mm 2 Lockers Size 159 x 423 x 517 mm 2 Lockers Size 322 x 423 x 517 mm 1 Locker Size 322 x 210 x 517 mm',
-            weight: '750 K.G',
+            outer: 'Outside Depth (D)',
+            inner: '23"',
+            weight: '24"',
         },
         {
-            outer: '45',
-            inner: '2000 x 1080 x 600 mm 45 Lockers Size 125 x 352 x 517 mm',
-            weight: '730 K.G.',
+            outer: 'Inside : Height (H)',
+            inner: '23"',
+            weight: '29"',
         },
         {
-            outer: '40',
-            inner: '2000 x 1080 x 600 mm 40 Lockers Size 189 x 263 x 517 mm',
-            weight: '690 K.G.',
+            outer: 'Inside : Width (W)',
+            inner: '17"',
+            weight: '20"',
         },
         {
-            outer: '32',
-            inner: '2000 x 1080 x 600 mm 28 Lockers Size 189 x 263 x 517 mm 2 Lockers Size 189 x 529 x 517 mm 2 Lockers Size 405 x 529 x 517 mm’',
-            weight: '670 K.G.',
+            outer: 'Inside : Depth (D)',
+            inner: '14"',
+            weight: '15"',
         },
         {
-            outer: '21',
-            inner: '2000 x 1080 x 600 mm 21 Lockers Size 278 x 352 x 517 mm',
-            weight: '625 K.G.',
+            outer: 'Drawer : Height (H)',
+            inner: '6"',
+            weight: '6"',
         },
         {
-            outer: '20',
-            inner: '2000 x 1080 x 600 mm 20 Lockers Size 189 x 529 x 517',
-            weight: '620 K.G.',
+            outer: 'Drawer : Width (W)',
+            inner: '12"',
+            weight: '14"',
+        },
+        {
+            outer: 'Drawer : Depth (D)',
+            inner: '17"',
+            weight: '17"',
+        },
+        {
+            outer: 'Weight – kgs',
+            inner: '575',
+            weight: '710',
         },
     ],
     note: ''
@@ -306,7 +321,6 @@ function getHeavySafeProduct(name) {
     } else if (name == 'night guard') {
         return nightGuard
     }
-
 }
 
 export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct }

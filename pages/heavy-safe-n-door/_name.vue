@@ -48,10 +48,9 @@
     <div v-if="products.weights.length" class="size-table">
       <table>
         <tr class="heading">
-          <th>No.</th>
-          <th>Outer Size (H. W. D.)</th>
-          <th>Inner Size (H. W. D.)</th>
-          <th>Weight (Approx)</th>
+          <th v-for="(heading, i) in products.tableHeader" :key="i">
+            {{ heading }}
+          </th>
         </tr>
         <tr class="table-row" v-for="(item, i) in products.weights" :key="i">
           <td>{{ i + 1 }}</td>
