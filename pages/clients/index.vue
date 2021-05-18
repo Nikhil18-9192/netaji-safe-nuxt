@@ -31,7 +31,7 @@
     </div>
     <div class="education">
       <div class="title">
-        <img src="/banks.svg" alt="banks icon" />
+        <img src="/commercial.svg" alt="commercial icon" />
         <h4>COMMERCIAL</h4>
       </div>
       <div class="list">
@@ -44,7 +44,7 @@
     </div>
     <div class="education">
       <div class="title">
-        <img src="/banks.svg" alt="banks icon" />
+        <img src="/jewellers.svg" alt="jewellers icon" />
         <h4>JEWELLERS</h4>
       </div>
       <div class="list">
@@ -57,7 +57,7 @@
     </div>
     <div class="banks">
       <div class="title">
-        <img src="/banks.svg" alt="banks icon" />
+        <img src="/temples.svg" alt="temples icon" />
         <h4>TEMPLES & TRUST</h4>
       </div>
       <div class="list">
