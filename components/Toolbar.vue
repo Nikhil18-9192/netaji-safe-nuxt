@@ -10,15 +10,31 @@
     <div class="blur"></div>
     <div class="container">
       <div class="left">
-        <div :class="scrollPosition > 0 ? 'scroll-logo' : 'logo'">
-          <nuxt-link to="/"> <img src="/logo.png" alt="logo" /></nuxt-link>
+        <div
+          class="logo"
+          :style="[
+            scrollPosition > 0
+              ? { 'margin-right': '0px' }
+              : { 'margin-right': '36px' },
+          ]"
+        >
+          <nuxt-link to="/">
+            <img
+              :style="[
+                scrollPosition > 0
+                  ? { width: '151px', height: '41px' }
+                  : { width: '235px', height: '64px' },
+              ]"
+              src="/logo.png"
+              alt="logo"
+          /></nuxt-link>
         </div>
         <div
           class="nav-products"
           :style="[
             scrollPosition > 0
-              ? { 'align-items': 'center' }
-              : { 'align-items': 'flex-end' },
+              ? { 'padding-top': '20px' }
+              : { 'padding-top': '45px' },
           ]"
         >
           <nuxt-link
@@ -101,15 +117,16 @@ export default {
       transition: 0.3s ease all;
       .logo {
         width: 235px;
-        height: 64px;
-        margin-right: 36px;
+        height: 100%;
+
         transition: 0.3s ease all;
       }
       img {
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
         object-fit: contain;
         mix-blend-mode: multiply;
+        transition: 0.5s ease all;
       }
       .nav-products {
         display: flex;
@@ -120,6 +137,7 @@ export default {
           line-height: 15px;
           text-transform: uppercase;
           margin-right: 38px;
+          transition: 0.3s ease all;
         }
       }
     }
@@ -140,11 +158,5 @@ export default {
       }
     }
   }
-}
-.scroll-logo {
-  width: 151px;
-  height: 41px;
-  margin-right: 84px;
-  transition: 0.3s ease all;
 }
 </style>
