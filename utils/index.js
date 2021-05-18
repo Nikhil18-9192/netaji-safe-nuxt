@@ -7,9 +7,10 @@ const productNav = [
 const navMenu = [
     { name: ' Home ', path: '/' },
     { name: ' About ', path: '/about' },
+    { name: ' Services  ', path: '/services' },
     { name: 'Clients ', path: '/clients' },
     { name: ' Contact  ', path: '/contact' },
-    { name: ' Services  ', path: '/services' },
+
 ]
 
 const slides = [
