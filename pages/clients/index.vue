@@ -16,10 +16,10 @@
         </ul>
       </div>
     </div>
-    <div class="banks">
+    <div class="education">
       <div class="title">
         <img src="/banks.svg" alt="banks icon" />
-        <h4>BANKS & CREDIT SOCIETIES –</h4>
+        <h4>BANKS & CREDIT SOCIETIES</h4>
       </div>
       <div class="list">
         <ul>
@@ -29,11 +29,56 @@
         </ul>
       </div>
     </div>
+    <div class="education">
+      <div class="title">
+        <img src="/banks.svg" alt="banks icon" />
+        <h4>COMMERCIAL</h4>
+      </div>
+      <div class="list">
+        <ul>
+          <li v-for="(item, i) in commercial" :key="i">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="education">
+      <div class="title">
+        <img src="/banks.svg" alt="banks icon" />
+        <h4>JEWELLERS</h4>
+      </div>
+      <div class="list">
+        <ul>
+          <li v-for="(item, i) in jewellers" :key="i">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banks">
+      <div class="title">
+        <img src="/banks.svg" alt="banks icon" />
+        <h4>TEMPLES & TRUST</h4>
+      </div>
+      <div class="list">
+        <ul>
+          <li v-for="(item, i) in temples" :key="i">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import { educationClients, bankClients } from '@/utils'
+import {
+  educationClients,
+  bankClients,
+  temples,
+  jewellers,
+  commercial,
+} from '@/utils'
 export default {
   name: 'ClientsPage',
   computed: {
@@ -42,6 +87,15 @@ export default {
     },
     bankClients() {
       return bankClients
+    },
+    temples() {
+      return temples
+    },
+    jewellers() {
+      return jewellers
+    },
+    commercial() {
+      return commercial
     },
   },
 }

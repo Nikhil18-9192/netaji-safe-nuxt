@@ -138,12 +138,12 @@ export default {
         padding-top: 45px;
         p {
           font-weight: 400;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 172%;
           margin-bottom: 10px;
           span {
             color: #777777;
-            min-width: 20px;
+            font-size: 12px;
           }
           .phone-link {
             font-weight: 600;
