@@ -9,6 +9,7 @@ const navMenu = [
     { name: ' About ', path: '/about' },
     { name: 'Clients ', path: '/clients' },
     { name: ' Contact  ', path: '/contact' },
+    { name: ' Services  ', path: '/services' },
 ]
 
 const slides = [
