@@ -80,13 +80,17 @@ export default {
   .carousel {
     width: 100%;
     margin-bottom: 92px;
-
+    .slide:last-child {
+      display: none;
+    }
     .slide {
-      padding-top: 56px;
-      padding-left: 85px;
+      width: 100%;
     }
     .card {
+      margin-top: 56px;
+      margin-left: 85px;
       position: relative;
+      min-width: 451px;
       transition: 0.3s ease all;
       .route-link {
         position: absolute;
