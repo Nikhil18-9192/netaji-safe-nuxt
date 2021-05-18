@@ -2,7 +2,13 @@
   <div id="product">
     <div class="header">
       <div class="navigater">
-        <p><span>Home / Heavy Safe N Door / </span> {{ productName }}</p>
+        <p>
+          <span
+            ><nuxt-link to="/">Home</nuxt-link>/
+            <nuxt-link to="/heavy_safe_n_door">Heavy Safe N Door</nuxt-link> /
+          </span>
+          {{ productName }}
+        </p>
       </div>
     </div>
     <h1 class="title">
@@ -114,6 +120,9 @@ export default {
         text-transform: capitalize;
         span {
           color: #7a7a7a;
+          a {
+            color: #7a7a7a;
+          }
         }
       }
     }

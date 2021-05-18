@@ -23,6 +23,7 @@
           :key="slide.title + i"
         >
           <div class="card">
+            <nuxt-link class="route-link" :to="slide.slug"></nuxt-link>
             <div class="overlay"></div>
             <div class="icon">
               <img :src="slide.icon" :alt="slide.title" />
@@ -87,6 +88,13 @@ export default {
     .card {
       position: relative;
       transition: 0.3s ease all;
+      .route-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
       .overlay {
         background: linear-gradient(
           180deg,
@@ -125,6 +133,7 @@ export default {
           font-size: 18px;
           line-height: 151.5%;
           margin-bottom: 24px;
+          transition: 0.3s ease all;
         }
         p {
           font-weight: 400;
@@ -148,6 +157,11 @@ export default {
         transform: translateY(-6px);
         .icon {
           background: #cb2929;
+        }
+        .text {
+          h4 {
+            color: #cb2929;
+          }
         }
       }
     }

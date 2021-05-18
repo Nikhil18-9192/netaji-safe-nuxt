@@ -2,7 +2,7 @@
   <div id="category">
     <div class="header">
       <div class="navigator">
-        <p><span>Home / </span> {{ category }}</p>
+        <p><nuxt-link to="/">Home / </nuxt-link> {{ category }}</p>
       </div>
     </div>
     <div class="product-container">
@@ -84,7 +84,7 @@ export default {
       bottom: 0;
       padding: 13px 20px;
       p {
-        span {
+        a {
           color: #ff8989;
         }
         color: #fff;
