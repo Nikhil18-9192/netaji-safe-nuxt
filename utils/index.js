@@ -569,4 +569,12 @@ const bankClients = [
     ' KADOLI VYAPARI GRAMIN SAH. PATH SANSTHA KADOLI',
 ]
 
-export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients }
+const services = [
+    { title: 'Safe Installation', desc: 'We provide on-site installation services for safe and doors.', icon: '/installation.svg' },
+    { title: 'Safe Delivery', desc: 'Our team provides on-site delivery of heavy safe and doors even in case of high rise buildings.', icon: '/delivery.svg' },
+    { title: 'Safe Design', desc: 'We design and manufacture special safe and doors as per client requirements.', icon: '/pencil.svg' },
+    { title: 'Safe Guidance', desc: 'Choosing the right safe is very important. Our expert teams provides you with security information and helps you choose the right type of safe for you.', icon: '/manual.svg' }
+]
+const servicesImage = ['/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg', '/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg',]
+
+export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage }
