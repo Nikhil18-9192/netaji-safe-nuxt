@@ -8,6 +8,11 @@
     <div class="product-container">
       <div class="card-wrapper">
         <div class="card" v-for="(product, i) in products" :key="i">
+          <nuxt-link
+            v-if="product.slug"
+            class="route-link"
+            :to="product.slug"
+          ></nuxt-link>
           <h4 class="title">{{ product.title }}</h4>
           <div class="image">
             <img :src="product.src" alt="" />
@@ -99,7 +104,9 @@ export default {
       column-gap: 32px;
       max-width: 1018px;
       .card {
+        position: relative;
         width: 492px;
+        height: 100%;
         background: linear-gradient(
           180deg,
           #efefef 0%,
@@ -108,6 +115,14 @@ export default {
         border-radius: 9px;
         padding: 38px 65px;
 
+        .route-link {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          top: 0;
+          left: 0;
+        }
         .title {
           font-weight: 600;
           font-size: 18px;

@@ -81,12 +81,12 @@ export default {
     margin-bottom: 92px;
 
     .slide {
-      padding-top: 50px;
+      padding-top: 56px;
       padding-left: 85px;
     }
     .card {
       position: relative;
-      // min-width: 450px;
+      transition: 0.3s ease all;
       .overlay {
         background: linear-gradient(
           180deg,
@@ -111,6 +111,7 @@ export default {
         top: -50px;
         left: 50%;
         transform: translate(-50%, 0);
+        transition: 0.3s ease all;
         img {
           width: 100%;
           height: 100%;
@@ -141,6 +142,12 @@ export default {
           height: 349px;
           object-fit: contain;
           mix-blend-mode: multiply;
+        }
+      }
+      &:hover {
+        transform: translateY(-6px);
+        .icon {
+          background: #cb2929;
         }
       }
     }

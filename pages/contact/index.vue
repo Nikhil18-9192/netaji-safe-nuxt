@@ -25,7 +25,7 @@
               <a href="tel:9922642299" class="phone-link">9922 642 299</a>
             </p>
             <p>
-              <span>email </span>
+              <span>Email </span>
               <a href="mailto: info@netajisafe.com"> info@netajisafe.com</a>
             </p>
             <p class="bottom-mail">
@@ -140,7 +140,6 @@ export default {
           font-weight: 400;
           font-size: 12px;
           line-height: 172%;
-          text-transform: capitalize;
           margin-bottom: 10px;
           span {
             color: #777777;
@@ -177,9 +176,10 @@ export default {
           font-size: 14px;
           line-height: 172%;
           font-weight: 400;
-          text-transform: capitalize;
+          font-family: 'Spartan', sans-serif;
           &::placeholder {
             color: #929292;
+            text-transform: capitalize;
           }
         }
         textarea {
@@ -191,11 +191,13 @@ export default {
           border-radius: 5px;
           outline: none;
           padding-left: 17px;
+          padding-top: 10px;
+          font-family: 'Spartan', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 172%;
           &::placeholder {
             color: #929292;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 172%;
             text-transform: capitalize;
           }
         }
