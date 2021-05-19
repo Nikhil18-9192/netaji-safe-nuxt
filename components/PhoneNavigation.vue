@@ -2,14 +2,22 @@
   <div id="phone-nav">
     <div class="product-nav">
       <ul>
-        <li v-for="(item, i) in productNav" :key="i">
+        <li
+          v-for="(item, i) in productNav"
+          :key="i"
+          @click="$store.commit('toggleMenuState')"
+        >
           <nuxt-link :to="item.path">{{ item.name }}</nuxt-link>
         </li>
       </ul>
     </div>
     <div class="nav-menu">
       <ul>
-        <li v-for="(item, i) in navMenu" :key="i">
+        <li
+          v-for="(item, i) in navMenu"
+          :key="i"
+          @click="$store.commit('toggleMenuState')"
+        >
           <nuxt-link :to="item.path">{{ item.name }}</nuxt-link>
         </li>
       </ul>

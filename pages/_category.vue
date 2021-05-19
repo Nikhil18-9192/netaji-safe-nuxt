@@ -102,9 +102,11 @@ export default {
     width: 100%;
     height: 425px;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 0 199px;
-
+    @include for-phone-only {
+      height: 350px;
+    }
     .navigator {
       width: 399px;
       height: 46px;
@@ -113,7 +115,12 @@ export default {
       align-items: center;
       position: absolute;
       bottom: 0;
+      left: 199px;
       padding: 13px 20px;
+      @include for-phone-only {
+        left: 0;
+        width: 100%;
+      }
       p {
         a {
           color: #ff8989;
@@ -128,12 +135,18 @@ export default {
   }
   .product-container {
     padding: 70px 199px;
+    @include for-phone-only {
+      padding: 32px 36px;
+    }
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 40px;
       column-gap: 32px;
       max-width: 1018px;
+      @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+      }
       .card {
         position: relative;
         width: 492px;
@@ -146,6 +159,10 @@ export default {
         border-radius: 9px;
         padding: 38px 65px;
         transition: 0.3s ease all;
+        @include for-phone-only {
+          width: 300px;
+          padding: 25px 20px;
+        }
         .route-link {
           position: absolute;
           width: 100%;
@@ -160,17 +177,30 @@ export default {
           line-height: 151.5%;
           width: 317px;
           transition: 0.3s ease all;
+          @include for-phone-only {
+            font-size: 14px;
+            width: 224px;
+          }
         }
         .image {
           height: 304px;
           padding-top: 30px;
           padding-bottom: 35px;
-
+          @include for-phone-only {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            padding: 28px 0;
+          }
           img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             mix-blend-mode: multiply;
+            @include for-phone-only {
+              width: 91px;
+              height: 141px;
+            }
           }
         }
         .desc {
