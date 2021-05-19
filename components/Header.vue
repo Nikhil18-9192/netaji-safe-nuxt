@@ -23,6 +23,9 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: -102px;
+  @include for-phone-only {
+    height: 350px;
+  }
   .heading {
     font-weight: 400;
     font-size: 36px;
@@ -32,6 +35,11 @@ export default {
     text-transform: uppercase;
     width: 500px;
     margin-top: 170px;
+    @include for-phone-only {
+      font-size: 18px;
+      width: 219px;
+      margin-top: 200px;
+    }
   }
   .image {
     position: absolute;
@@ -40,6 +48,11 @@ export default {
     width: 169px;
     height: 216px;
     object-fit: contain;
+    @include for-phone-only {
+      width: 66px;
+      height: 76px;
+      bottom: -35px;
+    }
   }
 }
 </style>

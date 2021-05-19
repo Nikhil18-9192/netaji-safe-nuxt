@@ -1,0 +1,50 @@
+<template>
+  <div id="phone-toolbar">
+    <div class="blur"></div>
+    <div class="logo">
+      <img src="/logo.png" alt="logo image" />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PhoneToolbarComponent',
+}
+</script>
+
+<style lang="scss" scoped>
+#phone-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(53px);
+  height: 69px;
+  border-bottom: 11px solid #cb2929;
+  display: none;
+  z-index: 2000;
+  padding: 0 18px;
+  @include for-phone-only {
+    display: flex;
+    align-items: center;
+  }
+  .blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+  }
+
+  .logo {
+    width: 50%;
+    img {
+      width: 178px;
+      height: 48px;
+      object-fit: contain;
+    }
+  }
+}
+</style>

@@ -1,16 +1,36 @@
 <template>
   <div>
     <Toolbar />
+    <PhoneToolbar />
+    <MenuButton />
+    <transition name="slide">
+      <PhoneNavigation v-if="menuState" />
+    </transition>
     <Nuxt />
     <Footer />
   </div>
 </template>
 <script>
 export default {
+  data() {
+    return {
+      menuState: false,
+    }
+  },
   mounted() {
     window.addEventListener('scroll', (e) => {
       this.$store.commit('SET_SCROLL_POSITION', parseInt(window.scrollY))
     })
+  },
+  computed: {
+    storeMenuState: function () {
+      return this.$store.getters.getMenuState
+    },
+  },
+  watch: {
+    storeMenuState: function (newState) {
+      this.menuState = newState
+    },
   },
 }
 </script>
@@ -49,5 +69,14 @@ a {
 .my-page-leave-active {
   opacity: 0;
   transform: translateX(-10px);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.5, 1);
+}
+.slide-enter,
+.slide-leave-active {
+  transform: translateX(100%);
 }
 </style>

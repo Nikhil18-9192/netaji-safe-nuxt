@@ -42,25 +42,6 @@
         </slide>
       </carousel>
     </client-only>
-    <div
-      class="btn-container"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <a class="broture-btn" target="_blank" href="/netaji-safe-brouchre.pdf">
-        <img src="/download.svg" alt="broture download" />
-        <p>Download Broture</p>
-      </a>
-      <a
-        class="video-btn"
-        target="_blank"
-        href="https://www.youtube.com/watch?v=5NMZ4zFTS7E"
-      >
-        <img src="/youtube.svg" alt="vidio play" />
-        <p>Watch Video</p>
-      </a>
-    </div>
   </div>
 </template>
 
@@ -89,12 +70,16 @@ export default {
   height: 100%;
   margin-top: 72px;
   padding-left: 62px;
+  @include for-phone-only {
+    padding-left: 37px;
+  }
   .carousel {
     width: 100%;
     margin-bottom: 92px;
     .slide:last-child {
       display: none;
     }
+
     .slide {
       width: 100%;
     }
@@ -104,6 +89,11 @@ export default {
       position: relative;
       min-width: 451px;
       transition: 0.3s ease all;
+      @include for-phone-only {
+        margin-left: 0;
+        margin-right: 42px;
+        min-width: 296px;
+      }
       .route-link {
         position: absolute;
         width: 100%;
@@ -144,18 +134,29 @@ export default {
       }
       .text {
         padding: 40px 50px;
+        @include for-phone-only {
+          padding: 28px 20px;
+        }
         h4 {
           font-weight: 600;
           font-size: 18px;
           line-height: 151.5%;
           margin-bottom: 24px;
           transition: 0.3s ease all;
+          @include for-phone-only {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
         }
         p {
           font-weight: 400;
           font-size: 14px;
           line-height: 173.69%;
           width: 280px;
+          @include for-phone-only {
+            font-size: 13px;
+            width: 252px;
+          }
         }
       }
       .image {
@@ -167,6 +168,10 @@ export default {
           height: 349px;
           object-fit: contain;
           mix-blend-mode: multiply;
+          @include for-phone-only {
+            width: 128px;
+            height: 169px;
+          }
         }
       }
       &:hover {
@@ -179,53 +184,6 @@ export default {
             color: #cb2929;
           }
         }
-      }
-    }
-  }
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    .broture-btn {
-      display: flex;
-      align-items: center;
-      width: 185px;
-      height: 47px;
-      padding: 10px 13px;
-      background: #1f1f1f;
-      border-radius: 47px;
-      margin-right: 33px;
-      p {
-        color: #fff;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 151.5%;
-      }
-      img {
-        width: 25px;
-        height: 25px;
-        object-fit: contain;
-        margin-right: 4px;
-      }
-    }
-    .video-btn {
-      display: flex;
-      align-items: center;
-      padding: 10px 13px;
-      width: 166px;
-      height: 47px;
-      background: #cb2929;
-      border-radius: 47px;
-      p {
-        color: #fff;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 151.5%;
-      }
-      img {
-        width: 25px;
-        height: 25px;
-        object-fit: contain;
-        margin-right: 9px;
       }
     }
   }

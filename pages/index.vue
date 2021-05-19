@@ -2,6 +2,7 @@
   <div class="home-page">
     <Header />
     <ProductCarousel />
+    <ButtonComponent />
   </div>
 </template>
 
