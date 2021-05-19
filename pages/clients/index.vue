@@ -5,17 +5,22 @@
         Clients
       </h1>
     </div>
-    <div
-      class="education"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <div class="title">
+    <div class="education">
+      <div
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <img src="/education.svg" alt="education icon" />
         <h4>EDUCATION SOCIETIES / INSTITUTIONS</h4>
       </div>
-      <div class="list">
+      <div
+        class="list"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <ul>
           <li v-for="(item, i) in educationClients" :key="i">
             {{ item }}
@@ -23,17 +28,22 @@
         </ul>
       </div>
     </div>
-    <div
-      class="education"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <div class="title">
+    <div class="education">
+      <div
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <img src="/banks.svg" alt="banks icon" />
         <h4>BANKS & CREDIT SOCIETIES</h4>
       </div>
-      <div class="list">
+      <div
+        class="list"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <ul>
           <li v-for="(item, i) in bankClients" :key="i">
             {{ item }}
@@ -41,17 +51,22 @@
         </ul>
       </div>
     </div>
-    <div
-      class="education"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <div class="title">
+    <div class="education">
+      <div
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <img src="/commercial.svg" alt="commercial icon" />
         <h4>COMMERCIAL</h4>
       </div>
-      <div class="list">
+      <div
+        class="list"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <ul>
           <li v-for="(item, i) in commercial" :key="i">
             {{ item }}
@@ -59,17 +74,22 @@
         </ul>
       </div>
     </div>
-    <div
-      class="education"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <div class="title">
+    <div class="education">
+      <div
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <img src="/jewellers.svg" alt="jewellers icon" />
         <h4>JEWELLERS</h4>
       </div>
-      <div class="list">
+      <div
+        class="list"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <ul>
           <li v-for="(item, i) in jewellers" :key="i">
             {{ item }}
@@ -77,17 +97,22 @@
         </ul>
       </div>
     </div>
-    <div
-      class="banks"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <div class="title">
+    <div class="banks">
+      <div
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <img src="/temples.svg" alt="temples icon" />
         <h4>TEMPLES & TRUST</h4>
       </div>
-      <div class="list">
+      <div
+        class="list"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <ul>
           <li v-for="(item, i) in temples" :key="i">
             {{ item }}

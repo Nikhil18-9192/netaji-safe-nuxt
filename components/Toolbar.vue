@@ -97,6 +97,9 @@ export default {
   align-items: center;
   z-index: 2000;
   transition: 0.3s ease all;
+  @include for-phone-only {
+    display: none;
+  }
   .blur {
     position: absolute;
     width: 100%;
@@ -130,14 +133,14 @@ export default {
       }
       .nav-products {
         display: flex;
-        transition: 0.3s ease all;
+        transition: 0.4s ease all;
         a {
           font-weight: 600;
           font-size: 13px;
           line-height: 15px;
           text-transform: uppercase;
           margin-right: 38px;
-          transition: 0.3s ease all;
+          transition: 0.4s ease all;
         }
       }
     }
