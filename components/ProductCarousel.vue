@@ -40,11 +40,15 @@
       </carousel>
     </client-only>
     <div class="btn-container">
-      <a class="broture-btn" href="/">
+      <a class="broture-btn" target="_blank" href="/netaji-safe-brouchre.pdf">
         <img src="/download.svg" alt="broture download" />
         <p>Download Broture</p>
       </a>
-      <a class="video-btn" href="/">
+      <a
+        class="video-btn"
+        target="_blank"
+        href="https://www.youtube.com/watch?v=5NMZ4zFTS7E"
+      >
         <img src="/youtube.svg" alt="vidio play" />
         <p>Watch Video</p>
       </a>
