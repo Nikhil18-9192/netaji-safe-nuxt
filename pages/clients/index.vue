@@ -1,9 +1,16 @@
 <template>
   <div id="clients">
     <div class="page-title">
-      <h1>Clients</h1>
+      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
+        Clients
+      </h1>
     </div>
-    <div class="education">
+    <div
+      class="education"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="title">
         <img src="/education.svg" alt="education icon" />
         <h4>EDUCATION SOCIETIES / INSTITUTIONS</h4>
@@ -16,7 +23,12 @@
         </ul>
       </div>
     </div>
-    <div class="education">
+    <div
+      class="education"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="title">
         <img src="/banks.svg" alt="banks icon" />
         <h4>BANKS & CREDIT SOCIETIES</h4>
@@ -29,7 +41,12 @@
         </ul>
       </div>
     </div>
-    <div class="education">
+    <div
+      class="education"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="title">
         <img src="/commercial.svg" alt="commercial icon" />
         <h4>COMMERCIAL</h4>
@@ -42,7 +59,12 @@
         </ul>
       </div>
     </div>
-    <div class="education">
+    <div
+      class="education"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="title">
         <img src="/jewellers.svg" alt="jewellers icon" />
         <h4>JEWELLERS</h4>
@@ -55,7 +77,12 @@
         </ul>
       </div>
     </div>
-    <div class="banks">
+    <div
+      class="banks"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="title">
         <img src="/temples.svg" alt="temples icon" />
         <h4>TEMPLES & TRUST</h4>

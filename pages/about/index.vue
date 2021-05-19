@@ -1,9 +1,16 @@
 <template>
   <div id="about">
     <div class="page-title">
-      <h1>About</h1>
+      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
+        About
+      </h1>
     </div>
-    <div class="container">
+    <div
+      class="container"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <div class="left">
         <div class="image">
           <img src="/owner.jpg" alt="owner image" />

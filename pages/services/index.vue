@@ -1,11 +1,18 @@
 <template>
   <div id="services">
     <div class="page-title">
-      <h1>Services</h1>
+      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
+        Services
+      </h1>
     </div>
     <div class="services-wrapper">
       <h2>Netaji Safe Company provides following services:-</h2>
-      <div class="services-container">
+      <div
+        class="services-container"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <div class="services" v-for="(item, i) in services" :key="i">
           <div class="icon">
             <img :src="item.icon" :alt="item.title" />
@@ -17,7 +24,12 @@
         </div>
       </div>
     </div>
-    <div class="services-carousel">
+    <div
+      class="services-carousel"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <client-only>
         <carousel
           ref="slider"

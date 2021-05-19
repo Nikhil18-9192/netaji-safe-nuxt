@@ -1,10 +1,17 @@
 <template>
   <div id="contact">
     <div class="page-title">
-      <h1>Contact</h1>
+      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
+        Contact
+      </h1>
     </div>
     <div class="contact-wrapper">
-      <div class="left">
+      <div
+        class="left"
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <div class="top">
           <div class="address">
             <h4>Netaji Safe Company ~</h4>
@@ -51,7 +58,12 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div
+        class="right"
+        data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <div class="form-wrapper">
           <form action="">
             <input type="text" placeholder="Name" />
@@ -64,7 +76,12 @@
         </div>
       </div>
     </div>
-    <div class="map">
+    <div
+      class="map"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7643.170444184989!2d74.23308242437591!3d16.69762685398157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1006d4448c135%3A0xb27dcccb447b772f!2sUnion%20Bank%20Of%20India!5e0!3m2!1sen!2sin!4v1621317523811!5m2!1sen!2sin"
         width="100%"

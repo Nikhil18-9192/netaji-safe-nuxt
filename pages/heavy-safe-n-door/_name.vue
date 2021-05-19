@@ -1,7 +1,12 @@
 <template>
   <div id="product">
     <div class="header">
-      <div class="navigater">
+      <div
+        class="navigater"
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <p>
           <span
             ><nuxt-link to="/">Home</nuxt-link>/
@@ -17,7 +22,15 @@
       with special features.
     </h1>
     <div class="card-container">
-      <div class="card" v-for="(item, i) in products.cards" :key="i">
+      <div
+        class="card"
+        v-for="(item, i) in products.cards"
+        :key="i"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-offset="150"
+        :data-aos-delay="i * 200"
+      >
         <div class="left">
           <img :src="item.icon" :alt="item.title" />
         </div>
@@ -27,7 +40,12 @@
         </div>
       </div>
     </div>
-    <div class="image-carousel">
+    <div
+      class="image-carousel"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <client-only>
         <carousel
           ref="slider"
@@ -51,7 +69,13 @@
         </carousel>
       </client-only>
     </div>
-    <div v-if="products.weights.length" class="size-table">
+    <div
+      v-if="products.weights.length"
+      class="size-table"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <table>
         <tr class="heading">
           <th v-for="(heading, i) in products.tableHeader" :key="i">

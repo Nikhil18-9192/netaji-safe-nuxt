@@ -1,13 +1,26 @@
 <template>
   <div id="category">
     <div class="header" :style="{ 'background-image': 'url(' + banner + ')' }">
-      <div class="navigator">
+      <div
+        class="navigator"
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-offset="200"
+      >
         <p><nuxt-link to="/">Home / </nuxt-link> {{ category }}</p>
       </div>
     </div>
     <div class="product-container">
       <div class="card-wrapper">
-        <div class="card" v-for="(product, i) in products" :key="i">
+        <div
+          class="card"
+          v-for="(product, i) in products"
+          :key="i"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-offset="150"
+          :data-aos-delay="i * 200"
+        >
           <nuxt-link
             v-if="product.slug"
             class="route-link"

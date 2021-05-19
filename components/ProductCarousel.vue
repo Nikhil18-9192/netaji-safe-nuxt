@@ -21,6 +21,9 @@
           class="slide"
           v-for="(slide, i) in slides"
           :key="slide.title + i"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-offset="200"
         >
           <div class="card">
             <nuxt-link class="route-link" :to="slide.slug"></nuxt-link>
@@ -39,7 +42,12 @@
         </slide>
       </carousel>
     </client-only>
-    <div class="btn-container">
+    <div
+      class="btn-container"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
       <a class="broture-btn" target="_blank" href="/netaji-safe-brouchre.pdf">
         <img src="/download.svg" alt="broture download" />
         <p>Download Broture</p>
