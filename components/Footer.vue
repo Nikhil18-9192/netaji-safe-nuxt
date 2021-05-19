@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div class="copyright">
-      <p>Copyright © 2015 Netaji Safe company</p>
+      <p>COPYRIGHT {{ new Date().getFullYear() }} | ALL RIGHTS RESERVED</p>
     </div>
   </div>
 </template>
