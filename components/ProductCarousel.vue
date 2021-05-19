@@ -71,7 +71,7 @@ export default {
   margin-top: 72px;
   padding-left: 62px;
   @include for-phone-only {
-    padding-left: 36px;
+    padding-left: 40px;
   }
   .carousel {
     width: 100%;
@@ -91,7 +91,7 @@ export default {
       transition: 0.3s ease all;
       @include for-phone-only {
         margin-left: 0;
-        margin-right: 36px;
+        margin-right: 40px;
         min-width: 296px;
       }
       .route-link {

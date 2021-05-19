@@ -136,7 +136,7 @@ export default {
   .product-container {
     padding: 70px 199px;
     @include for-phone-only {
-      padding: 32px 36px;
+      padding: 32px 40px;
     }
     .card-wrapper {
       display: grid;
