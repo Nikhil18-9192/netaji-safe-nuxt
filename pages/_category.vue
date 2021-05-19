@@ -145,7 +145,7 @@ export default {
         );
         border-radius: 9px;
         padding: 38px 65px;
-
+        transition: 0.3s ease all;
         .route-link {
           position: absolute;
           width: 100%;
@@ -187,6 +187,7 @@ export default {
           line-height: 173.69%;
         }
         &:hover {
+          transform: translateY(-6px);
           .title {
             color: #cb2929;
           }

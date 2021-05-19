@@ -171,6 +171,7 @@ export default {
       width: 557px;
       height: 100%;
       min-height: 282px;
+      transition: 0.3s ease all;
       .left {
         width: 25%;
         padding-left: 43px;
@@ -197,6 +198,7 @@ export default {
         }
       }
       &:hover {
+        transform: translateY(-6px);
         .right {
           h4 {
             color: #cb2929;
