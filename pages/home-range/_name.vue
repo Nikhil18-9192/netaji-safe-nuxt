@@ -189,11 +189,19 @@ export default {
           font-size: 14px;
           line-height: 151.5%;
           margin-bottom: 22px;
+          transition: 0.3s ease all;
         }
         p {
           font-weight: 400;
           font-size: 13px;
           line-height: 173.69%;
+        }
+      }
+      &:hover {
+        .right {
+          h4 {
+            color: #cb2929;
+          }
         }
       }
     }

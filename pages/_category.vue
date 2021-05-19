@@ -159,6 +159,7 @@ export default {
           font-size: 18px;
           line-height: 151.5%;
           width: 317px;
+          transition: 0.3s ease all;
         }
         .image {
           height: 304px;
@@ -184,6 +185,11 @@ export default {
           font-weight: 600;
           font-size: 13px;
           line-height: 173.69%;
+        }
+        &:hover {
+          .title {
+            color: #cb2929;
+          }
         }
       }
     }
