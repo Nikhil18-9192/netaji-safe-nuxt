@@ -31,7 +31,15 @@
 </template>
 
 <script>
-import { heavySafeDoor, homeRange, officeRange, ss } from '@/utils'
+import {
+  heavySafeDoor,
+  homeRange,
+  officeRange,
+  ss,
+  heavySafeBanner,
+  homeRangeBanner,
+  ssBanner,
+} from '@/utils'
 export default {
   name: 'CategoryPage',
   data() {
@@ -52,6 +60,17 @@ export default {
         return officeRange
       } else if (this.category == 's. s. safe') {
         return ss
+      }
+    },
+    banner() {
+      if (this.category == 'heavy safe n door') {
+        return heavySafeBanner
+      } else if (this.category == 'home range') {
+        return homeRangeBanner
+      } else if (this.category == 'office range') {
+        return homeRangeBanner
+      } else if (this.category == 's. s. safe') {
+        return ssBanner
       }
     },
   },

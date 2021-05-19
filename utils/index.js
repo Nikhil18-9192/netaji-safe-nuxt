@@ -736,4 +736,8 @@ const services = [
 ]
 const servicesImage = ['/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg', '/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg',]
 
-export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers }
+const heavySafeBanner = '/category-bg.jpg'
+const homeRangeBanner = '/home-range-banner.jpg'
+const ssBanner = '/ss-banner.jpg'
+
+export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner }
