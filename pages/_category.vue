@@ -17,7 +17,7 @@
           v-for="(product, i) in products"
           :key="i"
           data-aos="fade-up"
-          data-aos-duration="900"
+          data-aos-duration="700"
           data-aos-offset="150"
           :data-aos-delay="i * 200"
         >
