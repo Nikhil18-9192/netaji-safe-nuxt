@@ -1,6 +1,6 @@
 <template>
   <div id="category">
-    <div class="header">
+    <div class="header" :style="{ 'background-image': 'url(' + banner + ')' }">
       <div class="navigator">
         <p><nuxt-link to="/">Home / </nuxt-link> {{ category }}</p>
       </div>
@@ -68,7 +68,7 @@ export default {
       } else if (this.category == 'home range') {
         return homeRangeBanner
       } else if (this.category == 'office range') {
-        return homeRangeBanner
+        return heavySafeBanner
       } else if (this.category == 's. s. safe') {
         return ssBanner
       }
@@ -88,8 +88,7 @@ export default {
     position: relative;
     width: 100%;
     height: 425px;
-    background-image: url('/category-bg.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     padding: 0 199px;
 
