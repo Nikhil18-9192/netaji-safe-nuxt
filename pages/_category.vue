@@ -160,7 +160,7 @@ export default {
         padding: 38px 65px;
         transition: 0.3s ease all;
         @include for-phone-only {
-          width: 300px;
+          width: 100%;
           padding: 25px 20px;
         }
         .route-link {
