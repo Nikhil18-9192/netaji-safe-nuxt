@@ -129,7 +129,7 @@ export default {
         // height: 100%;
         object-fit: contain;
         mix-blend-mode: multiply;
-        transition: 0.5s ease all;
+        transition: 0.3s ease all;
       }
       .nav-products {
         display: flex;
@@ -140,7 +140,7 @@ export default {
           line-height: 15px;
           text-transform: uppercase;
           margin-right: 38px;
-          transition: 0.4s ease all;
+          transition: 0.3s ease all;
         }
       }
     }
