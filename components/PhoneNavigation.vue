@@ -46,7 +46,7 @@ export default {
   z-index: 2001;
   padding: 0 8px;
   .product-nav {
-    margin-top: 80px;
+    margin-top: 70px;
     border-top: 1px solid #e2e2e2;
     ul {
       list-style: none;
