@@ -70,10 +70,14 @@ export default {}
   width: 100%;
   height: 100%;
   padding: 0 187px;
+  @include for-phone-only {
+    padding: 0 40px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
+    margin-top: 60px;
     h1 {
       font-weight: 600;
       font-size: 18px;
@@ -85,8 +89,15 @@ export default {}
   .container {
     display: flex;
     margin-top: 40px;
+    @include for-phone-only {
+      flex-direction: column;
+    }
     .left {
       width: 20%;
+      @include for-phone-only {
+        width: 100%;
+        margin-bottom: 40px;
+      }
       .image {
         width: 195px;
         height: 252px;
@@ -99,6 +110,9 @@ export default {}
     }
     .right {
       width: 80%;
+      @include for-phone-only {
+        width: 100%;
+      }
       p {
         font-weight: 400;
         font-size: 14px;

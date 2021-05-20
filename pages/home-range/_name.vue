@@ -224,6 +224,7 @@ export default {
           width: 169px;
           height: 220px;
           object-fit: contain;
+          filter: brightness(1.1);
         }
       }
     }

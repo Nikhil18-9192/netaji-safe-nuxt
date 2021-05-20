@@ -168,6 +168,7 @@ export default {
           height: 349px;
           object-fit: contain;
           mix-blend-mode: multiply;
+          filter: brightness(1.1);
           @include for-phone-only {
             width: 128px;
             height: 169px;
