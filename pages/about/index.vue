@@ -71,24 +71,31 @@ export default {}
   height: 100%;
   padding: 0 187px;
   @include for-phone-only {
-    padding: 0 40px;
+    padding: 0 20px;
   }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
     margin-top: 60px;
+    @include for-phone-only {
+      padding-top: 28px;
+      padding-bottom: 17px;
+    }
     h1 {
       font-weight: 600;
       font-size: 18px;
       line-height: 161%;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      @include for-phone-only {
+        font-size: 14px;
+      }
     }
   }
   .container {
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
     @include for-phone-only {
       flex-direction: column;
     }
@@ -96,15 +103,21 @@ export default {}
       width: 20%;
       @include for-phone-only {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
       .image {
         width: 195px;
         height: 252px;
+        @include for-phone-only {
+          width: 106px;
+          height: 138px;
+          margin: 0 auto;
+        }
         img {
           width: 100%;
           height: 100%;
           object-fit: contain;
+          filter: brightness(1.1);
         }
       }
     }
@@ -121,6 +134,10 @@ export default {}
         margin-bottom: 18px;
         span {
           font-weight: 600;
+        }
+        @include for-phone-only {
+          font-size: 11px;
+          line-height: 188%;
         }
       }
     }

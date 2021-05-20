@@ -25,7 +25,7 @@ export default {
   border-bottom: 11px solid #cb2929;
   display: none;
   z-index: 2000;
-  padding: 0 18px;
+  padding: 0 20px;
   @include for-phone-only {
     display: flex;
     align-items: center;
