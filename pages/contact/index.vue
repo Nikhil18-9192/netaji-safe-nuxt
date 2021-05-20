@@ -60,14 +60,12 @@
       </div>
       <div class="right">
         <div class="form-wrapper">
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <input type="number" placeholder="Phone Number" />
-            <textarea placeholder="Message"></textarea>
-            <button>send</button>
-          </form>
+          <input v-model="name" type="text" placeholder="Name" />
+          <input v-model="email" type="email" placeholder="Email" />
+          <input v-model="subject" type="text" placeholder="Subject" />
+          <input v-model="number" type="number" placeholder="Phone Number" />
+          <textarea v-model="message" placeholder="Message"></textarea>
+          <button @click="submit">send</button>
         </div>
       </div>
     </div>
@@ -90,8 +88,34 @@
 </template>
 
 <script>
+import { formValidation } from '@/utils/validation'
 export default {
   name: 'ContactPage',
+  data() {
+    return {
+      name: '',
+      email: '',
+      subject: '',
+      number: '',
+      message: '',
+    }
+  },
+  methods: {
+    submit() {
+      const { name, email, subject, number, message } = this
+      const validation = formValidation({
+        name,
+        email,
+        subject,
+        number,
+        message,
+      })
+      if (validation.error) {
+        this.$toast.error(validation.error.message)
+        return
+      }
+    },
+  },
 }
 </script>
 
