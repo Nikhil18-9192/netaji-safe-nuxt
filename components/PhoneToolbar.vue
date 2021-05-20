@@ -1,5 +1,12 @@
 <template>
-  <div id="phone-toolbar">
+  <div
+    id="phone-toolbar"
+    :style="[
+      scrollPosition > 0
+        ? { 'border-bottom': '8px solid #cb2929' }
+        : { 'border-bottom': '11px solid #cb2929' },
+    ]"
+  >
     <div class="blur"></div>
     <div class="logo">
       <nuxt-link to="/">
@@ -12,6 +19,11 @@
 <script>
 export default {
   name: 'PhoneToolbarComponent',
+  computed: {
+    scrollPosition: function () {
+      return this.$store.getters.getScrollPosition
+    },
+  },
 }
 </script>
 
@@ -22,10 +34,10 @@ export default {
   width: 100%;
   backdrop-filter: blur(53px);
   height: 69px;
-  border-bottom: 11px solid #cb2929;
   display: none;
   z-index: 2000;
   padding: 0 20px;
+  transition: 0.3s ease all;
   @include for-phone-only {
     display: flex;
     align-items: center;
