@@ -21,7 +21,7 @@
       from size <span>28”</span> to size <span>72”</span>, All our safes come
       with special features.
     </h1>
-    <div class="card-container">
+    <div v-if="!$device.isMobile" class="card-container">
       <div
         class="card"
         v-for="(item, i) in products.cards"
@@ -40,6 +40,27 @@
         </div>
       </div>
     </div>
+    <div v-else class="phone-card-container">
+      <div
+        class="card"
+        v-for="(item, i) in products.cards"
+        :key="i"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="150"
+        :data-aos-delay="i * 200"
+      >
+        <div class="top">
+          <div class="icon"><img :src="item.icon" :alt="item.title" /></div>
+          <div class="card-title">
+            <h4>{{ item.title }}</h4>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>{{ item.desc }}</p>
+        </div>
+      </div>
+    </div>
     <div
       class="image-carousel"
       data-aos="fade-up"
@@ -52,7 +73,7 @@
           class="carousel"
           :perPageCustom="[
             [320, 1],
-            [375, 1],
+            [375, 2],
             [768, 3],
             [1200, 5],
             [1800, 5],
@@ -127,6 +148,9 @@ export default {
   width: 100%;
   height: 100%;
   padding: 0 187px;
+  @include for-phone-only {
+    padding: 0;
+  }
   .header {
     margin-top: 34px;
     border-bottom: 1px solid #bdbdbd;
@@ -137,6 +161,11 @@ export default {
       display: flex;
       align-items: center;
       padding: 13px 19px;
+      @include for-phone-only {
+        width: 100%;
+        margin-top: 69px;
+        height: 76px;
+      }
       p {
         font-weight: 600;
         font-size: 13px;
@@ -147,6 +176,10 @@ export default {
           a {
             color: #7a7a7a;
           }
+        }
+        @include for-phone-only {
+          font-size: 12px;
+          line-height: 230.5%;
         }
       }
     }
@@ -164,15 +197,22 @@ export default {
     span {
       color: #cb2929;
     }
+    @include for-phone-only {
+      padding: 30px 20px 43px 20px;
+      margin: 0;
+    }
   }
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
     column-gap: 32px;
-    // max-width: 1018px;
     .card:nth-child(1) {
       grid-row: auto / span 2;
+    }
+    @include for-phone-only {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 40px;
     }
     .card {
       grid-row: auto / span 3;
@@ -188,9 +228,11 @@ export default {
       height: 100%;
       min-height: 282px;
       transition: 0.3s ease all;
+
       .left {
         width: 25%;
         padding-left: 43px;
+
         img {
           width: 57px;
           height: 57px;
@@ -223,11 +265,69 @@ export default {
       }
     }
   }
+  .phone-card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    padding: 0 38px;
+    .card {
+      width: 299;
+      padding: 23px;
+      background: linear-gradient(
+        180deg,
+        #efefef 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 9px;
+      height: 100%;
+      min-height: 282px;
+      transition: 0.3s ease all;
+      .top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        .icon {
+          margin-right: 13px;
+          img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+          }
+        }
+        .card-title {
+          h4 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 151.5%;
+            transition: 0.3s ease all;
+          }
+        }
+      }
+      .bottom {
+        p {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 173.69%;
+        }
+      }
+      &:hover {
+        transform: translateY(-6px);
+        .right {
+          h4 {
+            color: #cb2929;
+          }
+        }
+      }
+    }
+  }
   .image-carousel {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 40px 0 100px 0;
+    @include for-phone-only {
+      padding: 40px 0 40px 0;
+    }
     .carousel {
       width: 100%;
       .slide {
@@ -235,11 +335,18 @@ export default {
         justify-content: center;
         align-items: center;
         border-right: 1px solid #bcbcbc;
+        @include for-phone-only {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
         img {
           width: 169px;
           height: 220px;
           object-fit: contain;
           filter: brightness(1.1);
+          @include for-phone-only {
+            width: 100%;
+          }
         }
       }
     }
@@ -250,6 +357,9 @@ export default {
       width: 791px;
       margin: 0 auto;
       border-spacing: 0 5px;
+      @include for-phone-only {
+        width: 100%;
+      }
       th {
         border-top: 9px solid #1f1f1f;
         background: #cb2929;
@@ -258,6 +368,13 @@ export default {
         font-size: 13px;
         line-height: 173.69%;
         color: #fff;
+        @include for-phone-only {
+          font-size: 11px;
+          height: 65px;
+          &:nth-child(1) {
+            padding-left: 10px;
+          }
+        }
       }
       td {
         text-align: center;
@@ -266,6 +383,9 @@ export default {
         font-weight: 500;
         font-size: 13px;
         line-height: 173.69%;
+        @include for-phone-only {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -275,6 +395,10 @@ export default {
     line-height: 173.69%;
     text-align: center;
     margin-top: 36px;
+    @include for-phone-only {
+      font-size: 11px;
+      padding: 0 20px;
+    }
   }
 }
 </style>
