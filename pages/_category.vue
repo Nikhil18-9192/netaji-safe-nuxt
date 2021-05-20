@@ -30,7 +30,7 @@
               ' from ' +
               $route.params.category.replace(/_/g, ' ') +
               ' category from this page ' +
-              $route.path +
+              url +
               '.!&phone=+919822090190'
             "
             ><img src="/whatsapp.svg" alt="whatsapp icon"
@@ -72,9 +72,11 @@ export default {
   data() {
     return {
       category: '',
+      url: '',
     }
   },
   mounted() {
+    this.url = window.location.href
     this.category = this.$route.params.category.replace(/_/g, ' ')
   },
   computed: {
