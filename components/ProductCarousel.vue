@@ -5,8 +5,8 @@
         ref="slider"
         class="carousel"
         :perPageCustom="[
-          [320, 1],
-          [375, 1],
+          [320, 2],
+          [375, 2],
           [768, 2],
           [1200, 3],
           [1800, 3],
@@ -71,7 +71,7 @@ export default {
   margin-top: 72px;
   padding-left: 62px;
   @include for-phone-only {
-    padding-left: 40px;
+    padding-left: 20px;
   }
   .carousel {
     width: 100%;
@@ -91,8 +91,9 @@ export default {
       transition: 0.3s ease all;
       @include for-phone-only {
         margin-left: 0;
-        margin-right: 40px;
-        min-width: 296px;
+        margin-right: 20px;
+        min-width: 200px;
+        width: 200px;
       }
       .route-link {
         position: absolute;
@@ -155,7 +156,7 @@ export default {
           width: 280px;
           @include for-phone-only {
             font-size: 13px;
-            width: 252px;
+            width: 180px;
           }
         }
       }
