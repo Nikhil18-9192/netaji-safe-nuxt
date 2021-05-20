@@ -76,10 +76,10 @@ export default {
   .carousel {
     width: 100%;
     margin-bottom: 92px;
-    .slide:last-child {
+    .slide:last-child,
+    .slide:nth-last-child(2) {
       display: none;
     }
-
     .slide {
       width: 100%;
     }
@@ -92,8 +92,8 @@ export default {
       @include for-phone-only {
         margin-left: 0;
         margin-right: 20px;
-        min-width: 200px;
-        width: 200px;
+        min-width: 225px;
+        width: 225px;
       }
       .route-link {
         position: absolute;
@@ -156,7 +156,7 @@ export default {
           width: 280px;
           @include for-phone-only {
             font-size: 13px;
-            width: 180px;
+            width: 200px;
           }
         }
       }
