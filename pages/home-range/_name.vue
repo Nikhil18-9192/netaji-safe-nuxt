@@ -27,11 +27,11 @@
         data-aos-offset="150"
         :data-aos-delay="i * 200"
       >
-        <div class="left">
-          <img :src="item.icon" :alt="item.title" />
+        <div :class="!item.title ? 'zero' : ''" class="left">
+          <img v-if="item.title" :src="item.icon" :alt="item.title" />
         </div>
-        <div class="right">
-          <h4>{{ item.title }}</h4>
+        <div :class="!item.title ? 'full' : ''" class="right">
+          <h4 v-if="item.title">{{ item.title }}</h4>
           <p>{{ item.desc }}</p>
         </div>
       </div>
@@ -47,8 +47,10 @@
         :data-aos-delay="i * 200"
       >
         <div class="top">
-          <div class="icon"><img :src="item.icon" :alt="item.title" /></div>
-          <div class="card-title">
+          <div v-if="item.title" class="icon">
+            <img :src="item.icon" :alt="item.title" />
+          </div>
+          <div v-if="item.title" class="card-title">
             <h4>{{ item.title }}</h4>
           </div>
         </div>
@@ -382,5 +384,12 @@ export default {
       padding: 0 20px;
     }
   }
+}
+
+.zero {
+  width: 0% !important;
+}
+.full {
+  width: 100% !important;
 }
 </style>

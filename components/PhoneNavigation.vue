@@ -7,7 +7,8 @@
           :key="i"
           @click="$store.commit('toggleMenuState')"
         >
-          <nuxt-link :to="item.path">{{ item.name }}</nuxt-link>
+          <nuxt-link class="global-link" :to="item.path"></nuxt-link>
+          {{ item.name }}
         </li>
       </ul>
     </div>
@@ -18,7 +19,8 @@
           :key="i"
           @click="$store.commit('toggleMenuState')"
         >
-          <nuxt-link :to="item.path">{{ item.name }}</nuxt-link>
+          <nuxt-link class="global-link" :to="item.path"></nuxt-link>
+          {{ item.name }}
         </li>
       </ul>
     </div>
@@ -60,14 +62,13 @@ export default {
       list-style: none;
       padding: 0;
       li {
+        position: relative;
         padding: 19px;
         border-bottom: 1px solid #e2e2e2;
-        a {
-          font-weight: 600;
-          font-size: 13px;
-          line-height: 15px;
-          text-transform: uppercase;
-        }
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
       }
     }
   }
@@ -76,16 +77,22 @@ export default {
       list-style: none;
       padding: 0;
       li {
+        position: relative;
         padding: 19px;
         border-bottom: 1px solid #e2e2e2;
-        a {
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 13px;
-          text-transform: uppercase;
-        }
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        text-transform: uppercase;
       }
     }
   }
+}
+.global-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 </style>

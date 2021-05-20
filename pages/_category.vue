@@ -106,6 +106,8 @@ export default {
     background-position: center;
     @include for-phone-only {
       height: 350px;
+      background-size: cover;
+      background-position: 55% 74%;
     }
     .navigator {
       width: 399px;
