@@ -110,32 +110,60 @@ export default {
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
     margin: 0 187px;
+    @include for-phone-only {
+      margin: 60px 20px 0 20px;
+      padding-top: 28px;
+      padding-bottom: 17px;
+    }
     h1 {
       font-weight: 600;
       font-size: 18px;
       line-height: 161%;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      @include for-phone-only {
+        font-size: 14px;
+      }
     }
   }
   .contact-wrapper {
     display: flex;
     width: 100%;
     padding: 25px 187px 85px 187px;
+    @include for-phone-only {
+      padding: 25px 20px 85px 20px;
+      flex-direction: column;
+    }
     .left {
       width: 60%;
+      @include for-phone-only {
+        width: 100%;
+      }
       .top {
         display: flex;
         width: 100%;
         padding-bottom: 40px;
+        @include for-phone-only {
+          flex-direction: column;
+          border-bottom: 1px solid #bdbdbd;
+          padding-bottom: 30px;
+        }
       }
       .bottom {
         display: flex;
         width: 100%;
+        @include for-phone-only {
+          flex-direction: column;
+          padding-top: 30px;
+          padding-bottom: 40px;
+        }
       }
       .address {
         width: 50%;
         padding-right: 60px;
+        @include for-phone-only {
+          width: 100%;
+        }
         h4 {
           font-weight: 600;
           font-size: 14px;
@@ -153,6 +181,10 @@ export default {
       .contact-info {
         width: 50%;
         padding-top: 45px;
+        @include for-phone-only {
+          width: 100%;
+          padding-top: 22px;
+        }
         p {
           font-weight: 400;
           font-size: 14px;
@@ -174,12 +206,18 @@ export default {
     .right {
       width: 40%;
       text-align: center;
+      @include for-phone-only {
+        width: 100%;
+      }
       .form-wrapper {
         width: 100%;
         height: 100%;
         background: #f5f5f5;
         border-radius: 5px;
         padding: 40px 50px 30px 50px;
+        @include for-phone-only {
+          padding: 40px 20px 30px 20px;
+        }
         input {
           width: 100%;
           height: 43px;
