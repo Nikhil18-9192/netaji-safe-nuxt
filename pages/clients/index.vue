@@ -159,85 +159,145 @@ export default {
   width: 100%;
   height: 100%;
   padding: 0 187px;
+  @include for-phone-only {
+    padding: 0 20px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
+    margin-top: 60px;
+    @include for-phone-only {
+      padding-top: 28px;
+      padding-bottom: 17px;
+    }
     h1 {
       font-weight: 600;
       font-size: 18px;
       line-height: 161%;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      @include for-phone-only {
+        font-size: 14px;
+      }
     }
   }
   .education {
     padding: 45px 55px 0 55px;
+    @include for-phone-only {
+      padding: 20px 0 0 0;
+    }
     .title {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include for-phone-only {
+        justify-content: flex-start;
+      }
       h4 {
         font-weight: 600;
         font-size: 14px;
         line-height: 151.5%;
+        @include for-phone-only {
+          font-size: 12px;
+          line-height: 176.5%;
+        }
       }
       img {
         width: 55px;
         height: 55px;
         object-fit: contain;
         margin-right: 17px;
+        @include for-phone-only {
+          width: 35px;
+          height: 30px;
+        }
       }
     }
     .list {
       margin-top: 62px;
       padding-bottom: 35px;
       border-bottom: 1px solid #bdbdbd;
+      @include for-phone-only {
+        margin-top: 28px;
+      }
       ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
         column-gap: 40px;
+        @include for-phone-only {
+          grid-template-columns: repeat(1, 1fr);
+        }
         li {
           font-size: 12px;
           line-height: 253.5%;
           text-transform: capitalize;
+          @include for-phone-only {
+            font-size: 11px;
+            line-height: 169.5%;
+            margin-bottom: 10px;
+          }
         }
       }
     }
   }
   .banks {
     padding: 45px 55px 0 55px;
+    @include for-phone-only {
+      padding: 20px 0 0 0;
+    }
     .title {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include for-phone-only {
+        justify-content: flex-start;
+      }
       h4 {
         font-weight: 600;
         font-size: 14px;
         line-height: 151.5%;
+        @include for-phone-only {
+          font-size: 12px;
+          line-height: 176.5%;
+        }
       }
       img {
         width: 55px;
         height: 55px;
         object-fit: contain;
         margin-right: 17px;
+        @include for-phone-only {
+          width: 35px;
+          height: 30px;
+        }
       }
     }
     .list {
       margin-top: 62px;
-
+      @include for-phone-only {
+        margin-top: 28px;
+      }
       ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
         column-gap: 40px;
+        @include for-phone-only {
+          grid-template-columns: repeat(1, 1fr);
+        }
         li {
           font-size: 12px;
           line-height: 253.5%;
           text-transform: capitalize;
+          @include for-phone-only {
+            font-size: 11px;
+            line-height: 169.5%;
+            margin-bottom: 10px;
+          }
         }
       }
     }
