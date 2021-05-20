@@ -36,7 +36,7 @@
           class="carousel"
           :perPageCustom="[
             [320, 1],
-            [375, 1],
+            [375, 2],
             [768, 3],
             [1200, 5],
             [1800, 5],
@@ -83,16 +83,27 @@ export default {
   width: 100%;
   height: 100%;
   padding: 0 187px;
+  @include for-phone-only {
+    padding: 0 20px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
+    @include for-phone-only {
+      margin-top: 60px;
+      padding-top: 28px;
+      padding-bottom: 17px;
+    }
     h1 {
       font-weight: 600;
       font-size: 18px;
       line-height: 161%;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      @include for-phone-only {
+        font-size: 14px;
+      }
     }
   }
   .services-wrapper {
@@ -111,6 +122,13 @@ export default {
       :nth-child(3) {
         border-right: 1px solid #e2e2e2;
       }
+      @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+        .services:nth-child(1),
+        :nth-child(3) {
+          border-right: none;
+        }
+      }
       .services {
         display: flex;
         align-items: flex-start;
@@ -118,31 +136,55 @@ export default {
         height: 210px;
         align-items: center;
         border-bottom: 1px solid #e2e2e2;
+        @include for-phone-only {
+          border-bottom: none;
+          border-top: 1px solid #e2e2e2;
+          height: 100%;
+          padding: 25px 0;
+        }
         .icon {
           width: 20%;
           display: flex;
           justify-content: center;
-
+          @include for-phone-only {
+            height: 100%;
+            width: 25%;
+          }
           img {
             width: 57px;
             height: 57px;
             object-fit: contain;
+            @include for-phone-only {
+              width: 46px;
+              height: 46px;
+            }
           }
         }
         .info {
           width: 80%;
+          @include for-phone-only {
+            width: 75%;
+          }
           h4 {
             font-weight: 600;
             font-size: 14px;
             line-height: 162%;
             text-transform: capitalize;
             margin-bottom: 10px;
+            @include for-phone-only {
+              font-size: 12px;
+              line-height: 162%;
+            }
           }
           p {
             font-weight: 400;
             font-size: 14px;
             line-height: 162%;
             text-transform: capitalize;
+            @include for-phone-only {
+              font-size: 12px;
+              line-height: 162%;
+            }
           }
         }
       }
@@ -156,10 +198,18 @@ export default {
         width: 265px;
         display: flex;
         justify-content: center;
+        @include for-phone-only {
+          padding: 0 15px;
+          border-left: none;
+          border-right: 1px solid #e2e2e2;
+        }
         img {
           width: 183px;
           height: 244px;
           object-fit: contain;
+          @include for-phone-only {
+            width: 100%;
+          }
         }
       }
     }
