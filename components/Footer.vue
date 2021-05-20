@@ -2,6 +2,12 @@
   <div id="footer">
     <div class="copyright">
       <p>COPYRIGHT {{ new Date().getFullYear() }} | ALL RIGHTS RESERVED</p>
+      <p class="formec-media">
+        Designed with ❤️ by
+        <a href="https://formecmedia.com/" target="_blank" rel="noopener"
+          >Formec Media.</a
+        >
+      </p>
     </div>
   </div>
 </template>

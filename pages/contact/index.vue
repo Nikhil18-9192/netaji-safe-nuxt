@@ -58,12 +58,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="right"
-        data-aos="fade-left"
-        data-aos-duration="900"
-        data-aos-offset="200"
-      >
+      <div class="right">
         <div class="form-wrapper">
           <form action="">
             <input type="text" placeholder="Name" />
@@ -272,6 +267,9 @@ export default {
         }
       }
     }
+  }
+  .map {
+    width: 100%;
   }
 }
 </style>
