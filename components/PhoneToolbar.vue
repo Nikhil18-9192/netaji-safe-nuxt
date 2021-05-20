@@ -3,7 +3,7 @@
     id="phone-toolbar"
     :style="[
       scrollPosition > 0
-        ? { 'border-bottom': '8px solid #cb2929' }
+        ? { 'border-bottom': '6px solid #cb2929' }
         : { 'border-bottom': '11px solid #cb2929' },
     ]"
   >
