@@ -21,6 +21,20 @@
           data-aos-offset="150"
           :data-aos-delay="i * 200"
         >
+          <a
+            class="whatsapp-icon"
+            target="_blank"
+            :href="
+              'https://api.whatsapp.com/send?text= Hello, Im interested in ' +
+              product.title +
+              ' from ' +
+              $route.params.category.replace(/_/g, ' ') +
+              ' category from this page ' +
+              $route.path +
+              '.!&phone=+919822090190'
+            "
+            ><img src="/whatsapp.svg" alt="whatsapp icon"
+          /></a>
           <nuxt-link
             v-if="product.slug"
             class="route-link"
@@ -107,7 +121,7 @@ export default {
     @include for-phone-only {
       height: 350px;
       background-size: cover;
-      background-position: 55% 74%;
+      background-position: 60% 74%;
     }
     .navigator {
       width: 399px;
@@ -164,6 +178,17 @@ export default {
         @include for-phone-only {
           width: 100%;
           padding: 25px 20px;
+        }
+        .whatsapp-icon {
+          position: absolute;
+          right: 15px;
+          top: 10px;
+          z-index: 1000;
+          img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+          }
         }
         .route-link {
           position: absolute;
