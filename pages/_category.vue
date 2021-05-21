@@ -206,7 +206,6 @@ export default {
           box-sizing: border-box;
           @include for-phone-only {
             padding: 8px;
-            right: 6px;
           }
           img {
             width: 100%;
