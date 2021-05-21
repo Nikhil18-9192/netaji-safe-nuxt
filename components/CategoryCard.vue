@@ -46,7 +46,7 @@
 <script>
 export default {
   name: 'CategoryCardComponent',
-  props: ['products'],
+  props: ['products', 'url'],
 }
 </script>
 
