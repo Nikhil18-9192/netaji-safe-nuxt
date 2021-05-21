@@ -13,7 +13,7 @@
         ]"
         :loop="true"
         :autoplay="true"
-        :autoplayTimeout="100000"
+        :autoplayTimeout="5000"
         :mouse-drag="true"
         :paginationEnabled="false"
       >

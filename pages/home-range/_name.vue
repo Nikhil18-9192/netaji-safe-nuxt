@@ -17,48 +17,9 @@
       </div>
     </div>
 
-    <div v-if="!$device.isMobile" class="card-container">
-      <div
-        class="card"
-        v-for="(item, i) in products.cards"
-        :key="i"
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-offset="150"
-        :data-aos-delay="i * 200"
-      >
-        <div :class="!item.title ? 'zero' : ''" class="left">
-          <img v-if="item.title" :src="item.icon" :alt="item.title" />
-        </div>
-        <div :class="!item.title ? 'full' : ''" class="right">
-          <h4 v-if="item.title">{{ item.title }}</h4>
-          <p>{{ item.desc }}</p>
-        </div>
-      </div>
-    </div>
-    <div v-else class="phone-card-container">
-      <div
-        class="card"
-        v-for="(item, i) in products.cards"
-        :key="i"
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-offset="150"
-        :data-aos-delay="i * 200"
-      >
-        <div class="top">
-          <div v-if="item.title" class="icon">
-            <img :src="item.icon" :alt="item.title" />
-          </div>
-          <div v-if="item.title" class="card-title">
-            <h4>{{ item.title }}</h4>
-          </div>
-        </div>
-        <div class="bottom">
-          <p>{{ item.desc }}</p>
-        </div>
-      </div>
-    </div>
+    <ProductCard v-if="!$device.isMobile" :products="products" />
+    <ProductCardPhone v-else :products="products" />
+
     <div
       class="image-carousel"
       data-aos="fade-up"
@@ -78,7 +39,7 @@
           ]"
           :loop="true"
           :autoplay="true"
-          :autoplayTimeout="10000"
+          :autoplayTimeout="5000"
           :mouse-drag="true"
           :paginationEnabled="false"
         >
@@ -156,6 +117,7 @@ export default {
   .header {
     margin-top: 34px;
     border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 30px;
     @include for-tablet-only {
       margin-top: 90px;
     }
@@ -193,131 +155,6 @@ export default {
     }
   }
 
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
-    column-gap: 32px;
-    margin-top: 40px;
-    .card:nth-child(1) {
-      grid-row: auto / span 2;
-    }
-    @include for-phone-only {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 0 40px;
-    }
-    @include for-tablet-only {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .card {
-      grid-row: auto / span 3;
-      display: flex;
-      padding: 44px 0 23px 0;
-      background: linear-gradient(
-        180deg,
-        #efefef 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      border-radius: 9px;
-      width: 557px;
-      height: 100%;
-      min-height: 282px;
-      transition: 0.3s ease all;
-      @include for-tablet-only {
-        margin: 0 auto;
-      }
-      .left {
-        width: 25%;
-        padding-left: 43px;
-
-        img {
-          width: 57px;
-          height: 57px;
-          object-fit: contain;
-        }
-      }
-      .right {
-        width: 75%;
-        padding-right: 22px;
-        h4 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 151.5%;
-          margin-bottom: 22px;
-          transition: 0.3s ease all;
-        }
-        p {
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 173.69%;
-        }
-      }
-      &:hover {
-        transform: translateY(-6px);
-        .right {
-          h4 {
-            color: #cb2929;
-          }
-        }
-      }
-    }
-  }
-  .phone-card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
-    padding: 0 38px;
-    margin-top: 40px;
-    .card {
-      width: 299;
-      padding: 23px;
-      background: linear-gradient(
-        180deg,
-        #efefef 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      border-radius: 9px;
-      height: 100%;
-      min-height: 282px;
-      transition: 0.3s ease all;
-      .top {
-        display: flex;
-        align-items: center;
-        margin-bottom: 28px;
-        .icon {
-          margin-right: 13px;
-          img {
-            width: 36px;
-            height: 36px;
-            object-fit: contain;
-          }
-        }
-        .card-title {
-          h4 {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 151.5%;
-            transition: 0.3s ease all;
-          }
-        }
-      }
-      .bottom {
-        p {
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 173.69%;
-        }
-      }
-      &:hover {
-        transform: translateY(-6px);
-        .right {
-          h4 {
-            color: #cb2929;
-          }
-        }
-      }
-    }
-  }
   .image-carousel {
     position: relative;
     width: 100%;
