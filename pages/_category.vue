@@ -139,6 +139,9 @@ export default {
         left: 0;
         width: 100%;
       }
+      @include for-tablet-only {
+        left: 60px;
+      }
       p {
         a {
           color: #ff8989;
@@ -156,6 +159,9 @@ export default {
     @include for-phone-only {
       padding: 32px 40px;
     }
+    @include for-tablet-only {
+      padding: 40px 60px;
+    }
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -163,6 +169,9 @@ export default {
       column-gap: 32px;
       max-width: 1018px;
       @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @include for-tablet-only {
         grid-template-columns: repeat(1, 1fr);
       }
       .card {
@@ -180,6 +189,9 @@ export default {
         @include for-phone-only {
           width: 100%;
           padding: 25px 20px;
+        }
+        @include for-tablet-only {
+          margin: 0 auto;
         }
         .whatsapp-icon {
           position: absolute;

@@ -153,9 +153,15 @@ export default {
   @include for-phone-only {
     padding: 0;
   }
+  @include for-tablet-only {
+    padding: 0 60px;
+  }
   .header {
     margin-top: 34px;
     border-bottom: 1px solid #bdbdbd;
+    @include for-tablet-only {
+      margin-top: 90px;
+    }
     .navigater {
       width: 580px;
       height: 46px;
@@ -167,6 +173,9 @@ export default {
         width: 100%;
         margin-top: 69px;
         height: 76px;
+      }
+      @include for-tablet-only {
+        width: 485px;
       }
       p {
         font-weight: 600;
@@ -203,6 +212,10 @@ export default {
       padding: 30px 20px 43px 20px;
       margin: 0;
     }
+    @include for-tablet-only {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
   }
   .card-container {
     display: grid;
@@ -215,6 +228,9 @@ export default {
     @include for-phone-only {
       grid-template-columns: repeat(1, 1fr);
       padding: 0 40px;
+    }
+    @include for-tablet-only {
+      grid-template-columns: repeat(1, 1fr);
     }
     .card {
       grid-row: auto / span 3;
@@ -230,7 +246,9 @@ export default {
       height: 100%;
       min-height: 282px;
       transition: 0.3s ease all;
-
+      @include for-tablet-only {
+        margin: 0 auto;
+      }
       .left {
         width: 25%;
         padding-left: 43px;
@@ -360,6 +378,9 @@ export default {
       margin: 0 auto;
       border-spacing: 0 5px;
       @include for-phone-only {
+        width: 100%;
+      }
+      @include for-tablet-only {
         width: 100%;
       }
       th {

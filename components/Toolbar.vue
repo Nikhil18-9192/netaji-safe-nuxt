@@ -100,6 +100,9 @@ export default {
   @include for-phone-only {
     display: none;
   }
+  @include for-tablet-only {
+    display: none;
+  }
   .blur {
     position: absolute;
     width: 100%;

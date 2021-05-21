@@ -73,6 +73,9 @@ export default {}
   @include for-phone-only {
     padding: 0 20px;
   }
+  @include for-tablet-only {
+    padding: 0 60px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -99,9 +102,16 @@ export default {}
     @include for-phone-only {
       flex-direction: column;
     }
+    @include for-tablet-only {
+      flex-direction: column;
+    }
     .left {
       width: 20%;
       @include for-phone-only {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      @include for-tablet-only {
         width: 100%;
         margin-bottom: 30px;
       }
@@ -111,6 +121,9 @@ export default {}
         @include for-phone-only {
           width: 106px;
           height: 138px;
+          margin: 0 auto;
+        }
+        @include for-tablet-only {
           margin: 0 auto;
         }
         img {
@@ -124,6 +137,9 @@ export default {}
     .right {
       width: 80%;
       @include for-phone-only {
+        width: 100%;
+      }
+      @include for-tablet-only {
         width: 100%;
       }
       p {

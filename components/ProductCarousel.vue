@@ -73,6 +73,9 @@ export default {
   @include for-phone-only {
     padding-left: 20px;
   }
+  @include for-tablet-only {
+    padding-left: 60px;
+  }
   .carousel {
     width: 100%;
     margin-bottom: 92px;
@@ -94,6 +97,9 @@ export default {
         margin-right: 20px;
         min-width: 225px;
         width: 225px;
+      }
+      @include for-tablet-only {
+        min-width: 375px;
       }
       .route-link {
         position: absolute;

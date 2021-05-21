@@ -134,6 +134,9 @@ export default {
       padding-top: 28px;
       padding-bottom: 17px;
     }
+    @include for-tablet-only {
+      margin: 60px 60px 0 60px;
+    }
     h1 {
       font-weight: 600;
       font-size: 18px;
@@ -153,9 +156,16 @@ export default {
       padding: 25px 20px 85px 20px;
       flex-direction: column;
     }
+    @include for-tablet-only {
+      padding: 25px 60px 85px 60px;
+      flex-direction: column;
+    }
     .left {
       width: 60%;
       @include for-phone-only {
+        width: 100%;
+      }
+      @include for-tablet-only {
         width: 100%;
       }
       .top {
@@ -227,6 +237,10 @@ export default {
       text-align: center;
       @include for-phone-only {
         width: 100%;
+      }
+      @include for-tablet-only {
+        width: 100%;
+        margin-top: 50px;
       }
       .form-wrapper {
         width: 100%;

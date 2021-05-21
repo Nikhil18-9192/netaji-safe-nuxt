@@ -42,6 +42,11 @@ export default {
     display: flex;
     align-items: center;
   }
+  @include for-tablet-only {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+  }
   .blur {
     position: absolute;
     width: 100%;

@@ -86,6 +86,9 @@ export default {
   @include for-phone-only {
     padding: 0 20px;
   }
+  @include for-tablet-only {
+    padding: 0 60px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -94,6 +97,9 @@ export default {
       margin-top: 60px;
       padding-top: 28px;
       padding-bottom: 17px;
+    }
+    @include for-tablet-only {
+      margin-top: 60px;
     }
     h1 {
       font-weight: 600;
@@ -150,6 +156,9 @@ export default {
             height: 100%;
             width: 25%;
           }
+          @include for-tablet-only {
+            width: 30%;
+          }
           img {
             width: 57px;
             height: 57px;
@@ -164,6 +173,9 @@ export default {
           width: 80%;
           @include for-phone-only {
             width: 75%;
+          }
+          @include for-tablet-only {
+            width: 70%;
           }
           h4 {
             font-weight: 600;

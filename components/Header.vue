@@ -40,6 +40,9 @@ export default {
       width: 219px;
       margin-top: 200px;
     }
+    @include for-tablet-only {
+      margin-top: 210px;
+    }
   }
   .image {
     position: absolute;

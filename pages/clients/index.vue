@@ -162,6 +162,9 @@ export default {
   @include for-phone-only {
     padding: 0 20px;
   }
+  @include for-tablet-only {
+    padding: 0 60px;
+  }
   .page-title {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -186,6 +189,9 @@ export default {
     padding: 45px 55px 0 55px;
     @include for-phone-only {
       padding: 20px 0 0 0;
+    }
+    @include for-tablet-only {
+      padding: 30px 25px 0 25px;
     }
     .title {
       display: flex;
@@ -247,6 +253,9 @@ export default {
     padding: 45px 55px 0 55px;
     @include for-phone-only {
       padding: 20px 0 0 0;
+    }
+    @include for-tablet-only {
+      padding: 30px 25px 0 25px;
     }
     .title {
       display: flex;
