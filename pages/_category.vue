@@ -192,11 +192,19 @@ export default {
           display: flex;
           align-items: center;
           justify-content: center;
+          @include for-phone-only {
+            padding: 6px;
+            right: 6px;
+          }
           img {
             width: 24px;
             height: 24px;
             object-fit: contain;
             box-sizing: border-box;
+            @include for-phone-only {
+              width: 18px;
+              height: 18px;
+            }
           }
         }
         .route-link {
