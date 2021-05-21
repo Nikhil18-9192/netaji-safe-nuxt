@@ -63,6 +63,9 @@ export default {
   @include for-tablet-only {
     grid-template-columns: repeat(1, 1fr);
   }
+  @include for-big-desktop-up {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .card {
     position: relative;
     width: 492px;
