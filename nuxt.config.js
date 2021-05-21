@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Netaji Safe Company | Manufacturer of best in class lockers, fire proof safe, strong room door, depository safe, lockers for home, school lockers in Kolhapur' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         rel: "preconnect",
         href:
