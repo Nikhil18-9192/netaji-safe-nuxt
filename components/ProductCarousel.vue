@@ -32,7 +32,7 @@
               <img :src="slide.icon" :alt="slide.title" />
             </div>
             <div class="text">
-              <h4>{{ slide.title }}</h4>
+              <p class="card-title">{{ slide.title }}</p>
               <p>{{ slide.desc }}</p>
             </div>
             <div class="image">
@@ -144,7 +144,7 @@ export default {
         @include for-phone-only {
           padding: 28px 20px;
         }
-        h4 {
+        .card-title {
           font-weight: 600;
           font-size: 18px;
           line-height: 151.5%;

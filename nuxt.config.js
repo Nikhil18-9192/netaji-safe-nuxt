@@ -12,14 +12,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Netaji Safe Company | Manufacturer of best in class lockers, fire proof safe, strong room door, depository safe, lockers for home, school lockers in Kolhapur' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet',
+        rel="preconnect",
         href:
-          'https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap',
       },
     ]
   },
