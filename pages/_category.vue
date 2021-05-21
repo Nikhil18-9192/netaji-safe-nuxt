@@ -186,10 +186,17 @@ export default {
           right: 15px;
           top: 10px;
           z-index: 1000;
+          border: 2px solid #000;
+          border-radius: 50%;
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           img {
             width: 24px;
             height: 24px;
             object-fit: contain;
+            box-sizing: border-box;
           }
         }
         .route-link {
