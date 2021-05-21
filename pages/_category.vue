@@ -201,22 +201,17 @@ export default {
           border: 2px solid #0000006b;
           border-radius: 50%;
           padding: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          width: 48px;
+          height: 48px;
+          box-sizing: border-box;
           @include for-phone-only {
-            padding: 6px;
+            padding: 8px;
             right: 6px;
           }
           img {
-            width: 24px;
-            height: 24px;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
-            box-sizing: border-box;
-            @include for-phone-only {
-              width: 18px;
-              height: 18px;
-            }
           }
         }
         .route-link {
