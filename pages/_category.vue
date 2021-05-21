@@ -186,7 +186,7 @@ export default {
           right: 15px;
           top: 10px;
           z-index: 1000;
-          border: 2px solid #000;
+          border: 2px solid #0000006b;
           border-radius: 50%;
           padding: 8px;
           display: flex;
