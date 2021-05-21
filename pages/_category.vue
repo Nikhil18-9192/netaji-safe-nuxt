@@ -195,7 +195,7 @@ export default {
         }
         .whatsapp-icon {
           position: absolute;
-          right: 15px;
+          right: 10px;
           top: 10px;
           z-index: 1000;
           border: 2px solid #0000006b;
