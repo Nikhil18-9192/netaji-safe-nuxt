@@ -6,11 +6,17 @@
       data-aos-duration="900"
       data-aos-offset="200"
     >
-      <a class="broture-btn" target="_blank" href="/netaji-safe-brouchre.pdf">
+      <a
+        rel="noreferrer"
+        class="broture-btn"
+        target="_blank"
+        href="/netaji-safe-brouchre.pdf"
+      >
         <img src="/download.svg" alt="broture download" />
         <p>Download Broture</p>
       </a>
       <a
+        rel="noreferrer"
         class="video-btn"
         target="_blank"
         href="https://www.youtube.com/watch?v=5NMZ4zFTS7E"

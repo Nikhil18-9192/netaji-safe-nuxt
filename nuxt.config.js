@@ -17,9 +17,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet',
+        rel: "preconnect",
         href:
           'https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap',
+        crossorigin: 'crossorigin',
       },
     ]
   },
