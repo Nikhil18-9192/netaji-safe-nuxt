@@ -69,6 +69,9 @@ export default {
       line-height: 173.69%;
       color: #9d9d9d;
     }
+    .formec-media {
+      margin-top: 16px;
+    }
   }
 }
 </style>
