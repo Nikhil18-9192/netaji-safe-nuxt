@@ -1,9 +1,9 @@
 <template>
   <div id="product-carousel">
-    <div class="left-icon" @click="prev">
+    <div class="left-icon" @click="prev" v-if="currentPage > 0">
       <img src="/left.png" alt="" />
     </div>
-    <div class="right-icon" @click="next">
+    <div class="right-icon" @click="next" v-if="currentPage < pageCount">
       <img src="/right.png" alt="" />
     </div>
     <client-only>
@@ -71,6 +71,7 @@ export default {
     return {
       mouseDownTimestamp: 0,
       currentPage: 0,
+      pageCount: 5,
     }
   },
   methods: {
@@ -81,7 +82,7 @@ export default {
     mouseUp: function (route) {
       const now = new Date().getTime()
       console.log(now - this.mouseDownTimestamp)
-      if (now - this.mouseDownTimestamp > 100) {
+      if (now - this.mouseDownTimestamp > 200) {
         return
       }
       this.navigateToNext(route)
@@ -90,11 +91,14 @@ export default {
       this.$router.push(route)
     },
     next() {
+      this.pageCount = this.$refs.slider.pageCount - 1
       this.currentPage < this.$refs.slider.pageCount - 1
         ? this.currentPage++
         : (this.currentPage = 0)
     },
     prev() {
+      this.pageCount = this.$refs.slider.pageCount - 1
+
       this.currentPage <= 0
         ? (this.currentPage = this.$refs.slider.pageCount - 1)
         : this.currentPage--

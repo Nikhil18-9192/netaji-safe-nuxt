@@ -39,7 +39,7 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="scss">
 html {
   font-family: 'Spartan', sans-serif;
   font-size: 16px;
@@ -58,6 +58,9 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+.nuxt-link-exact-active {
+  color: $primary !important;
 }
 .menuModal {
   position: fixed;
