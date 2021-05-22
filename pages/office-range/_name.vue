@@ -17,10 +17,17 @@
       </div>
     </div>
 
-    <ProductCard v-if="!$device.isMobile" :products="products" />
-    <ProductCardPhone v-else :products="products" />
-
-    <ProductImageCarousel :images="products.images" />
+    <!-- <ProductCard v-if="!$device.isMobile" :products="products" />
+    <ProductCardPhone v-else :products="products" /> -->
+    <CategoryCard
+      :products="libraryCabinateCards"
+      :url="url"
+      :category="category"
+    />
+    <ProductImageCarousel
+      v-if="products.images.length"
+      :images="products.images"
+    />
     <Table
       v-if="products.weights.length"
       :weights="products.weights"
@@ -35,7 +42,7 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
-import { getOfficeRangeProduct } from '@/utils'
+import { getOfficeRangeProduct, libraryCabinateCards } from '@/utils'
 export default {
   name: 'ProductPage',
   components: {
@@ -45,13 +52,21 @@ export default {
   data() {
     return {
       productName: false,
+      category: 'Office Range',
+      url: '',
     }
   },
   asyncData({ route }) {
     let products = getOfficeRangeProduct(route.params.name.replace(/-/g, ' '))
     return { products }
   },
+  computed: {
+    libraryCabinateCards() {
+      return libraryCabinateCards
+    },
+  },
   mounted() {
+    this.url = window.location.href
     this.productName = this.$route.params.name.replace(/-/g, ' ')
   },
 }

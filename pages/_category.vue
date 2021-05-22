@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="product-container">
-      <CategoryCard :products="products" :url="url" />
+      <CategoryCard :products="products" :url="url" :category="category" />
     </div>
   </div>
 </template>

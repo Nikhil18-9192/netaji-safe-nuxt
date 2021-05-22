@@ -31,6 +31,14 @@ const heavySafeDoor = [
     { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: '/category/d6.png', slug: 'heavy-safe-n-door/night-guard' },
 ]
 
+const libraryCabinateCards = [
+    { title: 'Special 6 door cabinet', desc: 'Netaji Special 6 door cabinet with glass doors with 2 shelves making three compartment above & below. Glass is fitted in aluminum section with rubber.', size: 'H-78″ x W-47″ x D-15″', note: 'Also available in customised sizes.', src: '/library-cabinate/1.jpg', slug: '' },
+    { title: 'Book Case', desc: 'Netaji Book Case for storage of articles and books, for easy identification, 4 compartments with glass panels, each with disappearing glass shutter fitted with 2 handles in each door and 4 locks with the common S.S. Keys in duplicate.', size: 'H-66″ x W-33″ x D-12″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/2.jpg', slug: '' },
+    { title: 'Double Faced Regular Glass door cabinet', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/3.jpg', slug: '' },
+    { title: 'Regular Glass Door Cabinet', desc: 'Netaji Regular Glass Door Cabinet with 4 shelves, 2 doors, fitted with 4 glass panels and lock with keys in duplicate for visibly keeping items of Offices, Hospitals, Hotels, Libraries, Houses etc.', size: 'H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/4.jpg', slug: '' },
+
+]
+
 const homeRange = [
     { title: 'Coffer', desc: 'Netaji Steel Coffer is one of our most selling products of recent times. Coffers come with safe life construction and sturdy door with inside pivots, it combines the strength of a safe, coffer can be easily fixed on a counter, table, wardrobe etc. Available in any size to suit your individual requirements. These coffers are available in various sizes and shapes.', src: '/category/h1.jpg', slug: 'home-range/coffer' },
     { title: 'Home Range', desc: 'Domestic Cabinet with half safe & half vertical partition, 2 drawers, 1 hanging rod & 2 shelves making three compartments. MODEL : NSCH 201 SIZE : H-78″ X W-36″ x D-21 Customisations as per individual requirement provided.', src: '/category/h2.jpg' },
@@ -331,7 +339,7 @@ const libraryCabinate = {
         { title: '', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″', note: 'also available in two compartments with top and in different sizes.', icon: '/security.svg' },
         { title: '', desc: 'Netaji Regular Glass Door Cabinet with 4 shelves, 2 doors, fitted with 4 glass panels and lock with keys in duplicate for visibly keeping items of Offices, Hospitals, Hotels, Libraries, Houses etc.', size: ' H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', icon: '/hinge.svg' },
     ],
-    images: ['/library-cabinate/1.jpg', '/library-cabinate/2.jpg', '/library-cabinate/3.jpg', '/library-cabinate/4.jpg',],
+    images: [],
     weights: [
     ],
     note: ''
@@ -740,4 +748,4 @@ const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 
-export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner }
+export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }

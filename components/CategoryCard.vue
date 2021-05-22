@@ -16,7 +16,7 @@
           'https://api.whatsapp.com/send?text= Hello, Im interested in ' +
           product.title +
           ' from ' +
-          $route.params.category.replace(/_/g, ' ') +
+          category +
           ' category from this page ' +
           url +
           '.!&phone=+919822090190'
@@ -35,6 +35,11 @@
       <div class="desc">
         <p>{{ product.desc }}</p>
         <p v-if="product.desc2">{{ product.desc2 }}</p>
+        <div v-if="product.size" class="size">
+          <p>Size Details :</p>
+          <p>{{ product.size }}</p>
+          <p class="note">{{ product.note }}</p>
+        </div>
       </div>
       <nuxt-link v-if="product.slug" class="read-btn" :to="product.slug"
         >Read More ...</nuxt-link
@@ -46,7 +51,7 @@
 <script>
 export default {
   name: 'CategoryCardComponent',
-  props: ['products', 'url'],
+  props: ['products', 'url', 'category'],
 }
 </script>
 
@@ -155,6 +160,12 @@ export default {
         font-weight: 400;
         font-size: 13px;
         line-height: 173.69%;
+      }
+      .size {
+        margin-top: 12px;
+        .note {
+          margin-top: 12px;
+        }
       }
     }
     .read-btn {
