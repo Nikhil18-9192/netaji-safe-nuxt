@@ -188,7 +188,7 @@ export default {
           background: #cb2929;
         }
         .text {
-          h4 {
+          .card-title {
             color: #cb2929;
           }
         }

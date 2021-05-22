@@ -144,6 +144,9 @@ export default {
           text-transform: uppercase;
           margin-right: 38px;
           transition: 0.3s ease all;
+          &:hover {
+            color: #cb2929;
+          }
         }
       }
     }
@@ -160,6 +163,9 @@ export default {
           line-height: 13px;
           margin-left: 21px;
           transition: 0.3s ease all;
+          &:hover {
+            color: #cb2929;
+          }
         }
       }
     }
