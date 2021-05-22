@@ -87,17 +87,20 @@ export default {
     }
     .whatsapp-icon {
       position: absolute;
-      right: 16px;
-      top: 16px;
+      right: 38px;
+      top: 38px;
       z-index: 1000;
       border: 2px solid #000000;
       border-radius: 50%;
-      padding: 12px;
-      width: 48px;
-      height: 48px;
+      padding: 8px;
+      width: 40px;
+      height: 40px;
       box-sizing: border-box;
       @include for-phone-only {
-        padding: 8px;
+        width: 36px;
+        height: 36px;
+        right: 20px;
+        top: 25px;
       }
       img {
         width: 100%;
@@ -121,7 +124,7 @@ export default {
       transition: 0.3s ease all;
       @include for-phone-only {
         font-size: 14px;
-        width: 224px;
+        width: 215px;
       }
     }
     .image {
