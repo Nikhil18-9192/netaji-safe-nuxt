@@ -17,7 +17,7 @@ const slides = [
     { title: 'Heavy Safe & Strong Room Doors', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism ...', icon: '/doors.svg', image: '/doors.png', slug: 'heavy_safe_n_door' },
     { title: 'Home Range', desc: 'Netaji Steel Coffer is one of our most selling products of recent times. Coffers come with safe life construction and sturdy door with inside pivots, it combines the strength of a safe ...', icon: '/home.svg', image: '/coffers.png', slug: 'home_range' },
     { title: 'Office Range', desc: 'Storewell Cabinet Multi Purpose Storage Cabinet with four shelves making five compartments. MODEL : NSCO 201 SIZE : H-78″ x W-36″ x D-19″ Can also be made in fire proof material.', icon: '/office.svg', image: '/office-range.jpg', slug: 'office_range' },
-    { title: 'Stainless Steel Fire Proof Safe', desc: 'Stainless steel is rustproof for lifetime. Oxy-acetenlye flame can’t attack or cut the stainless steel.', icon: '/doors.svg', image: '/ss-safe.png', slug: 'heavy_safe_n_door' },
+    { title: 'Stainless Steel Fire Proof Safe', desc: 'Stainless steel is rustproof for lifetime. Oxy-acetenlye flame can’t attack or cut the stainless steel.', icon: '/ss-icon.svg', image: '/ss-safe.png', slug: 'heavy_safe_n_door' },
     { slug: '' },
     // { slug: '' }
 ]

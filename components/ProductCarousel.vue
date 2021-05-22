@@ -1,8 +1,15 @@
 <template>
   <div id="product-carousel">
+    <div class="left-icon" @click="prev">
+      <img src="/left.png" alt="" />
+    </div>
+    <div class="right-icon" @click="next">
+      <img src="/right.png" alt="" />
+    </div>
     <client-only>
       <carousel
         ref="slider"
+        v-model="currentPage"
         class="carousel"
         :perPageCustom="[
           [320, 2],
@@ -62,6 +69,7 @@ export default {
   data() {
     return {
       mouseDownTimestamp: 0,
+      currentPage: 0,
     }
   },
   methods: {
@@ -79,6 +87,16 @@ export default {
     },
     navigateToNext(route) {
       this.$router.push(route)
+    },
+    next() {
+      this.currentPage < this.$refs.slider.pageCount - 1
+        ? this.currentPage++
+        : (this.currentPage = 0)
+    },
+    prev() {
+      this.currentPage <= 0
+        ? (this.currentPage = this.$refs.slider.pageCount - 1)
+        : this.currentPage--
     },
   },
   computed: {
@@ -101,6 +119,49 @@ export default {
   }
   @include for-tablet-only {
     padding-left: 60px;
+  }
+  .left-icon {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 135px;
+    top: 40%;
+    transform: translate(-50% -50%);
+    z-index: 1;
+    cursor: pointer;
+    @include for-phone-only {
+      top: 100%;
+    }
+    @include for-tablet-only {
+      left: 60px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .right-icon {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 64px;
+    top: 40%;
+    transform: translate(-50% -50%);
+    z-index: 1;
+    cursor: pointer;
+    @include for-phone-only {
+      top: 100%;
+      right: 120px;
+    }
+    @include for-tablet-only {
+      right: 50px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   .carousel {
     width: 100%;
@@ -125,6 +186,8 @@ export default {
       }
       @include for-tablet-only {
         min-width: 375px;
+        margin-right: 60px;
+        margin-left: 0;
       }
       .route-link {
         position: absolute;
