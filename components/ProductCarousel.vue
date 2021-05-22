@@ -25,8 +25,12 @@
           data-aos-duration="900"
           data-aos-offset="200"
         >
-          <div class="card">
-            <nuxt-link class="route-link" :to="slide.slug"></nuxt-link>
+          <div
+            class="card"
+            @mousedown="mouseDown"
+            @mouseup="mouseUp(slide.slug)"
+          >
+            <!-- <nuxt-link class="route-link" :to="slide.slug"></nuxt-link> -->
             <div class="overlay"></div>
             <div class="icon">
               <img :src="slide.icon" :alt="slide.title" />
@@ -54,6 +58,28 @@ export default {
   components: {
     Carousel,
     Slide,
+  },
+  data() {
+    return {
+      mouseDownTimestamp: 0,
+    }
+  },
+  methods: {
+    mouseDown: function () {
+      this.mouseDownTimestamp = new Date().getTime()
+      console.log(this.mouseDownTimestamp)
+    },
+    mouseUp: function (route) {
+      const now = new Date().getTime()
+      console.log(now - this.mouseDownTimestamp)
+      if (now - this.mouseDownTimestamp > 100) {
+        return
+      }
+      this.navigateToNext(route)
+    },
+    navigateToNext(route) {
+      this.$router.push(route)
+    },
   },
   computed: {
     slides() {
