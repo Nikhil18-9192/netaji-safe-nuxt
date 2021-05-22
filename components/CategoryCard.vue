@@ -90,9 +90,9 @@ export default {
       right: 16px;
       top: 16px;
       z-index: 1000;
-      border: 2px solid #0000006b;
+      border: 2px solid #000000;
       border-radius: 50%;
-      padding: 8px;
+      padding: 12px;
       width: 48px;
       height: 48px;
       box-sizing: border-box;
