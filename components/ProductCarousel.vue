@@ -12,7 +12,7 @@
           [1800, 3],
         ]"
         :loop="true"
-        :autoplay="true"
+        :autoplay="false"
         :autoplayTimeout="5000"
         :mouse-drag="true"
         :paginationEnabled="false"
@@ -140,6 +140,7 @@ export default {
       }
       .text {
         padding: 40px 50px;
+        min-height: 270px;
         @include for-phone-only {
           padding: 28px 20px;
         }
