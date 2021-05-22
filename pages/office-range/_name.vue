@@ -19,11 +19,14 @@
 
     <!-- <ProductCard v-if="!$device.isMobile" :products="products" />
     <ProductCardPhone v-else :products="products" /> -->
-    <CategoryCard
-      :products="libraryCabinateCards"
-      :url="url"
-      :category="category"
-    />
+    <div class="category-cards">
+      <CategoryCard
+        :products="libraryCabinateCards"
+        :url="url"
+        :category="category"
+      />
+    </div>
+
     <ProductImageCarousel
       v-if="products.images.length"
       :images="products.images"
@@ -124,7 +127,11 @@ export default {
       }
     }
   }
-
+  .category-cards {
+    @include for-phone-only {
+      padding: 0 38px;
+    }
+  }
   .note {
     font-weight: 400;
     font-size: 13px;

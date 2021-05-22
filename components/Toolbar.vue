@@ -136,7 +136,7 @@ export default {
       }
       .nav-products {
         display: flex;
-        transition: 0.4s ease all;
+        transition: 0.3s ease all;
         a {
           font-weight: 600;
           font-size: 13px;
