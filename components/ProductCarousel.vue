@@ -79,8 +79,7 @@ export default {
   .carousel {
     width: 100%;
     margin-bottom: 92px;
-    .slide:last-child,
-    .slide:nth-last-child(2) {
+    .slide:last-child {
       display: none;
     }
     .slide {

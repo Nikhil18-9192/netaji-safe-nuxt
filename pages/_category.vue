@@ -25,6 +25,7 @@ import {
   heavySafeBanner,
   homeRangeBanner,
   ssBanner,
+  officeRangeBanner,
 } from '@/utils'
 export default {
   name: 'CategoryPage',
@@ -56,7 +57,7 @@ export default {
       } else if (this.category == 'home range') {
         return homeRangeBanner
       } else if (this.category == 'office range') {
-        return heavySafeBanner
+        return officeRangeBanner
       } else if (this.category == 's. s. safe') {
         return ssBanner
       }

@@ -6,8 +6,8 @@
       :key="i"
       data-aos="fade-up"
       data-aos-duration="700"
-      data-aos-offset="150"
-      :data-aos-delay="i * 200"
+      data-aos-offset="200"
+      :data-aos-delay="i * 250"
     >
       <a
         class="whatsapp-icon"

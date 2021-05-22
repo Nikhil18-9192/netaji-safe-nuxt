@@ -103,4 +103,11 @@ export default {
     }
   }
 }
+
+.zero {
+  width: 0% !important;
+}
+.full {
+  width: 100% !important;
+}
 </style>
