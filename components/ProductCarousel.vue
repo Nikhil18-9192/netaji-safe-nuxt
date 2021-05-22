@@ -37,6 +37,7 @@
             class="card"
             @mousedown="mouseDown"
             @mouseup="mouseUp(slide.slug)"
+            @dblclick.stop=";``"
           >
             <!-- <nuxt-link class="route-link" :to="slide.slug"></nuxt-link> -->
             <div class="overlay"></div>
@@ -82,7 +83,7 @@ export default {
     mouseUp: function (route) {
       const now = new Date().getTime()
       console.log(now - this.mouseDownTimestamp)
-      if (now - this.mouseDownTimestamp > 150) {
+      if (now - this.mouseDownTimestamp > 200) {
         return
       }
       this.navigateToNext(route)
