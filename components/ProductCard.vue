@@ -16,6 +16,11 @@
         <div :class="!item.title ? 'full' : ''" class="right">
           <h4 v-if="item.title">{{ item.title }}</h4>
           <p>{{ item.desc }}</p>
+          <div v-if="item.size" class="size">
+            <p>Size Details :</p>
+            <p>{{ item.size }}</p>
+            <p class="note">{{ item.note }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -90,6 +95,12 @@ export default {
           font-weight: 400;
           font-size: 13px;
           line-height: 173.69%;
+        }
+        .size {
+          margin-top: 12px;
+          .note {
+            margin-top: 12px;
+          }
         }
       }
       &:hover {

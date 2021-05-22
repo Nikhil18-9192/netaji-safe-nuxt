@@ -20,6 +20,11 @@
         </div>
         <div class="bottom">
           <p>{{ item.desc }}</p>
+          <div v-if="item.size" class="size">
+            <p>Size Details :</p>
+            <p>{{ item.size }}</p>
+            <p class="note">{{ item.note }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -44,7 +49,7 @@ export default {
     row-gap: 30px;
     padding: 0 38px;
     .card {
-      width: 299;
+      width: 299px;
       padding: 23px;
       background: linear-gradient(
         180deg,
@@ -81,6 +86,12 @@ export default {
           font-weight: 400;
           font-size: 13px;
           line-height: 173.69%;
+        }
+        .size {
+          margin-top: 12px;
+          .note {
+            margin-top: 12px;
+          }
         }
       }
       &:hover {
