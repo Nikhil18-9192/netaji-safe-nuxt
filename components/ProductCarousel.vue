@@ -23,6 +23,7 @@
         :autoplayTimeout="5000"
         :mouse-drag="true"
         :paginationEnabled="false"
+        :navigateTo="currentPage"
       >
         <slide
           class="slide"
@@ -130,7 +131,7 @@ export default {
     z-index: 1;
     cursor: pointer;
     @include for-phone-only {
-      top: 100%;
+      display: none;
     }
     @include for-tablet-only {
       left: 60px;
@@ -151,8 +152,7 @@ export default {
     z-index: 1;
     cursor: pointer;
     @include for-phone-only {
-      top: 100%;
-      right: 120px;
+      display: none;
     }
     @include for-tablet-only {
       right: 50px;
