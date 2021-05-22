@@ -82,7 +82,7 @@ export default {
     mouseUp: function (route) {
       const now = new Date().getTime()
       console.log(now - this.mouseDownTimestamp)
-      if (now - this.mouseDownTimestamp > 200) {
+      if (now - this.mouseDownTimestamp > 150) {
         return
       }
       this.navigateToNext(route)
