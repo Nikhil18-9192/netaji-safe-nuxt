@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <Header />
+    <Hero />
     <ProductCarousel />
     <ButtonComponent />
   </div>
