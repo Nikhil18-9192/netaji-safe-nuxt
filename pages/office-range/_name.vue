@@ -21,7 +21,7 @@
     <ProductCardPhone v-else :products="products" /> -->
     <div class="category-cards">
       <CategoryCard
-        :products="libraryCabinateCards"
+        :products="products.cards"
         :url="url"
         :category="category"
       />
@@ -45,7 +45,7 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
-import { getOfficeRangeProduct, libraryCabinateCards } from '@/utils'
+import { getOfficeRangeProduct } from '@/utils'
 export default {
   name: 'ProductPage',
   components: {
@@ -63,11 +63,7 @@ export default {
     let products = getOfficeRangeProduct(route.params.name.replace(/-/g, ' '))
     return { products }
   },
-  computed: {
-    libraryCabinateCards() {
-      return libraryCabinateCards
-    },
-  },
+
   mounted() {
     this.url = window.location.href
     this.productName = this.$route.params.name.replace(/-/g, ' ')

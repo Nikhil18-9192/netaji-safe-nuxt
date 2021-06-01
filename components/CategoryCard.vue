@@ -27,7 +27,7 @@
         class="route-link"
         :to="product.slug"
       ></nuxt-link>
-      <h4 class="title">{{ product.title }}</h4>
+      <h4 v-if="product.title" class="title">{{ product.title }}</h4>
       <div class="image">
         <img :src="product.src" alt="" />
       </div>
