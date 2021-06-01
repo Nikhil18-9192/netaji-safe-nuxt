@@ -17,7 +17,9 @@
       </div>
     </div>
     <h1 v-if="products.heading" class="title">
-      {{ products.heading }}
+      {{ products.heading.h1 }}<span>{{ products.heading.span1 }}</span
+      >{{ products.heading.h2 }}<span>{{ products.heading.span2 }}</span
+      >{{ products.heading.h3 }}
     </h1>
     <ProductCard
       v-if="!$device.isMobile"

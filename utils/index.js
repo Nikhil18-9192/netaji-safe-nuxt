@@ -73,7 +73,13 @@ const ss = [
 
 
 const heavyFireProofSafe = {
-    heading: 'We manufacturer Fire proof Safes in various storage capacities ranging from size  28”  to size  72” , All our safes come with special features.',
+    heading: {
+        h1: 'We manufacturer Fire proof Safes in various storage capacities ranging from size   ',
+        h2: 'to size',
+        h3: ', All our safes come with special features.',
+        span1: '28” ',
+        span2: '72” ',
+    },
     cards: [
         { title: 'Strong Seamless Body', desc: 'The outer layer of body is tough tested quality 5mm M.S. Plate with fully welded multi corner bend constructed without a single rivet on all side and armored with a Double duty barrier material providing massive resistance strength of 90 mm thick layer on each side of safe which defends the attack of sledge hammer, power drills, oxy-acetylene flame and arc cutting steel.', icon: '/pattern.svg' },
         { title: 'Super Tough door', desc: 'The outer layer of the door slab is tough tested quality single solid M.S. Plate of 12 mm to 32 mm thickness. It is further fortified by a composite 190 mm thick layer of double duty barrier material and layers of flame and arc resistant alloy and hardened steel plates, which provide dependable protection against fire and attacks of power drill, oxy-acetylene flame and arc cutting. the total thickness of protective layer is strong over vital parts and is in vertical position with Un-pickable locks with high precision, superior quality dual control 10-lever 2 locks with stainless steel body and brass levers. Additional provision is made for digital or combination lock. The doors also have central 3mm aluminum plate for additional security and we use S.S. handles for lifelong durability.', icon: '/dumbbell.svg' },
