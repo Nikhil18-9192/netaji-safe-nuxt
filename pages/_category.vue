@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     products() {
-      if (this.category == 'heavy safe n door') {
+      if (this.category == 'heavy safe & door') {
         return heavySafeDoor
       } else if (this.category == 'home range') {
         return homeRange
@@ -52,7 +52,7 @@ export default {
       }
     },
     banner() {
-      if (this.category == 'heavy safe n door') {
+      if (this.category == 'heavy safe & door') {
         return heavySafeBanner
       } else if (this.category == 'home range') {
         return homeRangeBanner
