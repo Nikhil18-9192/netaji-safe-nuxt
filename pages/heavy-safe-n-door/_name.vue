@@ -16,12 +16,14 @@
         </p>
       </div>
     </div>
-    <h1 class="title">
-      We manufacturer Fire proof Safes in various storage capacities ranging
-      from size <span>28”</span> to size <span>72”</span>, All our safes come
-      with special features.
+    <h1 v-if="products.heading" class="title">
+      {{ products.heading }}
     </h1>
-    <ProductCard v-if="!$device.isMobile" :products="products" />
+    <ProductCard
+      v-if="!$device.isMobile"
+      :products="products"
+      :style="{ marginTop: '40px' }"
+    />
     <ProductCardPhone v-else :products="products" />
     <ProductImageCarousel :images="products.images" />
     <Table
