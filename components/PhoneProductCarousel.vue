@@ -46,6 +46,9 @@ export default {
   @include for-tablet-landscape-up {
     display: none;
   }
+  @include for-tablet-only {
+    display: none;
+  }
   .card-container {
     &:last-child {
       display: none;

@@ -25,7 +25,7 @@ const slides = [
 ]
 
 const heavySafeDoor = [
-    { title: 'Heavy fire proof safe single / double door(Standard)', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/d1.png', slug: 'heavy-safe-&-door/heavy-fire-proof-safe-doors' },
+    { title: 'Heavy fire proof safe single / double door(Standard)', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/d1.png', slug: 'heavy-safe-&-door/heavy-fire-proof-safe' },
     { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/d2.png', slug: 'heavy-safe-&-door/strong-room-door-with-grill-gate' },
     { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: '/category/d3.png', slug: 'heavy-safe-&-door/jewellery-safe' },
     { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: '/category/d4.png', slug: 'heavy-safe-&-door/counter-safe' },
@@ -489,7 +489,7 @@ const ssRoomDoor = {
 }
 
 function getHeavySafeProduct(name) {
-    if (name == 'heavy fire proof safe doors') {
+    if (name == 'heavy fire proof safe') {
         return heavyFireProofSafe
     } else if (name == 'strong room door with grill gate') {
         return strongRoomDoor
