@@ -76,7 +76,7 @@
       data-aos-offset="200"
     >
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7643.170444184989!2d74.23308242437591!3d16.69762685398157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1006d4448c135%3A0xb27dcccb447b772f!2sUnion%20Bank%20Of%20India!5e0!3m2!1sen!2sin!4v1621317523811!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.53191670188!2d74.22831931486685!3d16.70029088849381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc101a39b57dbbd%3A0xa858616aa2eb11bc!2sNetaji%20Safe%20Company!5e0!3m2!1sen!2sin!4v1622617493930!5m2!1sen!2sin"
         width="100%"
         height="505"
         style="border: 0"

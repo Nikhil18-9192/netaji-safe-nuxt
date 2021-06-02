@@ -21,6 +21,15 @@
             <p>{{ item.size }}</p>
             <p class="note">{{ item.note }}</p>
           </div>
+          <div v-if="item.dimentions && item.dimentions.length" class="size">
+            <p>Available in Different sizes like : (H x W X D):</p>
+            <ul>
+              <li v-for="(item, i) in item.dimentions" :key="i">
+                <p>>> {{ item }}</p>
+              </li>
+            </ul>
+          </div>
+          <p class="desc2" v-if="item.desc2">{{ item.desc2 }}</p>
         </div>
       </div>
     </div>
@@ -101,6 +110,13 @@ export default {
           .note {
             margin-top: 12px;
           }
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+        }
+        .desc2 {
+          margin-top: 22px;
         }
       }
       &:hover {

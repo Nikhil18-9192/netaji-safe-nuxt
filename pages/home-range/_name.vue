@@ -19,7 +19,6 @@
 
     <ProductCard v-if="!$device.isMobile" :products="products" />
     <ProductCardPhone v-else :products="products" />
-
     <ProductImageCarousel :images="products.images" />
     <Table
       v-if="products.weights.length"
