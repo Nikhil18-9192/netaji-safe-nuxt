@@ -1,8 +1,8 @@
 <template>
   <div class="home-page">
     <Hero />
-    <ProductCarousel v-if="!$device.isMobile" />
-    <PhoneProductCarousel v-else />
+    <ProductCarousel />
+    <!-- <PhoneProductCarousel v-else /> -->
     <ButtonComponent />
   </div>
 </template>
