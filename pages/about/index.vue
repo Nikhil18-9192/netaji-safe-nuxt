@@ -52,8 +52,7 @@
           organisations and have huge number of satisfied clients, Maharashtra
           Institute of Technology (M.I.T.) pune, Sinhgad Technical Education
           Society (S.T.E.S.) pune, Reliance Textile Depot, State Bank of India.
-          etc to name a few. To know more about our clients and fields we serve
-          <a href="/">CLICK HERE</a>.
+          etc to name a few.
         </p>
       </div>
     </div>
