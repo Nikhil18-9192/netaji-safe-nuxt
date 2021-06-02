@@ -1,9 +1,10 @@
 const productNav = [
     { name: ' Heavy Safe & Door ', path: '/heavy_safe_&_door' },
+    { name: ' Counter Safe', path: '/counter_safe' },
     { name: ' Home Range ', path: '/home_range' },
     { name: ' Office Range ', path: '/office_range' },
     { name: ' S.S.Safe & Door', path: '/s._s._safe_&_door' },
-    { name: ' Counter Safe', path: '/counter_safe' },
+
 ]
 const navMenu = [
     { name: ' Home ', path: '/' },
@@ -73,9 +74,9 @@ const ss = [
 ]
 
 const counter = [
-    { title: 'Non Fire Proof Counter Safe', desc: '', src: '', slug: '/counter_safe/non-fire-proof-counter-safe' },
-    { title: 'Fire Proof Counter Safe', desc: '', src: '', slug: '/counter_safe/fire-proof-counter-safe' },
-    { title: 'Stainless Steel Counter Safe', desc: '', src: '', slug: '/counter_safe/stainless-steel-counter-safe' },
+    { title: 'Non Fire Proof Counter Safe', desc: '', src: '', slug: '' },
+    { title: 'Fire Proof Counter Safe', desc: '', src: '', slug: '' },
+    { title: 'Stainless Steel Counter Safe', desc: '', src: '', slug: '' },
 ]
 
 
