@@ -10,7 +10,7 @@
         <p>
           <span
             ><nuxt-link to="/">Home</nuxt-link>/
-            <nuxt-link to="/s._s._safe">S. S. Safe</nuxt-link> /
+            <nuxt-link to="/s._s._safe_&_door">S. S. Safe & Door</nuxt-link> /
           </span>
           {{ productName }}
         </p>

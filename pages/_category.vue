@@ -47,7 +47,7 @@ export default {
         return homeRange
       } else if (this.category == 'office range') {
         return officeRange
-      } else if (this.category == 's. s. safe') {
+      } else if (this.category == 's. s. safe & door') {
         return ss
       }
     },
@@ -58,7 +58,7 @@ export default {
         return homeRangeBanner
       } else if (this.category == 'office range') {
         return officeRangeBanner
-      } else if (this.category == 's. s. safe') {
+      } else if (this.category == 's. s. safe & door') {
         return ssBanner
       }
     },

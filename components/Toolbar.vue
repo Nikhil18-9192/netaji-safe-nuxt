@@ -22,8 +22,8 @@
             <img
               :style="[
                 scrollPosition > 0
-                  ? { width: '151px', height: '41px' }
-                  : { width: '235px', height: '64px' },
+                  ? { width: '185px', height: '55px' }
+                  : { width: '255px', height: '75px' },
               ]"
               src="/logo.png"
               alt="logo"
@@ -122,9 +122,8 @@ export default {
       display: flex;
       transition: 0.3s ease all;
       .logo {
-        width: 235px;
+        min-width: 235px;
         height: 100%;
-
         transition: 0.3s ease all;
       }
       img {
