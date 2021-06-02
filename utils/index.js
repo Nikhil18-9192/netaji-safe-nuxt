@@ -2,7 +2,8 @@ const productNav = [
     { name: ' Heavy Safe & Door ', path: '/heavy_safe_&_door' },
     { name: ' Home Range ', path: '/home_range' },
     { name: ' Office Range ', path: '/office_range' },
-    { name: ' S.S.Safe & Door  ', path: '/s._s._safe_&_door' },
+    { name: ' S.S.Safe & Door', path: '/s._s._safe_&_door' },
+    { name: ' Counter Safe', path: '/counter_safe' },
 ]
 const navMenu = [
     { name: ' Home ', path: '/' },
@@ -69,6 +70,12 @@ const officeRange = [
 const ss = [
     { title: 'Fire Proof Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/ss1.jpg', slug: '/s-s-safe/s.-s.-safe-door' },
     { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/ss2.jpg', slug: '/s-s-safe/strong-room-door-with-grill-gate' },
+]
+
+const counter = [
+    { title: 'Non Fire Proof Counter Safe', desc: '', src: '', slug: '/counter_safe/non-fire-proof-counter-safe' },
+    { title: 'Fire Proof Counter Safe', desc: '', src: '', slug: '/counter_safe/fire-proof-counter-safe' },
+    { title: 'Stainless Steel Counter Safe', desc: '', src: '', slug: '/counter_safe/stainless-steel-counter-safe' },
 ]
 
 
@@ -749,11 +756,11 @@ const services = [
     { title: 'Safe Design', desc: 'We design and manufacture special safe and doors as per client requirements.', icon: '/pencil.svg' },
     { title: 'Safe Guidance', desc: 'Choosing the right safe is very important. Our expert teams provides you with security information and helps you choose the right type of safe for you.', icon: '/manual.svg' }
 ]
-const servicesImage = ['/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg', '/services1.jpg', '/services2.jpg', '/services3.jpg', '/services4.jpg', '/services5.jpg',]
+const servicesImage = ['/services/1.jpg', '/services/2.jpg', '/services/3.jpg', '/services/4.jpg', '/services/5.jpg', '/services/6.jpg', '/services/7.jpg', '/services/8.jpg', '/services/9.jpg', '/services/10.jpg',]
 
 const heavySafeBanner = '/category-bg.jpg'
 const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 
-export { slides, productNav, navMenu, ss, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }
+export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }

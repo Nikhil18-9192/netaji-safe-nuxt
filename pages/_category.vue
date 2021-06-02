@@ -22,6 +22,7 @@ import {
   homeRange,
   officeRange,
   ss,
+  counter,
   heavySafeBanner,
   homeRangeBanner,
   ssBanner,
@@ -49,6 +50,8 @@ export default {
         return officeRange
       } else if (this.category == 's. s. safe & door') {
         return ss
+      } else if (this.category == 'counter safe') {
+        return counter
       }
     },
     banner() {
@@ -59,6 +62,8 @@ export default {
       } else if (this.category == 'office range') {
         return officeRangeBanner
       } else if (this.category == 's. s. safe & door') {
+        return ssBanner
+      } else if (this.category == 'counter safe') {
         return ssBanner
       }
     },

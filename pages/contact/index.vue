@@ -33,11 +33,11 @@
             </p>
             <p>
               <span>Email </span>
-              <a href="mailto: info@netajisafe.com"> info@netajisafe.com</a>
+              <a href="mailto: netajisafe@yahoo.com"> netajisafe@yahoo.com</a>
             </p>
-            <p class="bottom-mail">
+            <!-- <p class="bottom-mail">
               <a href="mailto:sales@netajisafe.com">sales@netajisafe.com</a>
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="bottom">
