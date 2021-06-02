@@ -47,6 +47,7 @@ const homeRange = [
     { title: 'Domestic Cabinet – Khana Bhandar', desc: 'Domestic Cabinet (Khana Bhandar) with vertical partition, rod for hanging on both sides, 1 half safe, 1 Shelf making two compartments and 8-10 hidden compartments (chor khane) below with magnetic lock for 4 hidden compartments. MODEL : NSCH 203 SIZE : H-78″ X W-38″ x D-24″ Customisations as per individual requirement provided.', src: '/category/h5.jpg' },
     { title: 'Domestic Cabinet – Tijori Dressing', desc: 'Domestic Storage Cabinet (Tijori Dressing), with 1 shelves with with two hanging rods on both sides, 1 drawer, 1 full safe having 1 drawer and hidden compartment inside. MODEL : NSCH 206 SIZE : H-78″ X W-38″ x D-21″ / 24″ We also provide different sizes as ordered.', src: '/category/h6.jpg' },
     { title: 'Domestic Cabinet – Centre Drawer Dressing', desc: 'Domestic Cabinet with 1 shelf, vertical partition, 2 hanging rods, 1 drawer & 1 more shelf below making two compartments.MODEL : NSCH 204 SIZE : H-78″ X W-38″ x D-21″ / 24″ Others Sizes available on request.', src: '/category/h7.jpg' },
+    { title: 'Goa Type', desc: '', src: '' },
 
 ]
 
@@ -66,7 +67,7 @@ const officeRange = [
 ]
 
 const ss = [
-    { title: 'Single/Double Door S.S.Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/ss1.jpg', slug: '/s-s-safe/s.-s.-safe-door' },
+    { title: 'Fire Proof Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/ss1.jpg', slug: '/s-s-safe/s.-s.-safe-door' },
     { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/ss2.jpg', slug: '/s-s-safe/strong-room-door-with-grill-gate' },
 ]
 
@@ -342,9 +343,9 @@ const coffer = {
 const libraryCabinate = {
     cards: [
         { title: 'Special 6 door cabinet', desc: 'Netaji Special 6 door cabinet with glass doors with 2 shelves making three compartment above & below. Glass is fitted in aluminum section with rubber.', size: ' H-78″ x W-47″ x D-15″', note: 'Also available in customised sizes.', src: '/library-cabinate/1.jpg' },
-        { title: 'Book Case', desc: 'Netaji Book Case for storage of articles and books, for easy identification, 4 compartments with glass panels, each with disappearing glass shutter fitted with 2 handles in each door and 4 locks with the common S.S. Keys in duplicate.', size: 'H-66″ x W-33″ x D-12″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/2.jpg' },
-        { title: 'Double Faced Regular Glass door cabinet', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/3.jpg' },
         { title: 'Two door cabinate', desc: 'Netaji Regular Glass Door Cabinet with 4 shelves, 2 doors, fitted with 4 glass panels and lock with keys in duplicate for visibly keeping items of Offices, Hospitals, Hotels, Libraries, Houses etc.', size: ' H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/4.jpg' },
+        { title: 'Double Faced Regular Glass door cabinet', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/3.jpg' },
+        { title: 'Book Case', desc: 'Netaji Book Case for storage of articles and books, for easy identification, 4 compartments with glass panels, each with disappearing glass shutter fitted with 2 handles in each door and 4 locks with the common S.S. Keys in duplicate.', size: 'H-66″ x W-33″ x D-12″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/2.jpg' },
     ],
     images: [],
     weights: [

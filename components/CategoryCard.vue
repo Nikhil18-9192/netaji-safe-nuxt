@@ -29,7 +29,7 @@
       ></nuxt-link>
       <h4 v-if="product.title" class="title">{{ product.title }}</h4>
       <div class="image">
-        <img :src="product.src" alt="" />
+        <img v-if="product.src" :src="product.src" alt="" />
       </div>
       <div class="desc">
         <p>{{ product.desc }}</p>
