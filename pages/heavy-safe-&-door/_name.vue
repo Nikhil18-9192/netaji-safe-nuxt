@@ -60,8 +60,8 @@ export default {
     return { products }
   },
   mounted() {
-    this.productName = this.$route.params.name.replace(/-/g, ' ')
     this.getSrc()
+    this.productName = this.$route.params.name.replace(/-/g, ' ')
   },
   methods: {
     importAll(r) {
