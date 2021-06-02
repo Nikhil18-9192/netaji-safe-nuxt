@@ -100,7 +100,7 @@ const heavyFireProofSafe = {
         { title: 'Attractive finish and Rust Protection', desc: 'Attractive two tone smooth finish which is scratch free and long lasting because of multi-coat rust proof powder coating.', icon: '/attractive.svg' },
         { title: 'Internal Design', desc: 'The safes are provided with 2-3 adjustable shelves made of 1.6 mm thick steel and 2 bottom mounted drawer units with one basement.', icon: '/design.svg' },
     ],
-    images: ['/heavy-fire-proof-door/1.jpg', '/heavy-fire-proof-door/2.jpg', '/heavy-fire-proof-door/3.jpg', '/heavy-fire-proof-door/4.jpg', '/heavy-fire-proof-door/5.jpg', '/heavy-fire-proof-door/6.jpg', '/heavy-fire-proof-door/7.jpg',],
+    images: [],
     tableHeader: ['No.', 'Outer Size (H. W. D.)', 'Inner Size (H. W. D.)', 'Weight (Approx)'],
     weights: [
         {

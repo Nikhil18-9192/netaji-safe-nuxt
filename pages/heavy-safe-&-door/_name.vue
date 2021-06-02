@@ -27,7 +27,7 @@
       :style="{ marginTop: '40px' }"
     />
     <ProductCardPhone v-else :products="products" />
-    <ProductImageCarousel :images="products.images" />
+    <ProductImageCarousel :images="images" />
     <Table
       v-if="products.weights.length"
       :weights="products.weights"
@@ -52,6 +52,7 @@ export default {
   data() {
     return {
       productName: false,
+      images: [],
     }
   },
   asyncData({ route }) {
@@ -60,6 +61,19 @@ export default {
   },
   mounted() {
     this.productName = this.$route.params.name.replace(/-/g, ' ')
+    this.getSrc()
+  },
+  methods: {
+    importAll(r) {
+      return r.keys().map(r)
+    },
+    getSrc() {
+      const src = require.context(
+        '~/assets/carousels/heavy fire proof safe',
+        true
+      )
+      this.images = this.importAll(src)
+    },
   },
 }
 </script>
