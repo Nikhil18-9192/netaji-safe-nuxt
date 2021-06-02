@@ -43,6 +43,9 @@ export default {
   width: 100%;
   height: 100%;
   padding: 45px 20px 75px 20px;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
   .card-container {
     &:last-child {
       display: none;

@@ -122,6 +122,7 @@ export default {
   padding-left: 62px;
   @include for-phone-only {
     padding-left: 20px;
+    display: none;
   }
   @include for-tablet-only {
     padding-left: 60px;

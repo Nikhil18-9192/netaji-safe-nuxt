@@ -2,7 +2,7 @@
   <div class="home-page">
     <Hero />
     <ProductCarousel />
-    <!-- <PhoneProductCarousel v-else /> -->
+    <PhoneProductCarousel />
     <ButtonComponent />
   </div>
 </template>
