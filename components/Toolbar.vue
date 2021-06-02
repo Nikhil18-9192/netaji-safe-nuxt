@@ -33,7 +33,7 @@
           class="nav-products"
           :style="[
             scrollPosition > 0
-              ? { 'padding-top': '20px' }
+              ? { 'padding-top': '24px' }
               : { 'padding-top': '45px' },
           ]"
         >
@@ -55,7 +55,7 @@
         :style="[
           scrollPosition > 0
             ? { height: '100%', 'padding-top': '0' }
-            : { height: '100%', 'padding-top': '40px' },
+            : { height: '100%', 'padding-top': '25px' },
         ]"
       >
         <div class="nav-menu">
