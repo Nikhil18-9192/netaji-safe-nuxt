@@ -53,6 +53,14 @@ export default {
     return {
       productName: false,
       images: [],
+      categories: [
+        'heavy fire proof safe',
+        'strong room door with grill gate',
+        'jewellery safe',
+        'counter safe',
+        'safe deposite vaults',
+        'night guard',
+      ],
     }
   },
   asyncData({ route }) {
@@ -60,18 +68,54 @@ export default {
     return { products }
   },
   mounted() {
-    this.getSrc()
     this.productName = this.$route.params.name.replace(/-/g, ' ')
+    this.getSrc()
   },
   methods: {
     importAll(r) {
       return r.keys().map(r)
     },
+    getSrcForCategory(product) {
+      switch (product) {
+        case this.categories[0]:
+          return require.context(
+            '~/assets/carousels/heavy fire proof safe',
+            true
+          )
+          break
+
+        case this.categories[1]:
+          return require.context(
+            '~/assets/carousels/strong room door with grill gate',
+            true
+          )
+          break
+
+        case this.categories[2]:
+          return require.context('~/assets/carousels/jewellery safe', true)
+          break
+
+        case this.categories[3]:
+          return require.context('~/assets/carousels/counter safe', true)
+          break
+
+        case this.categories[4]:
+          return require.context(
+            '~/assets/carousels/safe deposite vaults',
+            true
+          )
+          break
+
+        case this.categories[5]:
+          return require.context('~/assets/carousels/night guard', true)
+          break
+
+        default:
+          break
+      }
+    },
     getSrc() {
-      const src = require.context(
-        '~/assets/carousels/heavy fire proof safe',
-        true
-      )
+      const src = this.getSrcForCategory(this.productName)
       this.images = this.importAll(src)
     },
   },

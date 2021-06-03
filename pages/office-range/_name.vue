@@ -27,10 +27,7 @@
       />
     </div>
 
-    <ProductImageCarousel
-      v-if="products.images.length"
-      :images="products.images"
-    />
+    <ProductImageCarousel :images="images" />
     <Table
       v-if="products.weights.length"
       :weights="products.weights"
@@ -57,6 +54,8 @@ export default {
       productName: false,
       category: 'Office Range',
       url: '',
+      images: [],
+      categories: ['library cabinets', 'pigeon hole cabinet', 'daan petti'],
     }
   },
   asyncData({ route }) {
@@ -67,6 +66,35 @@ export default {
   mounted() {
     this.url = window.location.href
     this.productName = this.$route.params.name.replace(/-/g, ' ')
+    this.getSrc()
+  },
+  methods: {
+    importAll(r) {
+      return r.keys().map(r)
+    },
+    getSrcForCategory(product) {
+      switch (product) {
+        case this.categories[0]:
+          return require.context('~/assets/carousels/library cabinets', true)
+          break
+
+        case this.categories[1]:
+          return require.context('~/assets/carousels/pigeon hole cabinet', true)
+          break
+
+        case this.categories[2]:
+          return require.context('~/assets/carousels/daan petti', true)
+          break
+
+        default:
+          break
+      }
+    },
+
+    getSrc() {
+      const src = this.getSrcForCategory(this.productName)
+      this.images = this.importAll(src)
+    },
   },
 }
 </script>

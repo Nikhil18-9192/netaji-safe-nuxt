@@ -25,12 +25,12 @@ const slides = [
 ]
 
 const heavySafeDoor = [
-    { title: 'Heavy fire proof safe single / double door(Standard)', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/d1.png', slug: 'heavy-safe-&-door/heavy-fire-proof-safe' },
-    { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/d2.png', slug: 'heavy-safe-&-door/strong-room-door-with-grill-gate' },
-    { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: '/category/d3.png', slug: 'heavy-safe-&-door/jewellery-safe' },
-    { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: '/category/d4.png', slug: 'heavy-safe-&-door/counter-safe' },
-    { title: 'Safe Deposite Vaults', desc: 'Netaji Safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables.', src: '/category/d5.png', slug: 'heavy-safe-&-door/safe-deposite-vaults' },
-    { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: '/category/d6.png', slug: 'heavy-safe-&-door/night-guard' },
+    { title: 'Heavy fire proof safe single / double door(Standard)', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: require('~/assets/products/heavy safe door/d1.png'), slug: 'heavy-safe-&-door/heavy-fire-proof-safe' },
+    { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: require('~/assets/products/heavy safe door/d2.png'), slug: 'heavy-safe-&-door/strong-room-door-with-grill-gate' },
+    { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: require('~/assets/products/heavy safe door/d3.png'), slug: 'heavy-safe-&-door/jewellery-safe' },
+    { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: require('~/assets/products/heavy safe door/d4.png'), slug: 'heavy-safe-&-door/counter-safe' },
+    { title: 'Safe Deposite Vaults', desc: 'Netaji Safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables.', src: require('~/assets/products/heavy safe door/d5.png'), slug: 'heavy-safe-&-door/safe-deposite-vaults' },
+    { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: require('~/assets/products/heavy safe door/d6.png'), slug: 'heavy-safe-&-door/night-guard' },
 ]
 
 const libraryCabinateCards = [
@@ -42,35 +42,35 @@ const libraryCabinateCards = [
 ]
 
 const homeRange = [
-    { title: 'Coffer', desc: 'Netaji Steel Coffer is one of our most selling products of recent times. Coffers come with safe life construction and sturdy door with inside pivots, it combines the strength of a safe, coffer can be easily fixed on a counter, table, wardrobe etc. Available in any size to suit your individual requirements. These coffers are available in various sizes and shapes.', src: '/category/h1.jpg', slug: 'home-range/coffer' },
-    { title: 'Home Range', desc: 'Domestic Cabinet with half safe & half vertical partition, 2 drawers, 1 hanging rod & 2 shelves making three compartments. MODEL : NSCH 201 SIZE : H-78″ X W-36″ x D-21 Customisations as per individual requirement provided.', src: '/category/h2.jpg' },
-    { title: 'Domestic Cabinet', desc: 'Domestic Cabinet with half safe, 2 drawers, 1 above hanging rod, 2 shelves making three compartments and one hidden shelf at bottom.MODEL : NSCH 205 SIZE : H-78″ X W-38″ x D-21″ MODEL : NSCH 205 A SIZE : H-78″ X W-34″ x D-21″ Other Sizes as per client specification provided.', src: '/category/h3.jpg' },
-    { title: 'Twin Cabinet ( Sangam )', desc: 'Sangam Twin Cabinet for individual use of 2 members of same house or hostel. The cabinet is with two separate locking arrangement each part having partition, 1 drawer, 1 hanging rod, 1 safe & 2 shelves is each part. Mirror fitted in each door. MODEL : NSCH 207 SIZE : H-78″ X W-47″ x D-21″ Sizes can vary according to client needs.', src: '/category/h4.jpg' },
-    { title: 'Domestic Cabinet – Khana Bhandar', desc: 'Domestic Cabinet (Khana Bhandar) with vertical partition, rod for hanging on both sides, 1 half safe, 1 Shelf making two compartments and 8-10 hidden compartments (chor khane) below with magnetic lock for 4 hidden compartments. MODEL : NSCH 203 SIZE : H-78″ X W-38″ x D-24″ Customisations as per individual requirement provided.', src: '/category/h5.jpg' },
-    { title: 'Domestic Cabinet – Tijori Dressing', desc: 'Domestic Storage Cabinet (Tijori Dressing), with 1 shelves with with two hanging rods on both sides, 1 drawer, 1 full safe having 1 drawer and hidden compartment inside. MODEL : NSCH 206 SIZE : H-78″ X W-38″ x D-21″ / 24″ We also provide different sizes as ordered.', src: '/category/h6.jpg' },
-    { title: 'Domestic Cabinet – Centre Drawer Dressing', desc: 'Domestic Cabinet with 1 shelf, vertical partition, 2 hanging rods, 1 drawer & 1 more shelf below making two compartments.MODEL : NSCH 204 SIZE : H-78″ X W-38″ x D-21″ / 24″ Others Sizes available on request.', src: '/category/h7.jpg' },
+    { title: 'Coffer', desc: 'Netaji Steel Coffer is one of our most selling products of recent times. Coffers come with safe life construction and sturdy door with inside pivots, it combines the strength of a safe, coffer can be easily fixed on a counter, table, wardrobe etc. Available in any size to suit your individual requirements. These coffers are available in various sizes and shapes.', src: require('~/assets/products/home range/h1.jpg'), slug: 'home-range/coffer' },
+    { title: 'Home Range', desc: 'Domestic Cabinet with half safe & half vertical partition, 2 drawers, 1 hanging rod & 2 shelves making three compartments. MODEL : NSCH 201 SIZE : H-78″ X W-36″ x D-21 Customisations as per individual requirement provided.', src: require('~/assets/products/home range/h2.jpg') },
+    { title: 'Domestic Cabinet', desc: 'Domestic Cabinet with half safe, 2 drawers, 1 above hanging rod, 2 shelves making three compartments and one hidden shelf at bottom.MODEL : NSCH 205 SIZE : H-78″ X W-38″ x D-21″ MODEL : NSCH 205 A SIZE : H-78″ X W-34″ x D-21″ Other Sizes as per client specification provided.', src: require('~/assets/products/home range/h3.jpg') },
+    { title: 'Twin Cabinet ( Sangam )', desc: 'Sangam Twin Cabinet for individual use of 2 members of same house or hostel. The cabinet is with two separate locking arrangement each part having partition, 1 drawer, 1 hanging rod, 1 safe & 2 shelves is each part. Mirror fitted in each door. MODEL : NSCH 207 SIZE : H-78″ X W-47″ x D-21″ Sizes can vary according to client needs.', src: require('~/assets/products/home range/h4.jpg') },
+    { title: 'Domestic Cabinet – Khana Bhandar', desc: 'Domestic Cabinet (Khana Bhandar) with vertical partition, rod for hanging on both sides, 1 half safe, 1 Shelf making two compartments and 8-10 hidden compartments (chor khane) below with magnetic lock for 4 hidden compartments. MODEL : NSCH 203 SIZE : H-78″ X W-38″ x D-24″ Customisations as per individual requirement provided.', src: require('~/assets/products/home range/h5.jpg') },
+    { title: 'Domestic Cabinet – Tijori Dressing', desc: 'Domestic Storage Cabinet (Tijori Dressing), with 1 shelves with with two hanging rods on both sides, 1 drawer, 1 full safe having 1 drawer and hidden compartment inside. MODEL : NSCH 206 SIZE : H-78″ X W-38″ x D-21″ / 24″ We also provide different sizes as ordered.', src: require('~/assets/products/home range/h6.jpg') },
+    { title: 'Domestic Cabinet – Centre Drawer Dressing', desc: 'Domestic Cabinet with 1 shelf, vertical partition, 2 hanging rods, 1 drawer & 1 more shelf below making two compartments.MODEL : NSCH 204 SIZE : H-78″ X W-38″ x D-21″ / 24″ Others Sizes available on request.', src: require('~/assets/products/home range/h7.jpg') },
     { title: 'Goa Type', desc: '', src: '' },
 
 ]
 
 const officeRange = [
-    { title: 'Storewell Cabinet', desc: 'Multi Purpose Storage Cabinet with four shelves making five compartments. MODEL : NSCO 201 SIZE : H-78″ x W-36″ x D-19″ Can also be made in fire proof material.', src: '/category/o1.jpg' },
-    { title: 'Netaji Junior-Locker Storewell Cabinet', desc: 'Netaji Mini Domestic Cabinet with 1 shelf and 1 full safe. MODEL : NSCO 208 SIZE : H-48″ x W-30″ x D-18″ The dimensions can be customised as required, while ordering.', src: '/category/o2.jpg' },
-    { title: 'Netaji Central Tijori Storewell Cabinet', desc: 'NETAJI Storage Cabinet with two shelves and one full safe in center, along with one hidden compartment.MODEL : NSCTS 202 SIZE : H-78″ x W-34″ x D-19″ | H-78″ x W-36″ x D-19″ Also available in other sizes as per requirement.', src: '/category/o3.jpg' },
-    { title: 'Library Cabinets', desc: 'Netaji offers a wide range of Library Cabinets. These cabients come in different sizes and number of sub cabinets. We offer Special 6 door cabinet, Book Case, Double Faced Glass door cabinet, Glass Door Cabinet and more.', src: '/category/o4.jpg', slug: '/office-range/library-cabinets' },
-    { title: 'Pigeon Hole Cabinet', desc: 'Netaji offers a wide range of Pigeon Hole Cabinets for various use in offices. These cabients come in different sizes and number of sub cabinets vary from 4, 6, 8, 12, 18 & 21. The models with 4 and 6 doors further have 1 shelf making 2 compartments each, thus giving maximum usage space.', src: '/category/o5.jpg', slug: '/office-range/pigeon-hole-cabinet' },
-    { title: 'Netaji Single Table', desc: 'With Decorative Particle board fitted with three box drawers on right, with automatic locking device. MODEL : NSCO 302 SIZE : H-30″ x W-48″ x D-24″', src: '/category/o6.jpg' },
+    { title: 'Storewell Cabinet', desc: 'Multi Purpose Storage Cabinet with four shelves making five compartments. MODEL : NSCO 201 SIZE : H-78″ x W-36″ x D-19″ Can also be made in fire proof material.', src: require('~/assets/products/office range/o1.jpg') },
+    { title: 'Netaji Junior-Locker Storewell Cabinet', desc: 'Netaji Mini Domestic Cabinet with 1 shelf and 1 full safe. MODEL : NSCO 208 SIZE : H-48″ x W-30″ x D-18″ The dimensions can be customised as required, while ordering.', src: require('~/assets/products/office range/o2.jpg') },
+    { title: 'Netaji Central Tijori Storewell Cabinet', desc: 'NETAJI Storage Cabinet with two shelves and one full safe in center, along with one hidden compartment.MODEL : NSCTS 202 SIZE : H-78″ x W-34″ x D-19″ | H-78″ x W-36″ x D-19″ Also available in other sizes as per requirement.', src: require('~/assets/products/office range/o3.jpg') },
+    { title: 'Library Cabinets', desc: 'Netaji offers a wide range of Library Cabinets. These cabients come in different sizes and number of sub cabinets. We offer Special 6 door cabinet, Book Case, Double Faced Glass door cabinet, Glass Door Cabinet and more.', src: require('~/assets/products/office range/o4.jpg'), slug: '/office-range/library-cabinets' },
+    { title: 'Pigeon Hole Cabinet', desc: 'Netaji offers a wide range of Pigeon Hole Cabinets for various use in offices. These cabients come in different sizes and number of sub cabinets vary from 4, 6, 8, 12, 18 & 21. The models with 4 and 6 doors further have 1 shelf making 2 compartments each, thus giving maximum usage space.', src: require('~/assets/products/office range/o5.jpg'), slug: '/office-range/pigeon-hole-cabinet' },
+    { title: 'Netaji Single Table', desc: 'With Decorative Particle board fitted with three box drawers on right, with automatic locking device. MODEL : NSCO 302 SIZE : H-30″ x W-48″ x D-24″', src: require('~/assets/products/office range/o6.jpg') },
     {
         title: 'Netaji Double Table', desc: 'With M.S.Steel of 1.6mm thickness fitted with three box drawers on right, with automatic locking and one locker shelf on left. MODEL : NSCO 301 SIZE : H-30″ x W-54″ x D-30″',
-        desc2: 'Also available executive office tables and other types of tables with standard dimensions of H-30″ x W-60″ x D-36 “. Customised sizes also made as per order.', src: '/category/o7.jpg'
+        desc2: 'Also available executive office tables and other types of tables with standard dimensions of H-30″ x W-60″ x D-36 “. Customised sizes also made as per order.', src: require('~/assets/products/office range/o7.jpg')
     },
-    { title: 'Netaji Cash Box', desc: 'Netaji Steel Cash Box available in table fit and without table fit arrangement. Sizes Available : 10 ” , 12″ , 14″ , 16″ (in width).as well as customised Size', src: '/category/o8.jpg' },
-    { title: 'Daan Petti ( Donation Box )', desc: 'Donation Box is a specially crafted product of Netaji. This safe is used in temples where people donate small amount of cash. This cash (mostly coins or small notes) is dropped in the collection box. The construction of the box is such that after inserting cash, it goes to the safe and can only be removed by opening the safe.', src: '/category/o9.jpg', slug: '/office-range/daan-petti' },
+    { title: 'Netaji Cash Box', desc: 'Netaji Steel Cash Box available in table fit and without table fit arrangement. Sizes Available : 10 ” , 12″ , 14″ , 16″ (in width).as well as customised Size', src: require('~/assets/products/office range/o8.jpg') },
+    { title: 'Daan Petti ( Donation Box )', desc: 'Donation Box is a specially crafted product of Netaji. This safe is used in temples where people donate small amount of cash. This cash (mostly coins or small notes) is dropped in the collection box. The construction of the box is such that after inserting cash, it goes to the safe and can only be removed by opening the safe.', src: require('~/assets/products/office range/o9.jpg'), slug: '/office-range/daan-petti' },
 ]
 
 const ss = [
-    { title: 'Fire Proof Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: '/category/ss1.jpg', slug: '/s-s-safe/s.-s.-safe-door' },
-    { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: '/category/ss2.jpg', slug: '/s-s-safe/strong-room-door-with-grill-gate' },
+    { title: 'Fire Proof Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: require('~/assets/products/ss/ss1.jpg'), slug: '/s-s-safe/s.-s.-safe-door' },
+    { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: require('~/assets/products/ss/ss2.jpg'), slug: '/s-s-safe/strong-room-door-with-grill-gate' },
 ]
 
 const counter = [
@@ -166,7 +166,7 @@ const strongRoomDoor = {
         { title: 'Automatic Self Locking Device ', desc: 'The Strong Room Door is further protected by an automatic self-locking device which comes into operation and dead locks the doors, if the lock is dislodged by explosive, sledge hammer or other attacks.', icon: '/lock2.svg' },
         { title: 'Ventilating Grill Gate ', desc: 'The grill gate is constructed with heavy round 19mm m.s. solid polish bars at staggered pitch and secured with high precision 8 levers unpickable lock operating on both sides provided with stainless steel keys in duplicate.', icon: '/grill-gate.svg' },
     ],
-    images: ['/strong-room-door/1.jpg', '/strong-room-door/2.jpg', '/strong-room-door/3.jpg', '/strong-room-door/4.jpg', '/strong-room-door/5.jpg', '/strong-room-door/6.jpg', '/strong-room-door/7.jpg',],
+    images: [],
     tableHeader: ['No.', 'Outer Size ( Frame) H. W.', 'Inner Size (Door) H. W.', 'Weight (Approx)'],
     weights: [
         {
@@ -198,7 +198,7 @@ const jewellerySafe = {
         { title: '', desc: 'The main specialist of this type of safe is they of Converted to a show case form This can be used for both display of Jewellery as will as protection. The three locking divice make it unpick able & convenient to use.', icon: '/pattern.svg' },
         { title: '', desc: 'The superior quality ten lever lock with brass levers, stainless steel keys with individual nomenclature, high quality made in USA lock & Auto locking feature make this a highly preferred safe for many Jewellers.', icon: '/hinge.svg' },
     ],
-    images: ['/jewellery-safe/1.jpg', '/jewellery-safe/2.jpg', '/jewellery-safe/3.jpg', '/jewellery-safe/4.jpg', '/jewellery-safe/5.jpg', '/jewellery-safe/6.jpg', '/jewellery-safe/7.jpg', '/jewellery-safe/8.jpg', '/jewellery-safe/9.jpg', '/jewellery-safe/10.jpg', '/jewellery-safe/11.jpg', '/jewellery-safe/12.jpg', '/jewellery-safe/13.jpg', '/jewellery-safe/15.jpg', '/jewellery-safe/16.jpg', '/jewellery-safe/17.jpg', '/jewellery-safe/18.jpg', '/jewellery-safe/19.jpg',],
+    images: [],
     tableHeader: ['No.', 'Outer Size (H. W. D.)', 'Inner Size (H. W. D.)', 'Weight (Approx)'],
     weights: [
     ],
@@ -210,7 +210,7 @@ const counterSafe = {
         { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
 
     ],
-    images: ['/counter-safe/1.jpg', '/counter-safe/2.jpg', '/counter-safe/3.jpg', '/counter-safe/4.jpg', '/counter-safe/5.jpg', '/counter-safe/6.jpg', '/counter-safe/7.jpg',],
+    images: [],
     weights: [
     ],
     note: ''
@@ -223,7 +223,7 @@ const depositeVaults = {
         { title: '', desc: 'Netaji offers a wide range of safe deposit lockers as per the configuration mentioned in the table below. In addition to that we can also provide Safe deposit lockers as per clients individual requirements, choice and specification for the best and economical use of available space. We can provide consultancy service on techno-commercial aspects to you from concept stage to commissioning stage with out incurring any extra cost.', icon: '/security.svg' },
 
     ],
-    images: ['/deposite-vaults/1.jpg', '/deposite-vaults/2.jpg', '/deposite-vaults/3.jpg', '/deposite-vaults/4.jpg', '/deposite-vaults/5.jpg', '/deposite-vaults/6.jpg', '/deposite-vaults/7.jpg', '/deposite-vaults/8.jpg',],
+    images: [],
     tableHeader: ['No.', 'Lockers', 'Size H. W. D.', 'Weight (Approx)'],
     weights: [
         {
@@ -279,7 +279,7 @@ const nightGuard = {
         { title: 'Frame Work', desc: 'The formed inner lining provides the backing to the four multiple bend front edged body frame.', icon: '/frame-work.svg' },
         { title: 'Locking Device', desc: 'A smooth operating double eccentric levers activated the bolt throwing mechanism. A customised design unpickable 10 lever dual control lock is used to control it. Separate stainless steel keys with individual nomenclature are provided in duplicate for these locks making it possible for 2 persons to remain in joint charge of the safe. The dual control lock also provides protection in the event of the loss of any one key by employing the other as a check on the first one if the safe is in charge of a single individual.', icon: '/lock1.svg' },
     ],
-    images: ['/night-gaurd/1.jpg', '/night-gaurd/2.jpg', '/night-gaurd/3.jpg', '/night-gaurd/4.jpg',],
+    images: [],
     tableHeader: ['No.', 'Models', 'PPS 36', 'PPS 42'],
     weights: [
         {
@@ -342,7 +342,7 @@ const coffer = {
         { title: 'Coffer with Digital & Key Lock', desc: 'The Most prominent features of this products are : ~ Hot Moving Product in present times. Compact in size but still offering high security. Coffer with Drawer>> Used in Offices, Homes, Institutions and almost every place which involves cash and other valuable items. Fitted on a table or any convenient location even a wardrobe. Available in both Horizontal as well as Vertical shape.Coffer with Digital Lock. ', desc2: ' Any Customised size as per requirement.Coffer with Digital / Combination Lock. Secure Locking System available in both (LG Locks) as well as Key Locking System. Coffers can be fitted any where and be shaped as per the interiors of the location it is to be placed in. Coffers are available in many vibrant dual tone colors and can also be colored as per requirements.', dimentions: ['16″ x 20″ x 16″', '24″ x 18″ x 18″', '30″ x 24″ x 18″', '36″ x 30″ x 21″'], icon: '/coffer-digital.svg' },
 
     ],
-    images: ['/coofer/1.jpg', '/coofer/2.jpg', '/coofer/3.jpg', '/coofer/4.jpg', '/coofer/5.jpg', '/coofer/6.jpg', '/coofer/7.jpg', '/coofer/8.jpg', '/coofer/9.jpg', '/coofer/10.jpg', '/coofer/11.jpg', '/coofer/12.jpg',],
+    images: [],
     weights: [
     ],
     note: ''
@@ -350,10 +350,10 @@ const coffer = {
 
 const libraryCabinate = {
     cards: [
-        { title: 'Special 6 door cabinet', desc: 'Netaji Special 6 door cabinet with glass doors with 2 shelves making three compartment above & below. Glass is fitted in aluminum section with rubber.', size: ' H-78″ x W-47″ x D-15″', note: 'Also available in customised sizes.', src: '/library-cabinate/1.jpg' },
-        { title: 'Two door cabinate', desc: 'Netaji Regular Glass Door Cabinet with 4 shelves, 2 doors, fitted with 4 glass panels and lock with keys in duplicate for visibly keeping items of Offices, Hospitals, Hotels, Libraries, Houses etc.', size: ' H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/4.jpg' },
-        { title: 'Double Faced Regular Glass door cabinet', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/3.jpg' },
-        { title: 'Book Case', desc: 'Netaji Book Case for storage of articles and books, for easy identification, 4 compartments with glass panels, each with disappearing glass shutter fitted with 2 handles in each door and 4 locks with the common S.S. Keys in duplicate.', size: 'H-66″ x W-33″ x D-12″', note: 'also available in two compartments with top and in different sizes.', src: '/library-cabinate/2.jpg' },
+        { title: 'Special 6 door cabinet', desc: 'Netaji Special 6 door cabinet with glass doors with 2 shelves making three compartment above & below. Glass is fitted in aluminum section with rubber.', size: ' H-78″ x W-47″ x D-15″', note: 'Also available in customised sizes.', src: require('~/assets/products/library cabinets/1.jpg') },
+        { title: 'Two door cabinate', desc: 'Netaji Regular Glass Door Cabinet with 4 shelves, 2 doors, fitted with 4 glass panels and lock with keys in duplicate for visibly keeping items of Offices, Hospitals, Hotels, Libraries, Houses etc.', size: ' H-78″ x W-34″ / 36″ / 38″ x D-18″', note: 'also available in two compartments with top and in different sizes.', src: require('~/assets/products/library cabinets/4.jpg') },
+        { title: 'Double Faced Regular Glass door cabinet', desc: 'Double Faced Regular Glass door cabinet with glass doors on both sides with 1 partition in middle and 4 shelves on each side for maximum storage capacity. Ideal for libraries, hospitals, stores and offices where visibility is essential.', size: 'H-78″ x W-34″ / 36″ / 38″', note: 'also available in two compartments with top and in different sizes.', src: require('~/assets/products/library cabinets/3.jpg') },
+        { title: 'Book Case', desc: 'Netaji Book Case for storage of articles and books, for easy identification, 4 compartments with glass panels, each with disappearing glass shutter fitted with 2 handles in each door and 4 locks with the common S.S. Keys in duplicate.', size: 'H-66″ x W-33″ x D-12″', note: 'also available in two compartments with top and in different sizes.', src: require('~/assets/products/library cabinets/2.jpg') },
     ],
     images: [],
     weights: [
@@ -362,10 +362,10 @@ const libraryCabinate = {
 }
 const pigeonHole = {
     cards: [
-        { title: '', desc: 'Netaji offers a wide range of Pigeon Hole Cabinets for various use in offices These cabients come in different sizes and number of sub cabinets vary from 4, 6, 8, 12, 18 & 21. The models with 4 and 6 doors further have 1 shelf making 2 compartments each, thus giving maximum usage space.The Standard Size of the Pigeon Hole Cabinet is H-78″ x W-38″ x D-18″', src: '/pigeon-hole/1.jpg' },
+        { title: '', desc: 'Netaji offers a wide range of Pigeon Hole Cabinets for various use in offices These cabients come in different sizes and number of sub cabinets vary from 4, 6, 8, 12, 18 & 21. The models with 4 and 6 doors further have 1 shelf making 2 compartments each, thus giving maximum usage space.The Standard Size of the Pigeon Hole Cabinet is H-78″ x W-38″ x D-18″', src: require('~/assets/products/pigeon hole cabinet/1.jpg') },
 
     ],
-    images: ['/pigeon-hole/1.jpg', '/pigeon-hole/2.jpg', '/pigeon-hole/3.jpg', '/pigeon-hole/4.jpg', '/pigeon-hole/5.jpg', '/pigeon-hole/6.jpg', '/pigeon-hole/7.jpg', '/pigeon-hole/8.jpg', '/pigeon-hole/9.jpg',],
+    images: [],
     weights: [
     ],
     note: ''
@@ -373,10 +373,10 @@ const pigeonHole = {
 
 const daanPetti = {
     cards: [
-        { title: '', desc: 'Donation Box is a specially crafted product of Netaji. This safe is used in temples where people donate small amount of cash. This cash (mostly coins or small notes) is dropped in the collection box. The construction of the box is such that after inserting cash, it goes to the safe and can only be removed by opening the safe. The special construction makes it impossible to take out the cash return from where it is put in.This product comes in various shapes and sizes and is usually produced as per requirements. Also some additional features like twin safe and a net filter for things other than coins (e.g. Rice Grains etc) which people put in the donation box or vertical straps for security etc are also added. Further the safes come with built in digital or key locks and also provide for vertical strap to fix extra Pad locks as well. We can add more features to this product as per requirements.A huge drawer is provided inside the safe under the top slot, where money is stored and can be easily taken out.', src: '/daan-petti/1.jpg' },
+        { title: '', desc: 'Donation Box is a specially crafted product of Netaji. This safe is used in temples where people donate small amount of cash. This cash (mostly coins or small notes) is dropped in the collection box. The construction of the box is such that after inserting cash, it goes to the safe and can only be removed by opening the safe. The special construction makes it impossible to take out the cash return from where it is put in.This product comes in various shapes and sizes and is usually produced as per requirements. Also some additional features like twin safe and a net filter for things other than coins (e.g. Rice Grains etc) which people put in the donation box or vertical straps for security etc are also added. Further the safes come with built in digital or key locks and also provide for vertical strap to fix extra Pad locks as well. We can add more features to this product as per requirements.A huge drawer is provided inside the safe under the top slot, where money is stored and can be easily taken out.', src: require('~/assets/products/daan petti/1.jpg') },
 
     ],
-    images: ['/daan-petti/1.jpg', '/daan-petti/2.jpg', '/daan-petti/3.jpg', '/daan-petti/4.jpg', '/daan-petti/5.jpg', '/daan-petti/6.jpg',],
+    images: [],
     weights: [
     ],
     note: ''
@@ -395,7 +395,7 @@ const ssSafeDoor = {
         { title: 'Attractive finish and Rust Protection', desc: 'Attractive two tone smooth finish which is scratch free and long lasting because of multi-coat rust proof powder coating.', icon: '/attractive.svg' },
         { title: 'Internal Design', desc: 'The safes are provided with 2-3 adjustable shelves made of 1.6 mm thick steel and 2 bottom mounted drawer units with one basement.', icon: '/design.svg' },
     ],
-    images: ['/ss-safe-door/1.jpg', '/ss-safe-door/2.jpg', '/ss-safe-door/3.jpg', '/ss-safe-door/4.jpg', '/ss-safe-door/5.jpg', '/ss-safe-door/6.jpg', '/ss-safe-door/7.jpg', '/ss-safe-door/8.jpg', '/ss-safe-door/9.jpg', '/ss-safe-door/10.jpg', '/ss-safe-door/11.jpg', '/ss-safe-door/12.jpg', '/ss-safe-door/13.jpg', '/ss-safe-door/14.jpg', '/ss-safe-door/15.jpg',],
+    images: [],
     tableHeader: ['No.', 'Outer Size (H. W. D.)', 'Inner Size (H. W. D.)', 'Weight (Approx)'],
     weights: [
         {
@@ -461,7 +461,7 @@ const ssRoomDoor = {
         { title: 'Various Locking System', desc: 'The Strong Room Door is further protected by an automatic self-locking device which comes into operation and dead locks the doors, if the lock is dislodged by explosive, sledge hammer or other attacks. Strong room doors are fitted with two superior quality dual control precision 10 Lever Locks along with S.S. keys in duplicate.', icon: '/lock.svg' },
         { title: 'Ventilating Grill Gate', desc: 'The grill gate is constructed with heavy round 20mm bars at staggered pitch and secured with high precision 8 levers unpickable lock operating on both sides provided with stainless steel keys in duplicate.', icon: '/grill-gate.svg' },
     ],
-    images: ['/ss-room-door/1.jpg', '/ss-room-door/2.jpg', '/ss-room-door/3.jpg', '/ss-room-door/4.jpg',],
+    images: [],
     tableHeader: ['No.', 'Outer Size ( Frame) H. W.', 'Inner Size (Door) H. W.', 'Weight (Approx)'],
     weights: [
         {
@@ -757,11 +757,11 @@ const services = [
     { title: 'Safe Design', desc: 'We design and manufacture special safe and doors as per client requirements.', icon: '/pencil.svg' },
     { title: 'Safe Guidance', desc: 'Choosing the right safe is very important. Our expert teams provides you with security information and helps you choose the right type of safe for you.', icon: '/manual.svg' }
 ]
-const servicesImage = ['/services/1.jpg', '/services/2.jpg', '/services/3.jpg', '/services/4.jpg', '/services/5.jpg', '/services/6.jpg', '/services/7.jpg', '/services/8.jpg', '/services/9.jpg', '/services/10.jpg',]
+
 
 const heavySafeBanner = '/category-bg.jpg'
 const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 
-export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, servicesImage, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }
+export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }

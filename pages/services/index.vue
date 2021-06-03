@@ -59,19 +59,34 @@
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
-import { services, servicesImage } from '@/utils'
+import { services } from '@/utils'
 export default {
   name: 'ServicesPage',
   components: {
     Carousel,
     Slide,
   },
+  data() {
+    return {
+      images: [],
+    }
+  },
+  mounted() {
+    this.getSrc()
+  },
   computed: {
     services() {
       return services
     },
-    images() {
-      return servicesImage
+  },
+  methods: {
+    importAll(r) {
+      return r.keys().map(r)
+    },
+
+    getSrc() {
+      const src = require.context('~/assets/carousels/services', true)
+      this.images = this.importAll(src)
     },
   },
 }

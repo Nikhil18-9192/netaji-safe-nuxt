@@ -19,7 +19,7 @@
 
     <ProductCard v-if="!$device.isMobile" :products="products" />
     <ProductCardPhone v-else :products="products" />
-    <ProductImageCarousel :images="products.images" />
+    <ProductImageCarousel :images="images" />
     <Table
       v-if="products.weights.length"
       :weights="products.weights"
@@ -44,14 +44,36 @@ export default {
   data() {
     return {
       productName: false,
+      images: [],
+      categories: ['coffer'],
     }
   },
   mounted() {
     this.productName = this.$route.params.name.replace(/-/g, ' ')
+    this.getSrc()
   },
   computed: {
     products() {
       return coffer
+    },
+  },
+  methods: {
+    importAll(r) {
+      return r.keys().map(r)
+    },
+    getSrcForCategory(product) {
+      switch (product) {
+        case this.categories[0]:
+          return require.context('~/assets/carousels/coffer', true)
+          break
+
+        default:
+          break
+      }
+    },
+    getSrc() {
+      const src = this.getSrcForCategory(this.productName)
+      this.images = this.importAll(src)
     },
   },
 }
