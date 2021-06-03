@@ -28,7 +28,7 @@ const heavySafeDoor = [
     { title: 'Heavy fire proof safe single / double door(Standard)', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Bolt work Mechanism, Balanced pressure Bolt-work,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: require('~/assets/products/heavy safe door/d1.png'), slug: 'heavy-safe-&-door/heavy-fire-proof-safe' },
     { title: 'Strong Room Door With Grill Gate', desc: 'Netaji branded Strong Room Doors with grill gate offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: require('~/assets/products/heavy safe door/d2.jpg'), slug: 'heavy-safe-&-door/strong-room-door-with-grill-gate' },
     { title: 'Jewellery Safe', desc: 'Netaji Safe Offers wide range of a Jewellery safe there are special built to order sets in varying Storage Capacities. The strong seamless body tough door, triple locking system [Key, Push Button, Automatic Locking.] Balanced pressure bolt work, Attractive Finished and Rug-head body are the primary features.', src: require('~/assets/products/heavy safe door/d3.jpg'), slug: 'heavy-safe-&-door/jewellery-safe' },
-    { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. .', src: require('~/assets/products/heavy safe door/d4.png'), slug: 'heavy-safe-&-door/counter-safe' },
+    // { title: 'Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements.', src: require('~/assets/products/heavy safe door/d4.png'), slug: 'heavy-safe-&-door/counter-safe' },
     { title: 'Safe Deposite Vaults', desc: 'Netaji Safe Deposit Locker Cabinets are designed for meeting exact security requirements, while making the most efficient use of vault space providing lockers featuring a most attractive design. The lockers are manufactured as per international standards with fortified frame work, as they are fabricated from best quality tested steel plates. Joints are welded by skilled and qualified welders by using approved quality welding consumables.', src: require('~/assets/products/heavy safe door/d5.jpg'), slug: 'heavy-safe-&-door/safe-deposite-vaults' },
     { title: 'Night Guard', desc: 'Night Guard Special Locker for collection centre Netaji safe company specialise in our prime product called Night Guard which caters to different important collection facility centres such as petrol pumps, restaurants, bar, toll-booths etc. This product is specially designed considering specific purpose and risk factor. The most prominent factor of this product is the specially constructed door, which has an overall strong thickness. It is made using special hard barrier material and tough steel plates re-enforced with drill and sledge hammer resistant special steel.', src: require('~/assets/products/heavy safe door/d6.jpg'), slug: 'heavy-safe-&-door/night-guard' },
 ]
@@ -74,9 +74,9 @@ const ss = [
 ]
 
 const counter = [
-    { title: 'Non Fire Proof Counter Safe', desc: '', src: '', slug: '' },
-    { title: 'Fire Proof Counter Safe', desc: '', src: '', slug: '' },
-    { title: 'Stainless Steel Counter Safe', desc: '', src: '', slug: '' },
+    { title: 'Non Fire Proof Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. ', src: require('~/assets/products/counter safe/1.jpg'), slug: '/counter-safe/non-fire-proof-counter-safe' },
+    { title: 'Fire Proof Counter Safe', desc: '', src: require('~/assets/products/counter safe/3.jpg'), slug: '/counter-safe/fire-proof-counter-safe' },
+    { title: 'Stainless Steel Counter Safe', desc: '', src: require('~/assets/products/counter safe/2.jpg'), slug: '/counter-safe/stainless-steel-counter-safe' },
 ]
 
 
@@ -204,7 +204,7 @@ const jewellerySafe = {
     ],
     note: ''
 }
-const counterSafe = {
+const nonFireProofCounterSafe = {
     cards: [
         { title: '', desc: 'This is a special product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ in height, 48″ to 72″ in width and 18″ to 24″ in depth. The body thickness of minimum 2mm and the door plate of minimum 3mm makes it strong and sturdy. We can also use Fire Proof material to make it more reliable and safe. More safety features can be added like use of LG digital locks instead of Key Locks.', icon: '/dumbbell.svg' },
         { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
@@ -488,6 +488,7 @@ const ssRoomDoor = {
     note: ''
 }
 
+
 function getHeavySafeProduct(name) {
     if (name == 'heavy fire proof safe') {
         return heavyFireProofSafe
@@ -495,13 +496,14 @@ function getHeavySafeProduct(name) {
         return strongRoomDoor
     } else if (name == 'jewellery safe') {
         return jewellerySafe
-    } else if (name == 'counter safe') {
-        return counterSafe
     } else if (name == 'safe deposite vaults') {
         return depositeVaults
     } else if (name == 'night guard') {
         return nightGuard
     }
+    // else if (name == 'counter safe') {
+    //     return counterSafe
+    // }
 }
 
 function getSsProduct(name) {
@@ -519,6 +521,16 @@ function getOfficeRangeProduct(name) {
         return pigeonHole
     } else if (name == 'daan petti') {
         return daanPetti
+    }
+}
+
+function getCounterSafeProduct(name) {
+    if (name == 'non fire proof counter safe') {
+        return nonFireProofCounterSafe
+    } else if (name == 'fire proof counter safe') {
+        return []
+    } else if (name == 'stainless steel counter safe') {
+        return []
     }
 }
 
@@ -764,4 +776,4 @@ const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 
-export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }
+export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }
