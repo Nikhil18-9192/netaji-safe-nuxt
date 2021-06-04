@@ -74,7 +74,7 @@ const ss = [
 ]
 const ssCards = [
     {
-        title: 'Why do we use stainless steel plate for front door of fire proof safe and strong room door ??',
+        title: 'Why do we use stainless steel plate for front door of fire proof safe and strong room door ?',
         list: ['Oxy-acetenlye flame can’t attack or cut the stainless steel.', ' Stainless steel is rustproof for lifetime.', 'The safe looks totally different from any other safe or door.', 'Stainless steel is more harder metal than M.S steel.']
     },
 
