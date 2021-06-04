@@ -49,7 +49,7 @@ const homeRange = [
     { title: 'Domestic Cabinet – Khana Bhandar', desc: 'Domestic Cabinet (Khana Bhandar) with vertical partition, rod for hanging on both sides, 1 half safe, 1 Shelf making two compartments and 8-10 hidden compartments (chor khane) below with magnetic lock for 4 hidden compartments. MODEL : NSCH 203 SIZE : H-78″ X W-38″ x D-24″ Customisations as per individual requirement provided.', src: require('~/assets/products/home range/h5.jpg') },
     { title: 'Domestic Cabinet – Tijori Dressing', desc: 'Domestic Storage Cabinet (Tijori Dressing), with 1 shelves with with two hanging rods on both sides, 1 drawer, 1 full safe having 1 drawer and hidden compartment inside. MODEL : NSCH 206 SIZE : H-78″ X W-38″ x D-21″ / 24″ We also provide different sizes as ordered.', src: require('~/assets/products/home range/h6.jpg') },
     { title: 'Domestic Cabinet – Centre Drawer Dressing', desc: 'Domestic Cabinet with 1 shelf, vertical partition, 2 hanging rods, 1 drawer & 1 more shelf below making two compartments.MODEL : NSCH 204 SIZE : H-78″ X W-38″ x D-21″ / 24″ Others Sizes available on request.', src: require('~/assets/products/home range/h7.jpg') },
-    { title: 'Goa Type', desc: '', src: '' },
+    { title: 'Goa Type', desc: '', src: require('~/assets/products/home range/h8.jpg') },
 
 ]
 
