@@ -12,6 +12,24 @@
     </div>
     <div class="product-container">
       <CategoryCard :products="products" :url="url" :category="category" />
+      <div class="card-container" v-if="cards && cards.length">
+        <div
+          class="card"
+          v-for="(item, i) in cards"
+          :key="i"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="150"
+          :data-aos-delay="i * 200"
+        >
+          <h4>{{ item.title }}</h4>
+          <ul>
+            <li v-for="(list, i) in item.list" :key="i">
+              {{ list }}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +45,8 @@ import {
   homeRangeBanner,
   ssBanner,
   officeRangeBanner,
+  counterBanner,
+  ssCards,
 } from '@/utils'
 export default {
   name: 'CategoryPage',
@@ -64,7 +84,21 @@ export default {
       } else if (this.category == 's. s. safe & door') {
         return ssBanner
       } else if (this.category == 'counter safe') {
-        return ssBanner
+        return counterBanner
+      }
+    },
+
+    cards() {
+      if (this.category == 'heavy safe & door') {
+        return []
+      } else if (this.category == 'home range') {
+        return []
+      } else if (this.category == 'office range') {
+        return []
+      } else if (this.category == 's. s. safe & door') {
+        return ssCards
+      } else if (this.category == 'counter safe') {
+        return []
       }
     },
   },
@@ -126,6 +160,59 @@ export default {
     }
     @include for-tablet-only {
       padding: 40px 60px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 40px;
+      row-gap: 40px;
+      grid-column-gap: 32px;
+      max-width: 1018px;
+      @include for-tablet-only {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .card {
+        padding: 44px 30px 23px 30px;
+        background: linear-gradient(
+          180deg,
+          #efefef 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 9px;
+        width: 492px;
+        height: 100%;
+        min-height: 282px;
+        transition: 0.3s ease all;
+        @include for-tablet-only {
+          margin: 0 auto;
+        }
+        @include for-phone-only {
+          width: 100%;
+          padding: 25px 20px;
+        }
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        ul {
+          list-style: decimal;
+          margin-top: 18px;
+          padding-left: 15px;
+          li {
+            font-size: 12px;
+            margin-bottom: 8px;
+          }
+
+          @include for-phone-only {
+            padding-left: 20px;
+          }
+        }
+      }
     }
   }
 }

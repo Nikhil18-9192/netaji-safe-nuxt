@@ -69,8 +69,15 @@ const officeRange = [
 ]
 
 const ss = [
-    { title: 'Fire Proof Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: require('~/assets/products/ss/ss1.jpg'), slug: '/s-s-safe/s.-s.-safe-door' },
+    { title: 'Fire Proof (export quality) Single/Double Door S.S. Safe:', desc: 'All our safes come with a Strong Seamless Body, Super Tough Door, Un-pickable locks, Various locking systems, Unyielding protective shielding, Boltwork Mechanism, Balanced pressure Bolt-work ,Automatic Relocking Device, Attractive finish and Rust Protection along with various other Special Features.', src: require('~/assets/products/ss/ss1.jpg'), slug: '/s-s-safe/s.-s.-safe-door' },
     { title: 'Strong Room Door With Grill Gate:', desc: 'Netaji branded Strong Room Doors offers complete protection for various establishments like banking sector, co-operative sector, corporate houses, diamond and jewellery showrooms, cash flowing sales outlets and all the places susceptible to theft, fire and burglary attacks. The strong room doors along with the grill are made of superior quality material along with special attention to all the security measures.', src: require('~/assets/products/ss/ss2.jpg'), slug: '/s-s-safe/strong-room-door-with-grill-gate' },
+]
+const ssCards = [
+    {
+        title: 'Why do we use stainless steel plate for front door of fire proof safe and strong room door ??',
+        list: ['Oxy-acetenlye flame can’t attack or cut the stainless steel.', ' Stainless steel is rustproof for lifetime.', 'The safe looks totally different from any other safe or door.', 'Stainless steel is more harder metal than M.S steel.']
+    },
+
 ]
 
 const counter = [
@@ -775,5 +782,6 @@ const heavySafeBanner = '/category-bg.jpg'
 const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
+const counterBanner = '/counter-banner.jpg'
 
-export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, libraryCabinateCards }
+export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, counterBanner, libraryCabinateCards, ssCards }

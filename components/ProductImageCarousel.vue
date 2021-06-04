@@ -49,9 +49,12 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 40px 0 100px 0;
+  padding: 40px 187px 100px 187px;
   @include for-phone-only {
     padding: 40px 0 40px 0;
+  }
+  @include for-tablet-only {
+    padding: 0 60px;
   }
   .carousel {
     width: 100%;
