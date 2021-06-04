@@ -77,7 +77,7 @@ $phoneHeight: 280px;
   background-size: cover;
   display: flex;
   justify-content: center;
-  margin-top: -102px;
+  // margin-top: -102px;
   @include for-phone-only {
     height: $phoneHeight;
     margin-top: 0px;
@@ -90,7 +90,7 @@ $phoneHeight: 280px;
     letter-spacing: 0.035em;
     text-transform: uppercase;
     width: 500px;
-    margin-top: 170px;
+    margin-top: 135px;
     z-index: 1;
     @include for-phone-only {
       font-size: 18px;
@@ -99,7 +99,7 @@ $phoneHeight: 280px;
       display: none;
     }
     @include for-tablet-only {
-      margin-top: 210px;
+      margin-top: 160px;
     }
   }
   .shield-icon {
