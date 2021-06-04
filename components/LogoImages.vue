@@ -1,8 +1,8 @@
 <template>
   <div id="logo-images">
-    <marquee behavior="" direction="">
+    <marquee>
       <div class="container">
-        <div class="image" v-for="(src, i) in logos" :key="i">
+        <div class="image" v-for="(src, i) in images" :key="i">
           <img :src="src" alt="" />
         </div>
       </div>
@@ -15,21 +15,21 @@ export default {
   name: 'LogoImagesComponent',
   data() {
     return {
-      logos: [
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-        '/favicon.png',
-      ],
+      images: [],
     }
+  },
+  mounted() {
+    this.getSrc()
+  },
+  methods: {
+    importAll(r) {
+      return r.keys().map(r)
+    },
+
+    getSrc() {
+      const src = require.context('~/assets/carousels/logos', true)
+      this.images = this.importAll(src)
+    },
   },
 }
 </script>
