@@ -48,13 +48,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 187px;
-  @include for-phone-only {
-    padding: 0;
-  }
-  @include for-tablet-only {
-    padding: 0 60px;
-  }
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

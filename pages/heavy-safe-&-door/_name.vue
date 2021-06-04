@@ -1,6 +1,6 @@
 <template>
   <div id="product">
-    <div class="header" :style="{ 'background-image': 'url(' + banner + ')' }">
+    <div class="header">
       <div
         class="navigater"
         data-aos="fade-right"
@@ -61,7 +61,6 @@ export default {
         'safe deposite vaults',
         'night guard',
       ],
-      banner: '/category-bg.jpg',
     }
   },
   asyncData({ route }) {
@@ -128,29 +127,20 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: -102px;
-
+  padding: 0 187px;
+  @include for-phone-only {
+    padding: 0;
+  }
+  @include for-tablet-only {
+    padding: 0 60px;
+  }
   .header {
-    position: relative;
-    width: 100%;
-    height: 425px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    @include for-phone-only {
-      height: 350px;
-      background-size: cover;
-      background-position: 60% 74%;
+    margin-top: 34px;
+    border-bottom: 1px solid #bdbdbd;
+    @include for-tablet-only {
+      margin-top: 90px;
     }
-    // margin-top: 34px;
-    // border-bottom: 1px solid #bdbdbd;
-    // @include for-tablet-only {
-    //   margin-top: 90px;
-    // }
     .navigater {
-      position: absolute;
-      bottom: 0;
-      left: 187px;
       width: 580px;
       height: 46px;
       background: #f2f2f2;
