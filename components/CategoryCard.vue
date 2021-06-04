@@ -1,5 +1,23 @@
 <template>
   <div class="card-wrapper">
+    <div class="card-container" v-if="cards && cards.length">
+      <div
+        class="card"
+        v-for="(item, i) in cards"
+        :key="i"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="150"
+        :data-aos-delay="i * 200"
+      >
+        <h4>{{ item.title }}</h4>
+        <ul>
+          <li v-for="(list, i) in item.list" :key="i">
+            {{ list }}
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       class="card"
       v-for="(product, i) in products"
@@ -50,7 +68,7 @@
 <script>
 export default {
   name: 'CategoryCardComponent',
-  props: ['products', 'url', 'category'],
+  props: ['products', 'url', 'category', 'cards'],
 }
 </script>
 
@@ -70,6 +88,60 @@ export default {
   @include for-big-desktop-up {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+    row-gap: 40px;
+    grid-column-gap: 32px;
+    max-width: 1018px;
+    @include for-tablet-only {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include for-phone-only {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      padding: 44px 30px 23px 30px;
+      background: linear-gradient(
+        180deg,
+        #efefef 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 9px;
+      width: 492px;
+      height: 100%;
+      min-height: 282px;
+      transition: 0.3s ease all;
+      @include for-tablet-only {
+        margin: 0 auto;
+      }
+      @include for-phone-only {
+        width: 100%;
+        padding: 25px 20px;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+      }
+      ul {
+        list-style: decimal;
+        margin-top: 18px;
+        padding-left: 15px;
+        li {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        @include for-phone-only {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
   .card {
     position: relative;
     width: 492px;
