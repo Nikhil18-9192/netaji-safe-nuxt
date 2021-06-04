@@ -27,8 +27,10 @@
         </carousel>
       </client-only>
     </div>
-    <h1 class="heading">A complete System For your security needs</h1>
-    <img class="shield-icon" src="/shild.png" alt="" />
+    <h1 v-if="currentPage == 0" class="heading">
+      A complete System For your security needs
+    </h1>
+    <img v-if="currentPage == 0" class="shield-icon" src="/shild.png" alt="" />
   </div>
 </template>
 
