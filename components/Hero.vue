@@ -138,13 +138,12 @@ $phoneHeight: 280px;
 
     .nav {
       position: absolute;
-      top: 50%;
+      top: 40%;
       z-index: 1;
       width: 80px;
       height: 80px;
       cursor: pointer;
       transition: 0.3s ease all;
-
       @include for-phone-only {
         width: 48px;
         height: 48px;
