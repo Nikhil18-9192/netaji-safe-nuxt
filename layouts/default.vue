@@ -23,6 +23,7 @@ export default {
     }
   },
   mounted() {
+    this.$ga.page(this.$router)
     window.addEventListener('scroll', (e) => {
       this.$store.commit('SET_SCROLL_POSITION', parseInt(window.scrollY))
     })
