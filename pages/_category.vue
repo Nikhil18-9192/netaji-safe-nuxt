@@ -110,6 +110,19 @@ export default {
       background-size: cover;
       background-position: 60% 74%;
     }
+    @include for-tablet-only {
+      background-size: cover;
+      object-position: bottom left;
+    }
+    @include for-tablet-landscape-up {
+      background-size: cover;
+      object-position: bottom right;
+    }
+    @include for-desktop-up {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     .navigator {
       width: 399px;
       height: 46px;

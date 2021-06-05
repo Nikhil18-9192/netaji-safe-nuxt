@@ -47,6 +47,14 @@ export default {
     align-items: center;
     padding: 0 60px;
   }
+  @include for-tablet-landscape-up {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+  }
+  @include for-desktop-up {
+    display: none;
+  }
   .blur {
     position: absolute;
     width: 100%;

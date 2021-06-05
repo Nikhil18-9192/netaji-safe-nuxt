@@ -103,6 +103,12 @@ export default {
   @include for-tablet-only {
     display: none;
   }
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+  @include for-desktop-up {
+    display: flex;
+  }
   .blur {
     position: absolute;
     width: 100%;

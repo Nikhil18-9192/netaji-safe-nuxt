@@ -59,6 +59,13 @@ export default {
     display: block;
     right: 60px;
   }
+  @include for-tablet-landscape-up {
+    display: block;
+    right: 60px;
+  }
+  @include for-desktop-up {
+    display: none;
+  }
   .burger_menu {
     position: relative;
     width: 24px;

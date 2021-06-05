@@ -46,8 +46,11 @@ export default {
   data() {
     return {
       currentPage: 0,
-      imgs: ['/hero-bg.jpg', '/ss-banner.jpg', 'home-range-banner.jpg'],
+      imgs: [],
     }
+  },
+  mounted() {
+    this.getSrc()
   },
   methods: {
     next() {
@@ -62,6 +65,14 @@ export default {
       this.currentPage <= 0
         ? (this.currentPage = this.$refs.heroSlider.pageCount - 1)
         : this.currentPage--
+    },
+    importAll(r) {
+      return r.keys().map(r)
+    },
+
+    getSrc() {
+      const src = require.context('~/assets/carousels/home carousel', true)
+      this.imgs = this.importAll(src)
     },
   },
 }
