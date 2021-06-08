@@ -16,7 +16,7 @@
           :perPage="1"
           :loop="true"
           :autoplay="false"
-          :autoplayTimeout="5000"
+          :autoplayTimeout="3000"
           :mouse-drag="true"
           :paginationEnabled="false"
           :navigateTo="currentPage"
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$phoneHeight: 280px;
+$phoneHeight: 275px;
 #hero {
   position: relative;
   width: 100%;
@@ -108,8 +108,7 @@ $phoneHeight: 280px;
     @include for-phone-only {
       font-size: 18px;
       width: 219px;
-      margin-top: 200px;
-      display: none;
+      margin-top: 80px;
     }
     @include for-tablet-only {
       margin-top: 160px;
@@ -125,7 +124,7 @@ $phoneHeight: 280px;
     @include for-phone-only {
       width: 66px;
       height: 76px;
-      bottom: -35px;
+      bottom: 35px;
     }
   }
 
@@ -179,8 +178,8 @@ $phoneHeight: 280px;
         min-height: 100%;
         img {
           width: 100%;
-          min-height: 559px;
-          object-fit: cover;
+          min-height: 555px;
+          object-fit: contain;
 
           @include for-phone-only {
             min-height: $phoneHeight;

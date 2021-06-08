@@ -42,7 +42,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 45px 20px 75px 20px;
+  padding: 0 20px 75px 20px;
   @include for-tablet-landscape-up {
     display: none;
   }
@@ -58,6 +58,9 @@ export default {
       width: 100%;
       transition: 0.3s ease all;
       margin-top: 90px;
+      @include for-phone-only {
+        margin-top: 65px;
+      }
       .route-link {
         position: absolute;
         width: 100%;

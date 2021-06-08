@@ -102,7 +102,7 @@ export default {
     position: relative;
     width: 100%;
     height: 425px;
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     @include for-phone-only {
