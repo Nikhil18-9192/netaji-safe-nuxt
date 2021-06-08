@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 #phone-toolbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   backdrop-filter: blur(53px);

@@ -15,7 +15,7 @@
           class="hero-carousel"
           :perPage="1"
           :loop="true"
-          :autoplay="false"
+          :autoplay="true"
           :autoplayTimeout="3000"
           :mouse-drag="true"
           :paginationEnabled="false"
@@ -47,10 +47,13 @@ export default {
     return {
       currentPage: 0,
       imgs: [],
+      height: 0,
     }
   },
   mounted() {
     this.getSrc()
+    this.height =
+      document.getElementById('hero').parentElement.clientWidth / 2.75
   },
   methods: {
     next() {
@@ -74,12 +77,13 @@ export default {
       const src = require.context('~/assets/carousels/home carousel', true)
       this.imgs = this.importAll(src)
     },
+    dynamicHeight() {},
   },
 }
 </script>
 
 <style lang="scss" scoped>
-$phoneHeight: 275px;
+$phoneHeight: 135px;
 #hero {
   position: relative;
   width: 100%;
@@ -108,7 +112,7 @@ $phoneHeight: 275px;
     @include for-phone-only {
       font-size: 18px;
       width: 219px;
-      margin-top: 80px;
+      margin-top: 15px;
     }
     @include for-tablet-only {
       margin-top: 160px;
@@ -124,7 +128,7 @@ $phoneHeight: 275px;
     @include for-phone-only {
       width: 66px;
       height: 76px;
-      bottom: 35px;
+      bottom: -40px;
     }
   }
 
@@ -146,6 +150,7 @@ $phoneHeight: 275px;
       @include for-phone-only {
         width: 48px;
         height: 48px;
+        top: 25%;
       }
 
       &:active {
@@ -179,8 +184,7 @@ $phoneHeight: 275px;
         img {
           width: 100%;
           min-height: 555px;
-          object-fit: contain;
-
+          object-fit: cover;
           @include for-phone-only {
             min-height: $phoneHeight;
           }
