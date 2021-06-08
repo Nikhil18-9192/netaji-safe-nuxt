@@ -15,7 +15,7 @@
           class="hero-carousel"
           :perPage="1"
           :loop="true"
-          :autoplay="true"
+          :autoplay="false"
           :autoplayTimeout="3000"
           :mouse-drag="true"
           :paginationEnabled="false"
@@ -120,7 +120,7 @@ $phoneHeight: 135px;
   }
   .shield-icon {
     position: absolute;
-    bottom: -50px;
+    bottom: -95px;
     transform: translate(-50% -50%);
     width: 169px;
     height: 216px;
@@ -129,6 +129,9 @@ $phoneHeight: 135px;
       width: 66px;
       height: 76px;
       bottom: -40px;
+    }
+    @include for-tablet-only {
+      bottom: -60px;
     }
   }
 
@@ -183,6 +186,7 @@ $phoneHeight: 135px;
         min-height: 100%;
         img {
           width: 100%;
+          height: 100%;
           min-height: 555px;
           object-fit: cover;
           @include for-phone-only {

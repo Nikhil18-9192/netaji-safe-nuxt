@@ -118,7 +118,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 72px;
+  margin-top: 125px;
   padding-left: 62px;
   @include for-phone-only {
     padding-left: 20px;
