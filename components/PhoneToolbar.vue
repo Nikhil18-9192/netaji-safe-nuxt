@@ -10,7 +10,7 @@
     <div class="blur"></div>
     <div class="logo">
       <nuxt-link to="/">
-        <img src="/logo.jpg" alt="logo image" />
+        <img src="/logo.png" alt="logo image" />
       </nuxt-link>
     </div>
   </div>

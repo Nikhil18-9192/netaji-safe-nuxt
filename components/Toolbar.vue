@@ -25,7 +25,7 @@
                   ? { width: '185px', height: '55px' }
                   : { width: '255px', height: '75px' },
               ]"
-              src="/logo.jpg"
+              src="/logo.png"
               alt="logo"
           /></nuxt-link>
         </div>
