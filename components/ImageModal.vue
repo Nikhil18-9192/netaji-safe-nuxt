@@ -41,6 +41,14 @@ export default {
     cursor: pointer;
     z-index: 111;
     color: $primary;
+    @include for-tablet-only {
+      top: 70px;
+      right: 80px;
+    }
+    @include for-phone-only {
+      top: 90px;
+      right: 35px;
+    }
   }
   .images-container {
     width: 80%;

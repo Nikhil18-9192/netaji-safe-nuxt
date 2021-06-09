@@ -28,11 +28,13 @@ import {
   officeRange,
   ss,
   counter,
+  locks,
   heavySafeBanner,
   homeRangeBanner,
   ssBanner,
   officeRangeBanner,
   counterBanner,
+  lockBanner,
   ssCards,
 } from '@/utils'
 export default {
@@ -59,6 +61,8 @@ export default {
         return ss
       } else if (this.category == 'counter safe') {
         return counter
+      } else if (this.category == 'locks') {
+        return locks
       }
     },
     banner() {
@@ -72,6 +76,8 @@ export default {
         return ssBanner
       } else if (this.category == 'counter safe') {
         return counterBanner
+      } else if (this.category == 'locks') {
+        return lockBanner
       }
     },
 
@@ -85,6 +91,8 @@ export default {
       } else if (this.category == 's. s. safe & door') {
         return ssCards
       } else if (this.category == 'counter safe') {
+        return []
+      } else if (this.category == 'locks') {
         return []
       }
     },

@@ -4,7 +4,7 @@ const productNav = [
     { name: ' Home Range ', path: '/home_range' },
     { name: ' Office Range ', path: '/office_range' },
     { name: ' S.S.Safe & Door', path: '/s._s._safe_&_door' },
-
+    { name: ' Locks', path: '/locks' },
 ]
 const navMenu = [
     { name: ' Home ', path: '/' },
@@ -12,6 +12,7 @@ const navMenu = [
     { name: ' Services  ', path: '/services' },
     { name: 'Clients ', path: '/clients' },
     { name: ' Contact  ', path: '/contact' },
+    { name: ' News', path: '/news' },
 
 ]
 
@@ -84,6 +85,15 @@ const counter = [
     { title: 'Non Fire Proof Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. ', src: require('~/assets/products/counter safe/1.jpg'), slug: '/counter-safe/non-fire-proof-counter-safe' },
     { title: 'Fire Proof Counter Safe', desc: 'This is a fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', src: require('~/assets/products/counter safe/3.jpg'), slug: '/counter-safe/fire-proof-counter-safe' },
     { title: 'Stainless Steel Counter Safe', desc: 'This is a stainless steel fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm & stainless steel plate (304) of 3mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', src: require('~/assets/products/counter safe/2.jpg'), slug: '/counter-safe/stainless-steel-counter-safe' },
+]
+
+const locks = [
+    { title: 'Biometric & Digital Lock', desc: '', src: require('~/assets/products/lock/Biometric & Digital Lock.jpg'), slug: '' },
+    { title: 'Fixed Number Numerical Lock', desc: '', src: require('~/assets/products/lock/Fixed Number Numerical Lock.jpg'), slug: '' },
+    { title: 'Numerical Combination Lock', desc: '', src: require('~/assets/products/lock/Numerical Combination Lock.jpg'), slug: '' },
+    { title: 'Time Lock', desc: '', src: require('~/assets/products/lock/Time Lock.jpg'), slug: '' },
+    { title: 'UL Listed Kaba Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Kaba Digital Lock.jpg'), slug: '' },
+    { title: 'UL Listed Lagard Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Lagard Digital Lock.jpg'), slug: '' },
 ]
 
 
@@ -805,5 +815,13 @@ const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 const counterBanner = '/counter-banner.jpg'
+const lockBanner = '/counter-banner.jpg'
 
-export { slides, productNav, navMenu, ss, counter, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, counterBanner, libraryCabinateCards, ssCards }
+const newsLinks = [
+    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
+    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
+    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
+    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
+]
+
+export { slides, productNav, navMenu, ss, counter, locks, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, counterBanner, lockBanner, libraryCabinateCards, ssCards, newsLinks }

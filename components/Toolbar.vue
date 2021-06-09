@@ -40,8 +40,8 @@
           <nuxt-link
             :style="[
               scrollPosition > 0
-                ? { 'font-size': '12px', 'margin-right': '45px' }
-                : { 'font-size': '13px', 'margin-right': '30px' },
+                ? { 'font-size': '12px', 'margin-right': '25px' }
+                : { 'font-size': '13px', 'margin-right': '12px' },
             ]"
             v-for="(product, i) in productNav"
             :key="i"
@@ -124,7 +124,7 @@ export default {
     align-items: center;
     transition: 0.3s ease all;
     .left {
-      width: 75%;
+      width: 72%;
       display: flex;
       transition: 0.3s ease all;
       .logo {
@@ -157,7 +157,7 @@ export default {
       }
     }
     .right {
-      width: 25%;
+      width: 28%;
       display: flex;
       justify-content: flex-end;
       transition: 0.3s ease all;
@@ -167,7 +167,7 @@ export default {
           font-weight: normal;
           font-size: 12px;
           line-height: 13px;
-          margin-left: 21px;
+          margin-left: 18px;
           transition: 0.3s ease all;
           &:hover {
             color: #cb2929;

@@ -170,9 +170,8 @@ export default {
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #bdbdbd;
-    margin-top: 60px;
     @include for-phone-only {
-      padding-top: 28px;
+      padding-top: 17px;
       padding-bottom: 17px;
     }
     h1 {

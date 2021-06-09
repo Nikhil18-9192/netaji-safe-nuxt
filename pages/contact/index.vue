@@ -130,8 +130,8 @@ export default {
     border-bottom: 1px solid #bdbdbd;
     margin: 0 187px;
     @include for-phone-only {
-      margin: 60px 20px 0 20px;
-      padding-top: 28px;
+      margin: 0 20px 0 20px;
+      padding-top: 17px;
       padding-bottom: 17px;
     }
     @include for-tablet-only {

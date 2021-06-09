@@ -24,35 +24,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="services-carousel"
-      data-aos="fade-up"
-      data-aos-duration="900"
-      data-aos-offset="200"
-    >
-      <client-only>
-        <carousel
-          ref="slider"
-          class="carousel"
-          :perPageCustom="[
-            [320, 1],
-            [375, 2],
-            [768, 3],
-            [1200, 5],
-            [1800, 5],
-          ]"
-          :loop="true"
-          :autoplay="true"
-          :autoplayTimeout="10000"
-          :mouse-drag="true"
-          :paginationEnabled="false"
-        >
-          <slide class="slide" v-for="(src, i) in images" :key="i">
-            <img :src="src" alt="" />
-          </slide>
-        </carousel>
-      </client-only>
-    </div>
+    <ProductImageCarousel class="carousel" :images="images" />
   </div>
 </template>
 
@@ -217,28 +189,10 @@ export default {
       }
     }
   }
-  .services-carousel {
+  .carousel {
     margin-top: 85px;
-    .carousel {
-      .slide {
-        border-left: 1px solid #bcbcbc;
-        width: 265px;
-        display: flex;
-        justify-content: center;
-        @include for-phone-only {
-          padding: 0 15px;
-          border-left: none;
-          border-right: 1px solid #e2e2e2;
-        }
-        img {
-          width: 183px;
-          height: 244px;
-          object-fit: contain;
-          @include for-phone-only {
-            width: 100%;
-          }
-        }
-      }
+    @include for-phone-only {
+      margin-top: 45px;
     }
   }
 }
