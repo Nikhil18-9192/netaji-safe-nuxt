@@ -129,7 +129,6 @@ export default {
       padding: 13px 19px;
       @include for-phone-only {
         width: 100%;
-        margin-top: 69px;
         height: 76px;
       }
       @include for-tablet-only {

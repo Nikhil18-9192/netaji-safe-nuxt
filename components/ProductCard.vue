@@ -25,7 +25,7 @@
             <p>Available in Different sizes like : (H x W X D):</p>
             <ul>
               <li v-for="(item, i) in item.dimentions" :key="i">
-                <p>>> {{ item }}</p>
+                <p>{{ item }}</p>
               </li>
             </ul>
           </div>
@@ -111,8 +111,8 @@ export default {
             margin-top: 12px;
           }
           ul {
-            list-style: none;
-            padding: 0;
+            list-style: disc;
+            padding-left: 15px;
           }
         }
         .desc2 {

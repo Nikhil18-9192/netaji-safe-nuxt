@@ -5,6 +5,7 @@
         Clients
       </h1>
     </div>
+    <LogoImages />
     <div class="education">
       <div
         class="title"
@@ -120,7 +121,6 @@
         </ul>
       </div>
     </div>
-    <LogoImages />
   </div>
 </template>
 

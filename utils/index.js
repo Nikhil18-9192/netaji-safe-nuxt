@@ -49,7 +49,7 @@ const homeRange = [
     { title: 'Domestic Cabinet – Khana Bhandar', desc: 'Domestic Cabinet (Khana Bhandar) with vertical partition, rod for hanging on both sides, 1 half safe, 1 Shelf making two compartments and 8-10 hidden compartments (chor khane) below with magnetic lock for 4 hidden compartments. MODEL : NSCH 203 SIZE : H-78″ X W-38″ x D-24″ Customisations as per individual requirement provided.', src: require('~/assets/products/home range/h5.jpg') },
     { title: 'Domestic Cabinet – Tijori Dressing', desc: 'Domestic Storage Cabinet (Tijori Dressing), with 1 shelves with with two hanging rods on both sides, 1 drawer, 1 full safe having 1 drawer and hidden compartment inside. MODEL : NSCH 206 SIZE : H-78″ X W-38″ x D-21″ / 24″ We also provide different sizes as ordered.', src: require('~/assets/products/home range/h6.jpg') },
     { title: 'Domestic Cabinet – Centre Drawer Dressing', desc: 'Domestic Cabinet with 1 shelf, vertical partition, 2 hanging rods, 1 drawer & 1 more shelf below making two compartments.MODEL : NSCH 204 SIZE : H-78″ X W-38″ x D-21″ / 24″ Others Sizes available on request.', src: require('~/assets/products/home range/h7.jpg') },
-    { title: 'Goa Type', desc: '', src: require('~/assets/products/home range/h8.jpg') },
+    { title: 'Goa Type', desc: 'Domestic Cabinet with vertical partition 2 hanging rods, 1 drawer and 1 half safe. Two partitions making 3 compartments. MODEL : NSCH 202 SIZE : H-78″ X W-34/38″ x D-21″ / 24″ Others Sizes available on request.', src: require('~/assets/products/home range/h8.jpg') },
 
 ]
 
@@ -82,8 +82,8 @@ const ssCards = [
 
 const counter = [
     { title: 'Non Fire Proof Counter Safe', desc: 'This is a special product manufactured by us specially for the Jewelers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include One door, Two door, Three door, Four Door, along with various compartments and shelves. The design is fully customised as per individual requirements. ', src: require('~/assets/products/counter safe/1.jpg'), slug: '/counter-safe/non-fire-proof-counter-safe' },
-    { title: 'Fire Proof Counter Safe', desc: '', src: require('~/assets/products/counter safe/3.jpg'), slug: '/counter-safe/fire-proof-counter-safe' },
-    { title: 'Stainless Steel Counter Safe', desc: '', src: require('~/assets/products/counter safe/2.jpg'), slug: '/counter-safe/stainless-steel-counter-safe' },
+    { title: 'Fire Proof Counter Safe', desc: 'This is a fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', src: require('~/assets/products/counter safe/3.jpg'), slug: '/counter-safe/fire-proof-counter-safe' },
+    { title: 'Stainless Steel Counter Safe', desc: 'This is a stainless steel fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm & stainless steel plate (304) of 3mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', src: require('~/assets/products/counter safe/2.jpg'), slug: '/counter-safe/stainless-steel-counter-safe' },
 ]
 
 
@@ -214,6 +214,28 @@ const jewellerySafe = {
 const nonFireProofCounterSafe = {
     cards: [
         { title: '', desc: 'This is a special product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ in height, 48″ to 72″ in width and 18″ to 24″ in depth. The body thickness of minimum 2mm and the door plate of minimum 3mm makes it strong and sturdy. We can also use Fire Proof material to make it more reliable and safe. More safety features can be added like use of LG digital locks instead of Key Locks.', icon: '/dumbbell.svg' },
+        { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
+
+    ],
+    images: [],
+    weights: [
+    ],
+    note: ''
+}
+const fireProofCounterSafe = {
+    cards: [
+        { title: '', desc: 'This is a fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', icon: '/dumbbell.svg' },
+        { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
+
+    ],
+    images: [],
+    weights: [
+    ],
+    note: ''
+}
+const ssFireProofCounterSafe = {
+    cards: [
+        { title: '', desc: 'This is a stainless steel fire proof counter safe product manufactured by us specially for the Jewellers. The main purpose of this type of safe is that it fits in the counter, providing ease of use as well as utilization of space. Counter safe come is various variants which include Single door, Two doors, Three doors & Four doors, along with various compartments and shelves. The safe comes in various dimensions starting from 24″ to 36" in height, 42" to 84" in width & 24" to 30" in depth. The body thickness of minimum 5mm and the door plate of minimum 12mm & stainless steel plate (304) of 3mm makes it strong and sturdy & fire proof. More safety features can be added like use of digital locks, combination locks  with key locks.', icon: '/dumbbell.svg' },
         { title: '', desc: 'This range is especially useful for Jewellery Showrooms where the products are on display at the counter. At closing time the products can be kept conveniently in the safe just below the Counter itself. Thus the space below the counter is utilized fully. The design is fully customised as per individual requirements.', icon: '/pattern.svg' },
 
     ],
@@ -535,9 +557,9 @@ function getCounterSafeProduct(name) {
     if (name == 'non fire proof counter safe') {
         return nonFireProofCounterSafe
     } else if (name == 'fire proof counter safe') {
-        return []
+        return fireProofCounterSafe
     } else if (name == 'stainless steel counter safe') {
-        return []
+        return ssFireProofCounterSafe
     }
 }
 
