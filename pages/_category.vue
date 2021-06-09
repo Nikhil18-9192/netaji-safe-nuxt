@@ -1,6 +1,13 @@
 <template>
   <div id="category">
-    <div class="header" :style="{ 'background-image': 'url(' + banner + ')' }">
+    <div
+      class="header"
+      id="header"
+      :style="{
+        'background-image': 'url(' + banner + ')',
+        height: height + 'px',
+      }"
+    >
       <div
         class="navigator"
         data-aos="fade-right"
@@ -43,11 +50,14 @@ export default {
     return {
       category: '',
       url: '',
+      height: 0,
     }
   },
   mounted() {
     this.url = window.location.href
     this.category = this.$route.params.category.replace(/_/g, ' ')
+    this.height =
+      document.getElementById('header').parentElement.clientWidth / 3.6
   },
   computed: {
     products() {
@@ -110,14 +120,14 @@ export default {
     position: relative;
     width: 100%;
     height: 425px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    @include for-phone-only {
-      height: 350px;
-      background-size: cover;
-      background-position: 80% 74%;
-    }
+    // @include for-phone-only {
+    //   height: 350px;
+    //   background-size: cover;
+    //   background-position: 80% 74%;
+    // }
     @include for-tablet-only {
       background-size: cover;
       object-position: bottom left;
@@ -144,6 +154,7 @@ export default {
       @include for-phone-only {
         left: 0;
         width: 100%;
+        bottom: -45px;
       }
       @include for-tablet-only {
         left: 60px;
@@ -163,7 +174,7 @@ export default {
   .product-container {
     padding: 70px 199px;
     @include for-phone-only {
-      padding: 32px 40px;
+      padding: 75px 40px;
     }
     @include for-tablet-only {
       padding: 40px 60px;
