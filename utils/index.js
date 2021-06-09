@@ -94,6 +94,7 @@ const locks = [
     { title: 'Time Lock', desc: '', src: require('~/assets/products/lock/Time Lock.jpg'), slug: '' },
     { title: 'UL Listed Kaba Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Kaba Digital Lock.jpg'), slug: '' },
     { title: 'UL Listed Lagard Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Lagard Digital Lock.jpg'), slug: '' },
+    { title: 'UL Listed NL Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed NL Digital Lock.jpg'), slug: '' },
 ]
 
 
