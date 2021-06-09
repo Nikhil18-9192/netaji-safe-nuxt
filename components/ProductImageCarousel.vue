@@ -1,32 +1,35 @@
 <template>
-  <div
-    class="image-carousel"
-    data-aos="fade-up"
-    data-aos-duration="900"
-    data-aos-offset="200"
-  >
-    <client-only>
-      <carousel
-        ref="slider"
-        class="carousel"
-        :perPageCustom="[
-          [320, 1],
-          [375, 2],
-          [768, 3],
-          [1200, 5],
-          [1800, 5],
-        ]"
-        :loop="true"
-        :autoplay="true"
-        :autoplayTimeout="3000"
-        :mouse-drag="true"
-        :paginationEnabled="false"
-      >
-        <slide class="slide" v-for="(item, i) in images" :key="i">
-          <img :src="item" alt="" />
-        </slide>
-      </carousel>
-    </client-only>
+  <div>
+    <ImageModal v-if="modal" :image="image" @dismiss="modal = false" />
+    <div
+      class="image-carousel"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-offset="200"
+    >
+      <client-only>
+        <carousel
+          ref="slider"
+          class="carousel"
+          :perPageCustom="[
+            [320, 1],
+            [375, 2],
+            [768, 3],
+            [1200, 5],
+            [1800, 5],
+          ]"
+          :loop="true"
+          :autoplay="true"
+          :autoplayTimeout="3000"
+          :mouse-drag="true"
+          :paginationEnabled="false"
+        >
+          <slide class="slide" v-for="(item, i) in images" :key="i">
+            <img @click="openModal(item)" :src="item" alt="" />
+          </slide>
+        </carousel>
+      </client-only>
+    </div>
   </div>
 </template>
 
@@ -40,6 +43,18 @@ export default {
   components: {
     Carousel,
     Slide,
+  },
+  data() {
+    return {
+      modal: false,
+      image: null,
+    }
+  },
+  methods: {
+    openModal(image) {
+      this.image = image
+      this.modal = true
+    },
   },
 }
 </script>
@@ -69,6 +84,7 @@ export default {
         height: 220px;
         object-fit: contain;
         filter: brightness(1.1);
+        cursor: pointer;
         @include for-phone-only {
           width: 100%;
         }
