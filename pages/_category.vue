@@ -116,7 +116,7 @@ export default {
     @include for-phone-only {
       height: 350px;
       background-size: cover;
-      background-position: 60% 74%;
+      background-position: 80% 74%;
     }
     @include for-tablet-only {
       background-size: cover;
