@@ -174,7 +174,8 @@ export default {
   .product-container {
     padding: 70px 199px;
     @include for-phone-only {
-      padding: 75px 40px;
+      padding: 32px 40px;
+      margin-top: 42px;
     }
     @include for-tablet-only {
       padding: 40px 60px;

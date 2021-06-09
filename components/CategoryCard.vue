@@ -220,7 +220,7 @@ export default {
         mix-blend-mode: multiply;
         filter: brightness(1.1);
         @include for-phone-only {
-          width: 91px;
+          width: 100%;
           height: 141px;
         }
       }
