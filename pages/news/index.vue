@@ -3,9 +3,21 @@
     <ImageModal v-if="modal" @dismiss="modal = false" :image="image" />
     <div class="page-title">
       <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
+        links
+      </h1>
+    </div>
+    <div class="link-container">
+      <div class="links" v-for="(item, i) in links" :key="i">
+        <h4>{{ item.title }}</h4>
+        <a target="_blank" rel="noopener" :href="item.link">{{ item.link }}</a>
+      </div>
+    </div>
+    <div class="page-title">
+      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
         news
       </h1>
     </div>
+
     <div class="image-container">
       <div
         class="image"
@@ -14,17 +26,6 @@
         @click="openImage(src)"
       >
         <img :src="src" alt="news image" />
-      </div>
-    </div>
-    <div class="page-title">
-      <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
-        links
-      </h1>
-    </div>
-    <div class="link-container">
-      <div class="links" v-for="(item, i) in links" :key="i">
-        <h4>{{ item.title }}</h4>
-        <a target="_blank" rel="noopener" :href="item.link">{{ item.link }}</a>
       </div>
     </div>
   </div>
@@ -107,7 +108,7 @@ export default {
     row-gap: 75px;
     max-width: 1120px;
     margin-top: 75px;
-    margin-bottom: 100px;
+
     @include for-phone-only {
       grid-template-columns: repeat(1, 1fr);
       margin-top: 45px;
@@ -135,26 +136,25 @@ export default {
     margin-top: 65px;
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 42px;
+    margin-bottom: 175px;
     .links {
       h4 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 161%;
         text-transform: capitalize;
         margin-bottom: 14px;
         transition: 0.3s ease all;
+        cursor: pointer;
         &:hover {
           color: $primary;
         }
       }
       a {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 161%;
-        @include for-phone-only {
-          font-size: 16px;
-        }
       }
     }
   }
