@@ -20,7 +20,7 @@
         <p>
           <span>Netaji Safe Company</span> is a reputed and trusted name which
           stands for Quality, Durability, Reliability and Affordability. Since
-          more than 65 years Netaji Safe Company offers a complete range of
+          more than 73 years Netaji Safe Company offers a complete range of
           Security Equipment : Fire and Burglar resisting Safe, Strong Room
           Doors, Safe Deposit Lockers, Coffers, Cupboards for Home / Office /
           Institutes etc.
