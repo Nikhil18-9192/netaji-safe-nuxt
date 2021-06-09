@@ -8,7 +8,9 @@
     </div>
     <div class="link-container">
       <div class="links" v-for="(item, i) in links" :key="i">
-        <h4>{{ item.title }}</h4>
+        <a target="_blank" rel="noopener" :href="item.link"
+          ><h4>{{ item.title }}</h4></a
+        >
         <a target="_blank" rel="noopener" :href="item.link">{{ item.link }}</a>
       </div>
     </div>
@@ -120,6 +122,7 @@ export default {
     .image {
       width: 320px;
       height: 396px;
+      cursor: pointer;
       @include for-tablet-only {
         width: 285px;
         height: 365px;
@@ -137,7 +140,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 42px;
-    margin-bottom: 175px;
+    margin-bottom: 62px;
     .links {
       h4 {
         font-weight: 500;
@@ -146,7 +149,6 @@ export default {
         text-transform: capitalize;
         margin-bottom: 14px;
         transition: 0.3s ease all;
-        cursor: pointer;
         &:hover {
           color: $primary;
         }

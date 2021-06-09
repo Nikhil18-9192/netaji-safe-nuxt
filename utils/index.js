@@ -819,10 +819,9 @@ const counterBanner = '/counter-banner.jpg'
 const lockBanner = '/counter-banner.jpg'
 
 const newsLinks = [
-    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
-    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
-    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
-    { title: 'Title Of The Link', link: 'https://netaji-safe-nuxt.vercel.app/' },
+    { title: 'Netaji Safe Featured on B News', link: 'https://www.youtube.com/watch?v=38hD5o5oSgA' },
+    { title: 'Netaji Safe Company On Youtube', link: 'https://www.youtube.com/channel/UCAxoeRauo42tPQ_c9SsQB1g/featured' },
+
 ]
 
 export { slides, productNav, navMenu, ss, counter, locks, officeRange, homeRange, heavySafeDoor, getHeavySafeProduct, coffer, getOfficeRangeProduct, getSsProduct, getCounterSafeProduct, educationClients, bankClients, services, temples, commercial, jewellers, heavySafeBanner, homeRangeBanner, ssBanner, officeRangeBanner, counterBanner, lockBanner, libraryCabinateCards, ssCards, newsLinks }
