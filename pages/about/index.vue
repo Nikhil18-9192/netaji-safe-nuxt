@@ -15,6 +15,10 @@
         <div class="image">
           <img src="/owner.jpg" alt="owner image" />
         </div>
+        <div class="text">
+          <h4>Mr. Devichand R. Oswal</h4>
+          <p>Proprietor</p>
+        </div>
       </div>
       <div class="right">
         <p>
@@ -130,6 +134,22 @@ export default {}
           height: 100%;
           object-fit: contain;
           filter: brightness(1.1);
+        }
+      }
+      .text {
+        text-align: center;
+        margin-top: 20px;
+        font-family: Roboto;
+        h4 {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 13px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
         }
       }
     }
