@@ -139,17 +139,17 @@ export default {}
       .text {
         text-align: center;
         margin-top: 20px;
-        font-family: Roboto;
+
         h4 {
           font-weight: 500;
           font-size: 12px;
-          line-height: 14px;
-          margin-bottom: 13px;
+          line-height: 13px;
+          margin-bottom: 14px;
         }
         p {
           font-weight: 300;
           font-size: 12px;
-          line-height: 14px;
+          line-height: 13px;
         }
       }
     }

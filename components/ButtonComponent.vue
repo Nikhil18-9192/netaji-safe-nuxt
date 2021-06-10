@@ -24,10 +24,11 @@
         <img src="/youtube.svg" alt="vidio play" />
         <p>Watch Video</p>
       </a>
-      <a rel="noreferrer" class="feedback-btn" href="/feedback">
-        <img src="/feedback.svg" alt="broture download" />
-        <p>Feedback</p>
-      </a>
+     
+        <nuxt-link class="feedback-btn" to="/feedback">
+         <img src="/feedback.svg" alt="broture download" />
+        <p>Feedback</p></nuxt-link>
+      
     </div>
   </div>
 </template>

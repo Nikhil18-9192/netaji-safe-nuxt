@@ -27,10 +27,19 @@
         </carousel>
       </client-only>
     </div>
-    <h1 v-if="currentPage == 0" class="heading">
-      A complete System For your security needs
-    </h1>
-    <img v-if="currentPage == 0" class="shield-icon" src="/shild.png" alt="" />
+    <transition name="fade">
+      <h1 v-if="currentPage == 0" class="heading">
+        A complete System For your security needs
+      </h1>
+    </transition>
+    <transition name="fade">
+      <img
+        v-if="currentPage == 0"
+        class="shield-icon"
+        src="/shild.png"
+        alt=""
+      />
+    </transition>
   </div>
 </template>
 
@@ -196,5 +205,15 @@ $phoneHeight: 135px;
       }
     }
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.3s;
+  opacity: 0;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
