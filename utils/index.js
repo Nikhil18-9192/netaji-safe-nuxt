@@ -88,13 +88,15 @@ const counter = [
 ]
 
 const locks = [
+    { title: 'UL Listed NL Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed NL Digital Lock.jpg'), slug: '' },
+    { title: 'Numerical Combination Lock', desc: '', src: require('~/assets/products/lock/Numerical Combination Lock.jpg'), slug: '' },
     { title: 'Biometric & Digital Lock', desc: '', src: require('~/assets/products/lock/Biometric & Digital Lock.jpg'), slug: '' },
     { title: 'Fixed Number Numerical Lock', desc: '', src: require('~/assets/products/lock/Fixed Number Numerical Lock.jpg'), slug: '' },
-    { title: 'Numerical Combination Lock', desc: '', src: require('~/assets/products/lock/Numerical Combination Lock.jpg'), slug: '' },
+
     { title: 'Time Lock', desc: '', src: require('~/assets/products/lock/Time Lock.jpg'), slug: '' },
     { title: 'UL Listed Kaba Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Kaba Digital Lock.jpg'), slug: '' },
     { title: 'UL Listed Lagard Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed Lagard Digital Lock.jpg'), slug: '' },
-    { title: 'UL Listed NL Digital Lock', desc: '', src: require('~/assets/products/lock/UL Listed NL Digital Lock.jpg'), slug: '' },
+
 ]
 
 
