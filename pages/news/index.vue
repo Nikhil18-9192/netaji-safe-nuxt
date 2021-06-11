@@ -120,8 +120,8 @@ export default {
       grid-template-columns: repeat(2, 1fr);
     }
     .image {
-      width: 320px;
-      height: 396px;
+      width: 278px;
+      height: 354px;
       cursor: pointer;
       @include for-tablet-only {
         width: 285px;
