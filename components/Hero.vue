@@ -15,7 +15,7 @@
           class="hero-carousel"
           :perPage="1"
           :loop="true"
-          :autoplay="false"
+          :autoplay="true"
           :autoplayTimeout="3000"
           :mouse-drag="true"
           :paginationEnabled="false"
