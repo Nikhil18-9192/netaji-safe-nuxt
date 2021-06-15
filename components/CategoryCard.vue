@@ -1,5 +1,6 @@
 <template>
   <div class="card-wrapper">
+    <ImageModal v-if="modal" :image="image" @dismiss="modal = false" />
     <div class="card-container" v-if="cards && cards.length">
       <div
         class="card1"
@@ -26,6 +27,7 @@
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-offset="200"
+      @click="openModal(product.slug, product.src)"
     >
       <a
         class="whatsapp-icon"
@@ -46,6 +48,7 @@
         class="route-link"
         :to="product.slug"
       ></nuxt-link>
+
       <h4 v-if="product.title" class="title">{{ product.title }}</h4>
       <div class="image">
         <img v-if="product.src" :src="product.src" alt="" />
@@ -70,6 +73,21 @@
 export default {
   name: 'CategoryCardComponent',
   props: ['products', 'url', 'category', 'cards'],
+  data() {
+    return {
+      modal: false,
+      image: null,
+    }
+  },
+  methods: {
+    openModal(slug, src) {
+      console.log(slug)
+      if (!slug) {
+        this.image = src
+        this.modal = true
+      }
+    },
+  },
 }
 </script>
 
