@@ -123,6 +123,9 @@ export default {
       width: 278px;
       height: 354px;
       cursor: pointer;
+      @include for-phone-only {
+        width: 100%;
+      }
       @include for-tablet-only {
         width: 285px;
         height: 365px;
@@ -142,6 +145,10 @@ export default {
     gap: 42px;
     margin-bottom: 62px;
     .links {
+      @include for-phone-only {
+        max-width: 375x;
+        // overflow: hidden;
+      }
       h4 {
         font-weight: 500;
         font-size: 18px;
@@ -157,6 +164,8 @@ export default {
         font-weight: 300;
         font-size: 14px;
         line-height: 161%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
       }
     }
   }
