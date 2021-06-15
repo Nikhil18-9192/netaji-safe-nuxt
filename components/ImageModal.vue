@@ -8,6 +8,9 @@
         </v-zoomer>
         <img v-else :src="image" />
       </div>
+      <p class="scroll-msg" v-if="$device.isDesktop">
+        Use scroll to zoom image
+      </p>
     </div>
   </div>
 </template>
@@ -85,6 +88,13 @@ export default {
         object-fit: contain;
         object-position: center;
       }
+    }
+    .scroll-msg {
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 18px;
+      text-transform: capitalize;
     }
   }
 }
