@@ -24,11 +24,11 @@
         <img src="/youtube.svg" alt="vidio play" />
         <p>Watch Video</p>
       </a>
-     
-        <nuxt-link class="feedback-btn" to="/feedback">
-         <img src="/feedback.svg" alt="broture download" />
-        <p>Feedback</p></nuxt-link>
-      
+
+      <nuxt-link class="feedback-btn" to="/feedback">
+        <img src="/feedback.svg" alt="broture download" />
+        <p>Feedback</p></nuxt-link
+      >
     </div>
   </div>
 </template>
@@ -60,7 +60,6 @@ export default {
 
       @include for-phone-only {
         margin-right: 0;
-        margin-bottom: 33px;
       }
       p {
         color: #fff;
@@ -84,6 +83,9 @@ export default {
       background: #cb2929;
       border-radius: 47px;
       margin: 0 33px;
+      @include for-phone-only {
+        margin: 33px;
+      }
       p {
         color: #fff;
         font-weight: 600;
