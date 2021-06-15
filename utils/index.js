@@ -818,7 +818,7 @@ const homeRangeBanner = '/home-range-banner.jpg'
 const ssBanner = '/ss-banner.jpg'
 const officeRangeBanner = '/office-range-banner.jpg'
 const counterBanner = '/counter-banner.jpg'
-const lockBanner = '/counter-banner.jpg'
+const lockBanner = '/lock-banner.jpg'
 
 const newsLinks = [
     { title: 'Netaji Safe Featured on B News', link: 'https://www.youtube.com/watch?v=38hD5o5oSgA' },
