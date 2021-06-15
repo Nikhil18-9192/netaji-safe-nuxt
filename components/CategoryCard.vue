@@ -2,7 +2,7 @@
   <div class="card-wrapper">
     <div class="card-container" v-if="cards && cards.length">
       <div
-        class="card"
+        class="card1"
         v-for="(item, i) in cards"
         :key="i"
         data-aos="fade-up"
@@ -11,6 +11,7 @@
         :data-aos-delay="i * 200"
       >
         <h4>{{ item.title }}</h4>
+
         <ul>
           <li v-for="(list, i) in item.list" :key="i">
             {{ list }}
@@ -102,7 +103,7 @@ export default {
     @include for-phone-only {
       grid-template-columns: repeat(1, 1fr);
     }
-    .card {
+    .card1 {
       padding: 44px 30px 23px 30px;
       background: linear-gradient(
         180deg,

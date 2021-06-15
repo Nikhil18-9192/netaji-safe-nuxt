@@ -5,19 +5,21 @@
     data-aos-duration="900"
     data-aos-offset="200"
   >
-    <table>
-      <tr class="heading">
-        <th v-for="(heading, i) in tableHeader" :key="i">
-          {{ heading }}
-        </th>
-      </tr>
-      <tr class="table-row" v-for="(item, i) in weights" :key="i">
-        <td>{{ i + 1 }}</td>
-        <td>{{ item.outer }}</td>
-        <td style="max-width: 225px">{{ item.inner }}</td>
-        <td>{{ item.weight }}</td>
-      </tr>
-    </table>
+    <client-only>
+      <table>
+        <tr class="heading">
+          <th v-for="(heading, i) in tableHeader" :key="i">
+            {{ heading }}
+          </th>
+        </tr>
+        <tr class="table-row" v-for="(item, i) in weights" :key="i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.outer }}</td>
+          <td style="max-width: 225px">{{ item.inner }}</td>
+          <td>{{ item.weight }}</td>
+        </tr>
+      </table>
+    </client-only>
   </div>
 </template>
 
