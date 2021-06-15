@@ -19,7 +19,8 @@
     "sass-loader": "^10.1.1",
     "vue-carousel": "^0.18.0",
     "vue-gtag": "^1.16.1",
-    "vue-izitoast": "^1.2.1"
+    "vue-izitoast": "^1.2.1",
+    "vue-zoomer": "^0.3.9"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.1.0",

@@ -3,7 +3,10 @@
     <div class="close" @click.stop="$emit('dismiss')">Close</div>
     <div class="images-container" @click.stop="">
       <div class="image">
-        <img :src="image" />
+        <v-zoomer v-if="$device.isDesktop" class="img">
+          <img :src="image" />
+        </v-zoomer>
+        <img v-else :src="image" />
       </div>
     </div>
   </div>
@@ -61,6 +64,20 @@ export default {
       height: 100%;
       @include for-phone-only {
         height: 500px;
+      }
+      .img {
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        transition: 0.2s ease background;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
       img {
         width: 100%;

@@ -38,16 +38,17 @@ export default {
       ssr: false,
     },
     { src: '~/plugins/toast.js', ssr: false },
-     { src: '~/plugins/gtag.js', ssr: false },
+    { src: '~/plugins/gtag.js', ssr: false },
+    { src: '~/plugins/zoomer.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/device',  ],
+  buildModules: ['@nuxtjs/device',],
 
- 
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
