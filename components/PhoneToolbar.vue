@@ -2,9 +2,9 @@
   <div
     id="phone-toolbar"
     :style="[
-      scrollPosition > 0
-        ? { 'border-bottom': '6px solid #cb2929' }
-        : { 'border-bottom': '11px solid #cb2929' },
+      scrollPosition > 0 && !$store.state.imageModal
+        ? { 'border-bottom': '6px solid #cb2929', 'z-index': '1' }
+        : { 'border-bottom': '11px solid #cb2929', 'z-index': '0' },
     ]"
   >
     <div class="blur"></div>

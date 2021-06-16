@@ -1,7 +1,9 @@
 export const state = () => ({
     menuState: false,
     scrollPosition: 0,
-    toggle: false
+    toggle: false,
+    imageModal: false
+
 })
 
 export const getters = {
@@ -11,6 +13,9 @@ export const getters = {
     getScrollPosition: (state) => {
         return state.scrollPosition;
     },
+    getImageModal: (state) => {
+        return state.imageModal
+    }
 }
 
 export const mutations = {
@@ -20,4 +25,7 @@ export const mutations = {
     SET_SCROLL_POSITION: (state, position) => {
         state.scrollPosition = position;
     },
+    toggleImageModal(state) {
+        state.imageModal = !state.imageModal
+    }
 }

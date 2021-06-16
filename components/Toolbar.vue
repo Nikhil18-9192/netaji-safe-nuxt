@@ -2,9 +2,17 @@
   <div
     id="toolbar"
     :style="[
-      scrollPosition > 0
-        ? { height: '71px', 'border-bottom': '4px solid #cb2929' }
-        : { height: '102px', 'border-bottom': '12px solid #cb2929' },
+      scrollPosition > 0 && !$store.state.imageModal
+        ? {
+            height: '71px',
+            'border-bottom': '4px solid #cb2929',
+            'z-index': '1',
+          }
+        : {
+            height: '102px',
+            'border-bottom': '12px solid #cb2929',
+            'z-index': '0',
+          },
     ]"
   >
     <div class="blur"></div>
@@ -95,7 +103,6 @@ export default {
   padding: 0 63px;
   display: flex;
   align-items: center;
-  z-index: 2000;
   transition: 0.3s ease all;
   @include for-phone-only {
     display: none;

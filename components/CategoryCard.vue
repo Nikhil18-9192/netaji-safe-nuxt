@@ -1,6 +1,10 @@
 <template>
   <div class="card-wrapper">
-    <ImageModal v-if="modal" :image="image" @dismiss="modal = false" />
+    <ImageModal
+      v-if="$store.state.imageModal"
+      :image="image"
+      @dismiss="$store.commit('toggleImageModal')"
+    />
     <div class="card-container" v-if="cards && cards.length">
       <div
         class="card1"
@@ -75,7 +79,6 @@ export default {
   props: ['products', 'url', 'category', 'cards'],
   data() {
     return {
-      modal: false,
       image: null,
     }
   },
@@ -84,7 +87,7 @@ export default {
       console.log(slug)
       if (!slug) {
         this.image = src
-        this.modal = true
+        this.$store.commit('toggleImageModal')
       }
     },
   },
