@@ -121,7 +121,6 @@ export default {
           'Thank you for contacting us, we will respond to you shortly!'
         )
       } catch (error) {
-        console.log(error)
         this.$toast.error(
           'Sorry! Something went wrong. Please try again later.'
         )
