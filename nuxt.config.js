@@ -50,7 +50,7 @@ export default {
 
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
   styleResources: {
     scss: ['~assets/global.scss'],
   },

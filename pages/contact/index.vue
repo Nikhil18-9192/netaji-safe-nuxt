@@ -101,7 +101,7 @@ export default {
     }
   },
   methods: {
-    submit() {
+    async submit() {
       const { name, email, subject, number, message } = this
       const validation = formValidation({
         name,
@@ -114,6 +114,43 @@ export default {
         this.$toast.error(validation.error.message)
         return
       }
+      try {
+        await this.submitToServer()
+        this.clearForm()
+        this.$toast.success(
+          'Thank you for contacting us, we will respond to you shortly!'
+        )
+      } catch (error) {
+        console.log(error)
+        this.$toast.error(
+          'Sorry! Something went wrong. Please try again later.'
+        )
+      }
+    },
+    submitToServer() {
+      const data = {
+        payload: {
+          client: 'Netaji Safe Company',
+          name: this.name,
+          email: this.email,
+          subject: this.subject,
+          mobile: this.number,
+          message: this.message,
+          to: 'netajisafe@yahoo.com',
+        },
+      }
+
+      return this.$axios.$post(
+        `https://formec-mail-api.vercel.app/notify`,
+        data
+      )
+    },
+    clearForm: function () {
+      this.name = ''
+      this.email = ''
+      this.number = ''
+      this.subject = ''
+      this.message = ''
     },
   },
 }
