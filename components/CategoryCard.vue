@@ -59,12 +59,26 @@
       </div>
       <div class="desc">
         <p>{{ product.desc }}</p>
-        <p v-if="product.desc2">{{ product.desc2 }}</p>
+
+        <div v-if="product.model" class="model">
+          <p>
+            Model: <span>{{ product.model }}</span>
+          </p>
+        </div>
         <div v-if="product.size" class="size">
-          <p>Size Details :</p>
-          <p>{{ product.size }}</p>
+          <p>Size :{{ product.size }}</p>
           <p class="note">{{ product.note }}</p>
         </div>
+        <div v-if="product.model1" class="model">
+          <p>
+            Model: <span>{{ product.model1 }}</span>
+          </p>
+        </div>
+        <div v-if="product.size1" class="size">
+          <p>Size :{{ product.size1 }}</p>
+        </div>
+        <p v-if="product.desc2">{{ product.desc2 }}</p>
+        <p v-if="product.p">{{ product.p }}</p>
       </div>
       <nuxt-link v-if="product.slug" class="read-btn" :to="product.slug"
         >Read More ...</nuxt-link
@@ -254,10 +268,15 @@ export default {
         font-size: 13px;
         line-height: 173.69%;
       }
-      .size {
-        margin-top: 12px;
-        .note {
-          margin-top: 12px;
+      // .size {
+      //   margin-top: 12px;
+      //   .note {
+      //     margin-top: 12px;
+      //   }
+      // }
+      .model {
+        span {
+          font-weight: 600;
         }
       }
     }
