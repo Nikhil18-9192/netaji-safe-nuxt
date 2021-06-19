@@ -117,7 +117,7 @@ $phoneHeight: 135px;
     text-transform: uppercase;
     width: 500px;
     margin-top: 135px;
-    z-index: 1;
+    z-index: 0;
     @include for-phone-only {
       font-size: 18px;
       width: 219px;
