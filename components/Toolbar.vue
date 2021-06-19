@@ -6,7 +6,7 @@
         ? {
             height: '71px',
             'border-bottom': '4px solid #cb2929',
-            'z-index': '1',
+            'z-index': '2',
           }
         : {
             height: '102px',
