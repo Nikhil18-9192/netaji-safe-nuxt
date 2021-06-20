@@ -15,6 +15,7 @@
         <span :class="!menuState ? 't2' : ''"></span>
       </div>
     </div>
+    <p class="menu-text">Menu</p>
   </div>
 </template>
 
@@ -52,6 +53,14 @@ export default {
   top: 28px;
   z-index: 2002;
   display: none;
+
+  .menu-text {
+    font-size: 10px;
+    position: absolute;
+    bottom: -26px;
+    left: -3px;
+  }
+
   @include for-phone-only {
     display: block;
   }
