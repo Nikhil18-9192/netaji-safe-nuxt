@@ -60,6 +60,7 @@ export default {
       margin-top: 90px;
       @include for-phone-only {
         margin-top: 90px;
+        width: 100%;
       }
       .route-link {
         position: absolute;
@@ -122,8 +123,8 @@ export default {
         display: flex;
         justify-content: center;
         img {
-          width: 128px;
-          height: 169px;
+          width: 100%;
+          height: 180px;
           object-fit: contain;
           mix-blend-mode: multiply;
           filter: brightness(1.1);
