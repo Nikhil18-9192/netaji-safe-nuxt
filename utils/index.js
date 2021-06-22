@@ -8,7 +8,7 @@ const productNav = [
 ]
 const navMenu = [
   { name: ' Home ', path: '/' },
-  { name: ' About ', path: '/about' },
+  { name: ' About Us', path: '/about' },
   { name: ' Services  ', path: '/services' },
   { name: 'Clients ', path: '/clients' },
   { name: ' Contact  ', path: '/contact' },

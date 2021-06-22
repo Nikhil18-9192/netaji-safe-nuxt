@@ -2,7 +2,7 @@
   <div id="about">
     <div class="page-title">
       <h1 data-aos="fade-right" data-aos-duration="900" data-aos-offset="200">
-        About
+        About Us
       </h1>
     </div>
     <div
