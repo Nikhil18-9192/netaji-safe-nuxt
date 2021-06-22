@@ -13,7 +13,7 @@
         href="/netaji-safe-brouchre.pdf"
       >
         <img src="/download.svg" alt="broture download" />
-        <p>Download Broture</p>
+        <p>Download brochure</p>
       </a>
       <a
         rel="noreferrer"
@@ -52,7 +52,7 @@ export default {
     .broture-btn {
       display: flex;
       align-items: center;
-      width: 185px;
+      width: 197px;
       height: 47px;
       padding: 10px 13px;
       background: #1f1f1f;
