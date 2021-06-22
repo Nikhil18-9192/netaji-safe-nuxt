@@ -1,5 +1,11 @@
 <template>
   <div>
+    <ImageModal
+      class="image-modal"
+      v-if="$store.state.imageModal"
+      :image="$store.state.productImg"
+      @dismiss="$store.commit('toggleImageModal')"
+    />
     <Toolbar />
     <PhoneToolbar />
     <MenuButton />

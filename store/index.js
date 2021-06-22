@@ -2,7 +2,8 @@ export const state = () => ({
     menuState: false,
     scrollPosition: 0,
     toggle: false,
-    imageModal: false
+    imageModal: false,
+    productImg: null
 
 })
 
@@ -27,5 +28,8 @@ export const mutations = {
     },
     toggleImageModal(state) {
         state.imageModal = !state.imageModal
+    },
+    SET_IMAGE(state, src) {
+        state.productImg = src
     }
 }

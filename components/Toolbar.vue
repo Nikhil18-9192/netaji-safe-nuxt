@@ -6,12 +6,10 @@
         ? {
             height: '71px',
             'border-bottom': '4px solid #cb2929',
-            'z-index': '2',
           }
         : {
             height: '102px',
             'border-bottom': '12px solid #cb2929',
-            'z-index': '0',
           },
     ]"
   >
@@ -104,6 +102,7 @@ export default {
   display: flex;
   align-items: center;
   transition: 0.3s ease all;
+  z-index: 1000;
   @include for-phone-only {
     display: none;
   }

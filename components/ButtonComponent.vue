@@ -13,13 +13,13 @@
         href="/netaji-safe-brouchre.pdf"
       >
         <img src="/download.svg" alt="broture download" />
-        <p>Download brochure</p>
+        <p>Download Brochure</p>
       </a>
       <a
         rel="noreferrer"
         class="video-btn"
         target="_blank"
-        href="https://www.youtube.com/watch?v=5NMZ4zFTS7E"
+        href="https://www.youtube.com/watch?v=wmUl5P0u-OU&t=28s"
       >
         <img src="/youtube.svg" alt="vidio play" />
         <p>Watch Video</p>

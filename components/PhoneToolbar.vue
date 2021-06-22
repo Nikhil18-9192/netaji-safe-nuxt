@@ -3,8 +3,8 @@
     id="phone-toolbar"
     :style="[
       scrollPosition > 0 && !$store.state.imageModal
-        ? { 'border-bottom': '6px solid #cb2929', 'z-index': '2' }
-        : { 'border-bottom': '11px solid #cb2929', 'z-index': '0' },
+        ? { 'border-bottom': '6px solid #cb2929' }
+        : { 'border-bottom': '11px solid #cb2929' },
     ]"
   >
     <div class="blur"></div>
@@ -35,7 +35,7 @@ export default {
   backdrop-filter: blur(53px);
   height: 69px;
   display: none;
-  z-index: 2000;
+  z-index: 1000;
   padding: 0 20px;
   transition: 0.3s ease all;
   @include for-phone-only {

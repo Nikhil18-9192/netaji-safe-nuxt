@@ -32,7 +32,7 @@ export default {
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 2;
+  z-index: 2000;
   background: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;

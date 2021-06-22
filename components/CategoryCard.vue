@@ -1,10 +1,5 @@
 <template>
   <div class="card-wrapper">
-    <ImageModal
-      v-if="$store.state.imageModal"
-      :image="image"
-      @dismiss="$store.commit('toggleImageModal')"
-    />
     <div class="card-container" v-if="cards && cards.length">
       <div
         class="card1"
@@ -100,7 +95,7 @@ export default {
     openModal(slug, src) {
       console.log(slug)
       if (!slug) {
-        this.image = src
+        this.$store.commit('SET_IMAGE', src)
         this.$store.commit('toggleImageModal')
       }
     },
